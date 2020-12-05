@@ -9,7 +9,9 @@
 .margin--auto{
 	margin:  auto;
 }
-
+.margin--tb-auto {
+	margin: 2rem auto;
+}
 .margin {
 	margin: 0.5rem;
 }
@@ -317,7 +319,26 @@ colors utilities..
 
 /*colors utilities*/
 
-/* 
+
+/*active classes
+*/ 
+.active {
+	color: $white-color;
+	background-color: #889DFF;
+	border-radius: .25rem;
+	
+	a{
+		color: $white-color;
+	}
+} 
+
+
+/*
+active classes
+*/
+
+
+/*
 * Utility Rules Defined end here
 * All Type of Utility Tools will Describe Here
 */

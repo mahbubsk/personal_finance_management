@@ -10,7 +10,8 @@
   "author": "stack learner",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "sass": "^1.30.0"
   },
   "devDependencies": {
     "kss": "^3.0.1",

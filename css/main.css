@@ -15,6 +15,9 @@ body {
 .margin--auto {
   margin: auto; }
 
+.margin--tb-auto {
+  margin: 2rem auto; }
+
 .margin {
   margin: 0.5rem; }
 
@@ -242,7 +245,19 @@ colors utilities..
   background-color: #EBEEFF; }
 
 /*colors utilities*/
-/* 
+/*active classes
+*/
+.active {
+  color: #fff;
+  background-color: #889DFF;
+  border-radius: .25rem; }
+  .active a {
+    color: #fff; }
+
+/*
+active classes
+*/
+/*
 * Utility Rules Defined end here
 * All Type of Utility Tools will Describe Here
 */
@@ -382,18 +397,17 @@ colors utilities..
     Styleguide Lib.Navs.nav-item
 */
 .nav-item {
-  width: 15rem;
-  padding: 1rem;
+  width: 10rem;
+  padding: .5rem;
   font-weight: 500;
   font-size: 18px;
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border: 1px solid red; }
+  justify-content: space-between; }
   .nav-item__link {
     text-decoration: none;
-    color: #000;
+    color: #EBEEFF;
     flex-grow: 2;
     margin-left: 0.8rem; }
 
@@ -666,3 +680,27 @@ colors utilities..
   .form-section__legend-title {
     font-size: 18px;
     font-weight: 700; }
+
+/*
+    container (this is main container of dashboard)
+
+    Markup:
+    <main class="main-content">
+        <section class="main-content__stack-menu"></section>
+        <section class="main-content__stack-content"></section>
+    </main>
+
+    Styleguide Pages.dashboard.main-content
+*/
+.main-content {
+  background-color: #506df5;
+  height: 90vh;
+  width: 95vw;
+  border-radius: 3.1rem;
+  display: flex; }
+  .main-content__stack-menu {
+    width: 14%; }
+  .main-content__stack-content {
+    width: 86%;
+    background-color: #f5f5f5;
+    border-radius: 2.5rem; }
