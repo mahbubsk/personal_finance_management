@@ -1,0 +1,16 @@
+/*
+    btn-xlg (button extra large)
+
+    Markup:
+    <button class="btn-xlg">text</button>
+
+    Styleguide Lib.buttons.btn-xlg
+*/
+
+.btn-xlg{
+    width:17.5rem;
+    height: 3.125rem;
+    border-radius: 0.5rem;
+    font-weight: $font-weight-bold;
+
+}

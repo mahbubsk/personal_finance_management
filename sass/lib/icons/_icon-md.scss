@@ -1,0 +1,21 @@
+/*
+    icon-md (icon medium ---> size: 24/24)
+
+    Markup:
+    <i class="icon-md">
+        <img class="icon-md__img" src="../../icons/out.svg"/>
+    </i>
+
+    Styleguide Lib.icons.icon-md
+*/
+
+.icon-md{
+    display:inline-block;
+    width:24px;
+    height: 24px;
+    
+    &__img{
+        width:100%;
+        height:100%;
+    }
+}

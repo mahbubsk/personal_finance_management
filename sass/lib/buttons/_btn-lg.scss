@@ -1,0 +1,14 @@
+/*
+    btn-lg (button larg)
+
+    Markup:
+    <button class="btn-lg">text</button>
+
+    Styleguide Lib.buttons.btn-lg
+*/
+
+.btn-lg{
+    width:12rem;
+    height: 3.125rem;
+    font-weight: $font-weight-bold;
+}

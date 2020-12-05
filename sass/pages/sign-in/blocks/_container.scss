@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    background:$white-color;
+    width:65%;
+    height: 50rem;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 3.25rem auto;
+    position: relative;
+
+    .container__form{
+        width: 50%;
+        height: 100%;
+        background-color: $secondary-color;
+    }
+
+    .container__img{
+        width: 50%;
+        position: absolute;
+        bottom:-4px;
+        right:2rem;
+
+        &-image{
+            width:41rem;
+        }
+    }
+}

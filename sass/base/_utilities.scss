@@ -1,0 +1,323 @@
+
+/* 
+* Utility Rules Defined Here
+* All Type of Utility Tools will Describe Here
+*/
+
+/*margin-utility*/
+
+.margin--auto{
+	margin:  auto;
+}
+
+.margin {
+	margin: 0.5rem;
+}
+
+.margin--md {
+	margin: 1rem;
+}
+
+.margin--lg {
+	margin: 2rem;
+}
+
+
+
+.margin--y {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.margin--ymd {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.margin--ylg {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+
+
+
+.margin--x {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.margin--xmd {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.margin--xlg {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+
+.margin--t{
+    margin-top: 0.5rem;
+}
+.margin--tmd{
+    margin-top:1rem;
+}
+
+.margin--tlg{
+    margin-top:2rem;
+}
+
+.margin--r{
+    margin-right: 0.5rem;
+}
+.margin--rmd{
+    margin-right:1rem;
+}
+
+.margin--rlg{
+    margin-right:2rem;
+}
+
+
+
+.margin--b{
+    margin-bottom: 0.5rem;
+}
+.margin--bmd{
+    margin-bottom:1rem;
+}
+
+.margin--blg{
+    margin-bottom:2rem;
+}
+
+
+.margin--l{
+    margin-left: 0.5rem;
+}
+.margin--lmd{
+    margin-left:1rem;
+}
+
+.margin--llg{
+    margin-left:2rem;
+}
+
+
+
+/*margin-utility*/
+
+/*padding utility*/
+
+.padding--sm {
+	padding: 0.5rem;
+}
+
+.padding--md {
+	padding: 1rem;
+}
+
+.padding--lg {
+	padding: 2rem;
+}
+
+
+
+.padding--y {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.padding--ymd {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.padding--ylg {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+
+
+
+.padding--x {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.padding--xmd {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.padding--xlg {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+
+
+.padding--t{
+    padding-top: 0.5rem;
+}
+.padding--tmd{
+    padding-top:1rem;
+}
+
+.padding--tlg{
+    padding-top:2rem;
+}
+
+.padding--r{
+    padding-right: 0.5rem;
+}
+.padding--rmd{
+    padding-right:1rem;
+}
+
+.padding--rlg{
+    padding-right:2rem;
+}
+
+
+
+.padding--b{
+    padding-bottom: 0.5rem;
+}
+.padding--bmd{
+    padding-bottom:1rem;
+}
+
+.padding--blg{
+    padding-bottom:2rem;
+}
+
+
+.padding--l{
+    margin-left: 0.5rem;
+}
+.padding--lmd{
+    padding-left:1rem;
+}
+
+.padding--llg{
+    padding-left:2rem;
+}
+
+
+/*padding utility*/
+
+
+/*border outline none*/
+.border-outline--none{
+	outline: none;
+	border: none;
+}
+
+/*shadow utility*/
+
+.shadow--lg {
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.shadow--md {
+	box-shadow: 1 1 5px 0 rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 1 1 5px 0 rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 1 1 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.shadow--sm {
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*shadow utility*/
+
+
+
+.display--i{
+	display: inline;
+}
+.display--n {
+	display: none;
+}
+
+.display--b {
+	display: block;
+}
+
+
+.align--right {
+	text-align: right;
+}
+
+.align--left {
+	text-align: left;
+}
+.align--center{
+	text-align: center;
+}
+
+
+
+
+/*
+colors utilities..
+*/
+.text--secondary{
+    color:$secondary-color;
+}
+.text--primary{
+    color:$primary-color;
+}
+.text--info{
+    color:$info-color;
+}
+.text--white{
+    color:$white-color;
+}
+.text--berry{
+    color:$blue-berry-color;
+}
+.text--success{
+    color:$success-color;
+}
+
+.text--ash{
+	color:$ash-color;
+}
+
+.bg--secondary{
+    background-color:$secondary-color;
+}
+.bg--primary{
+    background-color:$primary-color;
+}
+.bg--info{
+    background-color:$info-color;
+}
+.bg--white{
+    background-color:$white-color;
+}
+.bg--berry{
+    background-color:$blue-berry-color;
+}
+.bg--success{
+    background-color:$success-color;
+}
+.bg--ash{
+	background-color: $ash-color;
+}
+
+/*colors utilities*/
+
+/* 
+* Utility Rules Defined end here
+* All Type of Utility Tools will Describe Here
+*/

@@ -1,0 +1,19 @@
+{
+  "name": "personal-finance-management",
+  "version": "1.0.0",
+  "description": "personal finance management project ",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css -w",
+    "kss": "kss --config kss-config.json"
+  },
+  "author": "stack learner",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "kss": "^3.0.1",
+    "michelangelo": "^0.8.0"
+  }
+}

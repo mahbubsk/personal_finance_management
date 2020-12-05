@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="../css/main.css"/>
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">Dashboard Project</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">Dashboard Project</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="kss-state-active" href="section-lib.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Lib</span>
+            </a>
+                <ul class="kss-nav__subnav">
+                    <li class="kss-nav__item ">
+                      <a href="section-lib.html#kssref-lib-buttons">
+                        <span class="kss-nav__ref">1.1</span>
+                        <span class="kss-nav__name">Lib.buttons</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-buttons-btn-lg">
+                        <span class="kss-nav__ref">1.1.1</span>
+                        <span class="kss-nav__name">btn-lg (button larg)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-buttons-btn-md">
+                        <span class="kss-nav__ref">1.1.2</span>
+                        <span class="kss-nav__name">btn-md (button medium)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-buttons-btn-sm">
+                        <span class="kss-nav__ref">1.1.3</span>
+                        <span class="kss-nav__name">btn-sm (button small)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-buttons-btn-xlg">
+                        <span class="kss-nav__ref">1.1.4</span>
+                        <span class="kss-nav__name">btn-xlg (button extra large)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-buttons-btn-xsm">
+                        <span class="kss-nav__ref">1.1.5</span>
+                        <span class="kss-nav__name">btn-xsm (button extra small)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-lib.html#kssref-lib-cards">
+                        <span class="kss-nav__ref">1.2</span>
+                        <span class="kss-nav__name">Lib.cards</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-cards-card">
+                        <span class="kss-nav__ref">1.2.1</span>
+                        <span class="kss-nav__name">card (it&#x27;s a pre build card with a background image)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-lib.html#kssref-lib-icons">
+                        <span class="kss-nav__ref">1.3</span>
+                        <span class="kss-nav__name">Lib.icons</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-icons-icon-lg">
+                        <span class="kss-nav__ref">1.3.1</span>
+                        <span class="kss-nav__name">icon-lg (icon larg ---&gt; size: 28/28)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-icons-icon-md">
+                        <span class="kss-nav__ref">1.3.2</span>
+                        <span class="kss-nav__name">icon-md (icon medium ---&gt; size: 24/24)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-icons-icon-sm">
+                        <span class="kss-nav__ref">1.3.3</span>
+                        <span class="kss-nav__name">icon-xsm (icon small ---&gt; size: 20/20)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-icons-icon-xlg">
+                        <span class="kss-nav__ref">1.3.4</span>
+                        <span class="kss-nav__name">icon-xlg (icon extra larg ---&gt; size: 32/32)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-icons-icon-xsm">
+                        <span class="kss-nav__ref">1.3.5</span>
+                        <span class="kss-nav__name">icon-xsm (icon extra small ---&gt; size: 16/16)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-lib.html#kssref-lib-inputs">
+                        <span class="kss-nav__ref">1.4</span>
+                        <span class="kss-nav__name">Lib.Inputs</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-inputs-input-field-lg">
+                        <span class="kss-nav__ref">1.4.1</span>
+                        <span class="kss-nav__name">input-field-lg (input field larg)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-inputs-input-field-md">
+                        <span class="kss-nav__ref">1.4.2</span>
+                        <span class="kss-nav__name">input-field-md (input field medium)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-inputs-input-field-sm">
+                        <span class="kss-nav__ref">1.4.3</span>
+                        <span class="kss-nav__name">input-field-sm (input field small)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-inputs-input-field-xlg">
+                        <span class="kss-nav__ref">1.4.4</span>
+                        <span class="kss-nav__name">input-field-xlg (input field extra larg )</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-lib.html#kssref-lib-items">
+                        <span class="kss-nav__ref">1.5</span>
+                        <span class="kss-nav__name">Lib.items</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-items-budgets-item">
+                        <span class="kss-nav__ref">1.5.1</span>
+                        <span class="kss-nav__name">Budgets-item (budgets single item)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-items-trans-item">
+                        <span class="kss-nav__ref">1.5.2</span>
+                        <span class="kss-nav__name">Trans-item (transaction single item)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-lib.html#kssref-lib-navs">
+                        <span class="kss-nav__ref">1.6</span>
+                        <span class="kss-nav__name">Lib.Navs</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-navs-nav-item">
+                        <span class="kss-nav__ref">1.6.1</span>
+                        <span class="kss-nav__name">nav-item (navigation-item)</span>
+                      </a>
+                    </li>
+                </ul>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-1" id="kssref-lib">
+
+            <article class="kss-section__content">
+
+              <a class="kss-section__permalink" href="#kssref-lib">
+                <h1 class="kss-section__item kss-section__item--depth-1">
+                  <span class="kss-section__ref">1</span>
+                  <span class="kss-section__name">Lib</span>
+                </h1>
+              </a>
+
+
+            </article>
+
+
+            </header>
+            <section class="kss-section kss-section--depth-2" id="kssref-lib-buttons">
+
+            <article class="kss-section__content">
+
+              <a class="kss-section__permalink" href="#kssref-lib-buttons">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">1.1</span>
+                  <span class="kss-section__name">Lib.buttons</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-buttons-btn-lg">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/buttons/_btn-lg.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-buttons-btn-lg">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.1.1</span>
+                  <span class="kss-section__name">btn-lg (button larg)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><button class="btn-lg">text</button></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;button class&#x3D;&quot;btn-lg&quot;&gt;text&lt;/button&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-buttons-btn-md">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/buttons/_btn-md.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-buttons-btn-md">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.1.2</span>
+                  <span class="kss-section__name">btn-md (button medium)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><button class="btn-md">text</button></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;button class&#x3D;&quot;btn-md&quot;&gt;text&lt;/button&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-buttons-btn-sm">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/buttons/_btn-sm.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-buttons-btn-sm">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.1.3</span>
+                  <span class="kss-section__name">btn-sm (button small)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><button class="btn-sm">text</button></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;button class&#x3D;&quot;btn-sm&quot;&gt;text&lt;/button&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-buttons-btn-xlg">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/buttons/_btn-xlg.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-buttons-btn-xlg">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.1.4</span>
+                  <span class="kss-section__name">btn-xlg (button extra large)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><button class="btn-xlg">text</button></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;button class&#x3D;&quot;btn-xlg&quot;&gt;text&lt;/button&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-buttons-btn-xsm">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/buttons/_btn-xsm.scss</span>, line <span>2</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-buttons-btn-xsm">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.1.5</span>
+                  <span class="kss-section__name">btn-xsm (button extra small)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><button class="btn-xsm">+</button></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;button class&#x3D;&quot;btn-xsm&quot;&gt;+&lt;/button&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-lib-cards">
+
+            <article class="kss-section__content">
+
+              <a class="kss-section__permalink" href="#kssref-lib-cards">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">1.2</span>
+                  <span class="kss-section__name">Lib.cards</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-cards-card">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/cards/_card.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-cards-card">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.2.1</span>
+                  <span class="kss-section__name">card (it&#x27;s a pre build card with a background image)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class="card">text</div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;card&quot;&gt;text&lt;/div&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-lib-icons">
+
+            <article class="kss-section__content">
+
+              <a class="kss-section__permalink" href="#kssref-lib-icons">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">1.3</span>
+                  <span class="kss-section__name">Lib.icons</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-icons-icon-lg">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/icons/_icon-lg.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-icons-icon-lg">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.3.1</span>
+                  <span class="kss-section__name">icon-lg (icon larg ---&gt; size: 28/28)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><i class="icon-lg">
+    <img class="icon-lg__img" src="../../icons/out.svg"/>
+</i></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;i class&#x3D;&quot;icon-lg&quot;&gt;
+    &lt;img class&#x3D;&quot;icon-lg__img&quot; src&#x3D;&quot;../../icons/out.svg&quot;/&gt;
+&lt;/i&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-icons-icon-md">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/icons/_icon-md.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-icons-icon-md">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.3.2</span>
+                  <span class="kss-section__name">icon-md (icon medium ---&gt; size: 24/24)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><i class="icon-md">
+    <img class="icon-md__img" src="../../icons/out.svg"/>
+</i></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;i class&#x3D;&quot;icon-md&quot;&gt;
+    &lt;img class&#x3D;&quot;icon-md__img&quot; src&#x3D;&quot;../../icons/out.svg&quot;/&gt;
+&lt;/i&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-icons-icon-sm">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/icons/_icon-sm.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-icons-icon-sm">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.3.3</span>
+                  <span class="kss-section__name">icon-xsm (icon small ---&gt; size: 20/20)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><i class="icon-sm">
+    <img class="icon-sm__img" src="../../icons/out.svg"/>
+</i></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;i class&#x3D;&quot;icon-sm&quot;&gt;
+    &lt;img class&#x3D;&quot;icon-sm__img&quot; src&#x3D;&quot;../../icons/out.svg&quot;/&gt;
+&lt;/i&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-icons-icon-xlg">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/icons/_icon-xlg.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-icons-icon-xlg">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.3.4</span>
+                  <span class="kss-section__name">icon-xlg (icon extra larg ---&gt; size: 32/32)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><i class="icon-xlg">
+    <img class="icon-xlg__img" src="../../icons/out.svg"/>
+</i></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;i class&#x3D;&quot;icon-xlg&quot;&gt;
+    &lt;img class&#x3D;&quot;icon-xlg__img&quot; src&#x3D;&quot;../../icons/out.svg&quot;/&gt;
+&lt;/i&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-icons-icon-xsm">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/icons/_icon-xsm.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-icons-icon-xsm">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.3.5</span>
+                  <span class="kss-section__name">icon-xsm (icon extra small ---&gt; size: 16/16)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><i class="icon-xsm">
+    <img class="icon-xsm__img" src="../../icons/out.svg"/>
+</i></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;i class&#x3D;&quot;icon-xsm&quot;&gt;
+    &lt;img class&#x3D;&quot;icon-xsm__img&quot; src&#x3D;&quot;../../icons/out.svg&quot;/&gt;
+&lt;/i&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-lib-inputs">
+
+            <article class="kss-section__content">
+
+              <a class="kss-section__permalink" href="#kssref-lib-inputs">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">1.4</span>
+                  <span class="kss-section__name">Lib.Inputs</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-inputs-input-field-lg">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/input-field/_input-field-lg.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-inputs-input-field-lg">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.4.1</span>
+                  <span class="kss-section__name">input-field-lg (input field larg)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><input placeholder="text" type="text" class="input-field-lg"/></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;input placeholder&#x3D;&quot;text&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;input-field-lg&quot;/&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-inputs-input-field-md">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/input-field/_input-field-md.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-inputs-input-field-md">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.4.2</span>
+                  <span class="kss-section__name">input-field-md (input field medium)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><input placeholder="text" type="text" class="input-field-md"/></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;input placeholder&#x3D;&quot;text&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;input-field-md&quot;/&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-inputs-input-field-sm">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/input-field/_input-field-sm.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-inputs-input-field-sm">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.4.3</span>
+                  <span class="kss-section__name">input-field-sm (input field small)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><input placeholder="text" type="text" class="input-field-sm"/></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;input placeholder&#x3D;&quot;text&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;input-field-sm&quot;/&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-inputs-input-field-xlg">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/input-field/_input-field-xlg.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-inputs-input-field-xlg">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.4.4</span>
+                  <span class="kss-section__name">input-field-xlg (input field extra larg )</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><input placeholder="text" type="text" class="input-field-xlg"/></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;input placeholder&#x3D;&quot;text&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;input-field-xlg&quot;/&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-lib-items">
+
+            <article class="kss-section__content">
+
+              <a class="kss-section__permalink" href="#kssref-lib-items">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">1.5</span>
+                  <span class="kss-section__name">Lib.items</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-items-budgets-item">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/items/_budgets-item.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-items-budgets-item">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.5.1</span>
+                  <span class="kss-section__name">Budgets-item (budgets single item)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class="budgets-item">
+    <div class="budgets-item__info">
+        <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
+        <p class="budgets-item__info__text">some text</p>
+    </div>
+    <div class="budgets-item__amount">
+        200/-
+    </div>
+</div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;budgets-item&quot;&gt;
+    &lt;div class&#x3D;&quot;budgets-item__info&quot;&gt;
+        &lt;img class&#x3D;&quot;budgets-item__info__icon&quot; src&#x3D;&quot;../../icons/travel.svg&quot;/&gt;
+        &lt;p class&#x3D;&quot;budgets-item__info__text&quot;&gt;some text&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;budgets-item__amount&quot;&gt;
+        200/-
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-items-trans-item">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/items/_trans-item.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-items-trans-item">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.5.2</span>
+                  <span class="kss-section__name">Trans-item (transaction single item)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class="trans-item">
+    <div class="trans-item__info">
+        <img class="trans-item__info__icon" src="../../icons/in.svg"/>
+        <div class="trans-item__info__text">
+            <h4 class="trans-item__info__text__title">some text<h4>
+            <p class="trans-item__info__text__sub-title">Bank name</p>
+        </div>
+    </div>
+    <div class="trans-item__amount">
+        200 TK
+    </div>
+</div>
+<div class="trans-item">
+    <div class="trans-item__info">
+        <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+        <div class="trans-item__info__text">
+            <h4 class="trans-item__info__text__title">some text<h4>
+            <p class="trans-item__info__text__sub-title">bank name</p>
+        </div>
+    </div>
+    <div class="trans-item__amount">
+        -200 TK
+    </div>
+</div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;trans-item&quot;&gt;
+    &lt;div class&#x3D;&quot;trans-item__info&quot;&gt;
+        &lt;img class&#x3D;&quot;trans-item__info__icon&quot; src&#x3D;&quot;../../icons/in.svg&quot;/&gt;
+        &lt;div class&#x3D;&quot;trans-item__info__text&quot;&gt;
+            &lt;h4 class&#x3D;&quot;trans-item__info__text__title&quot;&gt;some text&lt;h4&gt;
+            &lt;p class&#x3D;&quot;trans-item__info__text__sub-title&quot;&gt;Bank name&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;trans-item__amount&quot;&gt;
+        200 TK
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;trans-item&quot;&gt;
+    &lt;div class&#x3D;&quot;trans-item__info&quot;&gt;
+        &lt;img class&#x3D;&quot;trans-item__info__icon&quot; src&#x3D;&quot;../../icons/out.svg&quot;/&gt;
+        &lt;div class&#x3D;&quot;trans-item__info__text&quot;&gt;
+            &lt;h4 class&#x3D;&quot;trans-item__info__text__title&quot;&gt;some text&lt;h4&gt;
+            &lt;p class&#x3D;&quot;trans-item__info__text__sub-title&quot;&gt;bank name&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;trans-item__amount&quot;&gt;
+        -200 TK
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-lib-navs">
+
+            <article class="kss-section__content">
+
+              <a class="kss-section__permalink" href="#kssref-lib-navs">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">1.6</span>
+                  <span class="kss-section__name">Lib.Navs</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-navs-nav-item">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/navs/_nav-item.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-navs-nav-item">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">1.6.1</span>
+                  <span class="kss-section__name">nav-item (navigation-item)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><li class="nav-item">
+    <img class="nav-item__icon" src="../../icons/setting-ac.svg"/>
+    <a class="nav-item__link" href="#">Settings</a>
+</li></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+    &lt;img class&#x3D;&quot;nav-item__icon&quot; src&#x3D;&quot;../../icons/setting-ac.svg&quot;/&gt;
+    &lt;a class&#x3D;&quot;nav-item__link&quot; href&#x3D;&quot;#&quot;&gt;Settings&lt;/a&gt;
+&lt;/li&gt;</code></pre>
+                </article>
+
+            </section>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  
+  <!-- /scripts. -->
+
+  </body>
+</html>

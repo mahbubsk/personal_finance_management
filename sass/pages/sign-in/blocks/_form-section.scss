@@ -1,0 +1,9 @@
+.form-section{
+    margin: 9rem auto;
+
+
+    &__legend-title{
+        font-size: $font-size-title-lg;
+        font-weight: $font-weight-bold;
+    }
+}

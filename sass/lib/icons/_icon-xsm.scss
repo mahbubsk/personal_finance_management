@@ -1,0 +1,21 @@
+/*
+    icon-xsm (icon extra small ---> size: 16/16)
+
+    Markup:
+    <i class="icon-xsm">
+        <img class="icon-xsm__img" src="../../icons/out.svg"/>
+    </i>
+
+    Styleguide Lib.icons.icon-xsm
+*/
+
+.icon-xsm{
+    display: inline-block;
+    width:16px;
+    height: 16px;
+
+    &__img{
+        width:100%;
+        height:100%;
+    }
+}

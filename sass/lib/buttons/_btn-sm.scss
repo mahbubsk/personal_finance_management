@@ -1,0 +1,15 @@
+/*
+    btn-sm (button small)
+
+    Markup:
+    <button class="btn-sm">text</button>
+
+    Styleguide Lib.buttons.btn-sm
+*/
+
+.btn-sm{
+    width:6.25rem;
+    height:3.125rem;
+    font-weight: $font-weight-bold;
+
+}

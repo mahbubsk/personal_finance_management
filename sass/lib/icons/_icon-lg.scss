@@ -1,0 +1,21 @@
+/*
+    icon-lg (icon larg ---> size: 28/28)
+
+    Markup:
+    <i class="icon-lg">
+        <img class="icon-lg__img" src="../../icons/out.svg"/>
+    </i>
+
+    Styleguide Lib.icons.icon-lg
+*/
+
+.icon-lg{
+    display:inline-block;
+    width: 28px;
+    height: 28px;
+
+    &__img{
+        width:100%;
+        height: 100%;
+    }
+}

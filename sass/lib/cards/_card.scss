@@ -1,0 +1,16 @@
+/*
+    card (it's a pre build card with a background image)
+
+    Markup:
+    <div class="card">text</div>
+
+    Styleguide Lib.cards.card
+*/
+
+.card{
+    background-image:url("../../../img/card-bg.svg");
+    width:230px;
+    height: 130px;
+    padding:1.5rem;
+    color:white;
+}

@@ -1,0 +1,29 @@
+.title-section{
+    margin-top: 4rem;
+    height:5rem;
+
+    &__title{
+        font-size: $font-size-brand;
+    }
+
+    &__moto{
+        font-size: $font-size-title-md;
+        font-weight: $font-weight-bold;
+        width: 14rem;
+        position: relative;    
+        
+        
+        &::before{
+            content: "";
+            position: absolute;
+            border-bottom: .8px solid $ash-color;
+            top:35px;
+            left:16px;
+            width:12rem;
+        }
+
+    }
+
+            
+    
+}

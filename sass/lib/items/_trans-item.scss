@@ -1,0 +1,86 @@
+/*
+    Trans-item (transaction single item)
+
+    Markup:
+    <div class="trans-item">
+        <div class="trans-item__info">
+            <img class="trans-item__info__icon" src="../../icons/in.svg"/>
+            <div class="trans-item__info__text">
+                <h4 class="trans-item__info__text__title">some text<h4>
+                <p class="trans-item__info__text__sub-title">Bank name</p>
+            </div>
+        </div>
+        <div class="trans-item__amount">
+            200 TK
+        </div>
+    </div>
+    <div class="trans-item">
+        <div class="trans-item__info">
+            <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+            <div class="trans-item__info__text">
+                <h4 class="trans-item__info__text__title">some text<h4>
+                <p class="trans-item__info__text__sub-title">bank name</p>
+            </div>
+        </div>
+        <div class="trans-item__amount">
+            -200 TK
+        </div>
+    </div>
+
+    Styleguide Lib.items.trans-item
+*/
+
+
+.trans-item{
+    width:24rem;
+    height: 4.5rem;
+    @include d-flex(space-between);
+    border-radius: 20px;
+    position: relative;
+    
+
+    &__info{
+        @include d-flex(space-between);
+        width:70%;
+        height: 100%;
+        padding:1rem;
+        color:$text-color;
+
+        // &__icon{
+
+        // }
+
+        &__text{
+            flex-grow: 2;
+            margin-left: 1.5rem;
+            font-weight: $font-weight-medium;
+
+            &__sub-title{
+                font-size: $font-size-tiny;
+                margin-top: .2rem;
+                
+            }
+        }
+
+    }
+
+    &__amount{
+        width:30%;
+        background:$white-color;
+        padding:1rem;
+        color:$text-color;
+        
+
+    }
+
+
+    &::before{
+        content: "";
+        position: absolute;
+        width:20rem;
+        height:0.0725rem;
+        background:$ash-color;
+        left:15px;
+        bottom:0px;
+    }
+}

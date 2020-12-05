@@ -1,0 +1,668 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px; }
+
+/* 
+* Utility Rules Defined Here
+* All Type of Utility Tools will Describe Here
+*/
+/*margin-utility*/
+.margin--auto {
+  margin: auto; }
+
+.margin {
+  margin: 0.5rem; }
+
+.margin--md {
+  margin: 1rem; }
+
+.margin--lg {
+  margin: 2rem; }
+
+.margin--y {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+.margin--ymd {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.margin--ylg {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.margin--x {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem; }
+
+.margin--xmd {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.margin--xlg {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.margin--t {
+  margin-top: 0.5rem; }
+
+.margin--tmd {
+  margin-top: 1rem; }
+
+.margin--tlg {
+  margin-top: 2rem; }
+
+.margin--r {
+  margin-right: 0.5rem; }
+
+.margin--rmd {
+  margin-right: 1rem; }
+
+.margin--rlg {
+  margin-right: 2rem; }
+
+.margin--b {
+  margin-bottom: 0.5rem; }
+
+.margin--bmd {
+  margin-bottom: 1rem; }
+
+.margin--blg {
+  margin-bottom: 2rem; }
+
+.margin--l {
+  margin-left: 0.5rem; }
+
+.margin--lmd {
+  margin-left: 1rem; }
+
+.margin--llg {
+  margin-left: 2rem; }
+
+/*margin-utility*/
+/*padding utility*/
+.padding--sm {
+  padding: 0.5rem; }
+
+.padding--md {
+  padding: 1rem; }
+
+.padding--lg {
+  padding: 2rem; }
+
+.padding--y {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.padding--ymd {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.padding--ylg {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.padding--x {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+.padding--xmd {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.padding--xlg {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.padding--t {
+  padding-top: 0.5rem; }
+
+.padding--tmd {
+  padding-top: 1rem; }
+
+.padding--tlg {
+  padding-top: 2rem; }
+
+.padding--r {
+  padding-right: 0.5rem; }
+
+.padding--rmd {
+  padding-right: 1rem; }
+
+.padding--rlg {
+  padding-right: 2rem; }
+
+.padding--b {
+  padding-bottom: 0.5rem; }
+
+.padding--bmd {
+  padding-bottom: 1rem; }
+
+.padding--blg {
+  padding-bottom: 2rem; }
+
+.padding--l {
+  margin-left: 0.5rem; }
+
+.padding--lmd {
+  padding-left: 1rem; }
+
+.padding--llg {
+  padding-left: 2rem; }
+
+/*padding utility*/
+/*border outline none*/
+.border-outline--none {
+  outline: none;
+  border: none; }
+
+/*shadow utility*/
+.shadow--lg {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25); }
+
+.shadow--md {
+  box-shadow: 1 1 5px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1 1 5px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1 1 5px 0 rgba(0, 0, 0, 0.25); }
+
+.shadow--sm {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1); }
+
+/*shadow utility*/
+.display--i {
+  display: inline; }
+
+.display--n {
+  display: none; }
+
+.display--b {
+  display: block; }
+
+.align--right {
+  text-align: right; }
+
+.align--left {
+  text-align: left; }
+
+.align--center {
+  text-align: center; }
+
+/*
+colors utilities..
+*/
+.text--secondary {
+  color: #506df5; }
+
+.text--primary {
+  color: #f5f5f5; }
+
+.text--info {
+  color: #263268; }
+
+.text--white {
+  color: #fff; }
+
+.text--berry {
+  color: #263268; }
+
+.text--success {
+  color: #0F801B; }
+
+.text--ash {
+  color: #EBEEFF; }
+
+.bg--secondary {
+  background-color: #506df5; }
+
+.bg--primary {
+  background-color: #f5f5f5; }
+
+.bg--info {
+  background-color: #263268; }
+
+.bg--white {
+  background-color: #fff; }
+
+.bg--berry {
+  background-color: #263268; }
+
+.bg--success {
+  background-color: #0F801B; }
+
+.bg--ash {
+  background-color: #EBEEFF; }
+
+/*colors utilities*/
+/* 
+* Utility Rules Defined end here
+* All Type of Utility Tools will Describe Here
+*/
+.form {
+  text-align: center;
+  width: 19rem;
+  height: 20.125rem; }
+
+/*
+    btn-xsm (button extra small)
+
+    Markup:
+    <button class="btn-xsm">+</button>
+
+    Styleguide Lib.buttons.btn-xsm
+*/
+.btn-xsm {
+  width: 3.125rem;
+  height: 3.125rem;
+  font-weight: 700;
+  font-size: 30px; }
+
+/*
+    btn-sm (button small)
+
+    Markup:
+    <button class="btn-sm">text</button>
+
+    Styleguide Lib.buttons.btn-sm
+*/
+.btn-sm {
+  width: 6.25rem;
+  height: 3.125rem;
+  font-weight: 700; }
+
+/*
+    btn-md (button medium)
+
+    Markup:
+    <button class="btn-md">text</button>
+
+    Styleguide Lib.buttons.btn-md
+*/
+.btn-md {
+  width: 8.25rem;
+  height: 3.125rem;
+  font-weight: 700; }
+
+/*
+    btn-lg (button larg)
+
+    Markup:
+    <button class="btn-lg">text</button>
+
+    Styleguide Lib.buttons.btn-lg
+*/
+.btn-lg {
+  width: 12rem;
+  height: 3.125rem;
+  font-weight: 700; }
+
+/*
+    btn-xlg (button extra large)
+
+    Markup:
+    <button class="btn-xlg">text</button>
+
+    Styleguide Lib.buttons.btn-xlg
+*/
+.btn-xlg {
+  width: 17.5rem;
+  height: 3.125rem;
+  border-radius: 0.5rem;
+  font-weight: 700; }
+
+/*
+    input-field-sm (input field small)
+
+    Markup:
+    <input placeholder="text" type="text" class="input-field-sm"/>
+
+    Styleguide Lib.Inputs.input-field-sm
+*/
+.input-field-sm {
+  width: 14.375rem;
+  padding: 1rem;
+  border-radius: 0.8rem; }
+
+/*
+    input-field-md (input field medium)
+
+    Markup:
+    <input placeholder="text" type="text" class="input-field-md"/>
+
+    Styleguide Lib.Inputs.input-field-md
+*/
+.input-field-md {
+  width: 17.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem; }
+
+/*
+    input-field-lg (input field larg)
+
+    Markup:
+    <input placeholder="text" type="text" class="input-field-lg"/>
+
+    Styleguide Lib.Inputs.input-field-lg
+*/
+.input-field-lg {
+  width: 25rem;
+  padding: 1rem;
+  border-radius: 0.5rem; }
+
+/*
+    input-field-xlg (input field extra larg )
+
+    Markup:
+    <input placeholder="text" type="text" class="input-field-xlg"/>
+
+    Styleguide Lib.Inputs.input-field-xlg
+*/
+.input-field-xlg {
+  width: 40rem;
+  padding: 1rem;
+  border-radius: 0.8rem; }
+
+/*
+    nav-item (navigation-item)
+
+    Markup:
+    <li class="nav-item">
+        <img class="nav-item__icon" src="../../icons/setting-ac.svg"/>
+        <a class="nav-item__link" href="#">Settings</a>
+    </li>
+
+    Styleguide Lib.Navs.nav-item
+*/
+.nav-item {
+  width: 15rem;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 18px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red; }
+  .nav-item__link {
+    text-decoration: none;
+    color: #000;
+    flex-grow: 2;
+    margin-left: 0.8rem; }
+
+/*
+    icon-xsm (icon extra small ---> size: 16/16)
+
+    Markup:
+    <i class="icon-xsm">
+        <img class="icon-xsm__img" src="../../icons/out.svg"/>
+    </i>
+
+    Styleguide Lib.icons.icon-xsm
+*/
+.icon-xsm {
+  display: inline-block;
+  width: 16px;
+  height: 16px; }
+  .icon-xsm__img {
+    width: 100%;
+    height: 100%; }
+
+/*
+    icon-xsm (icon small ---> size: 20/20)
+
+    Markup:
+    <i class="icon-sm">
+        <img class="icon-sm__img" src="../../icons/out.svg"/>
+    </i>
+
+    Styleguide Lib.icons.icon-sm
+*/
+.icon-sm {
+  display: inline-block;
+  width: 20px;
+  height: 20px; }
+  .icon-sm__img {
+    width: 100%;
+    height: 100%; }
+
+/*
+    icon-md (icon medium ---> size: 24/24)
+
+    Markup:
+    <i class="icon-md">
+        <img class="icon-md__img" src="../../icons/out.svg"/>
+    </i>
+
+    Styleguide Lib.icons.icon-md
+*/
+.icon-md {
+  display: inline-block;
+  width: 24px;
+  height: 24px; }
+  .icon-md__img {
+    width: 100%;
+    height: 100%; }
+
+/*
+    icon-lg (icon larg ---> size: 28/28)
+
+    Markup:
+    <i class="icon-lg">
+        <img class="icon-lg__img" src="../../icons/out.svg"/>
+    </i>
+
+    Styleguide Lib.icons.icon-lg
+*/
+.icon-lg {
+  display: inline-block;
+  width: 28px;
+  height: 28px; }
+  .icon-lg__img {
+    width: 100%;
+    height: 100%; }
+
+/*
+    icon-xlg (icon extra larg ---> size: 32/32)
+
+    Markup:
+    <i class="icon-xlg">
+        <img class="icon-xlg__img" src="../../icons/out.svg"/>
+    </i>
+
+    Styleguide Lib.icons.icon-xlg
+*/
+.icon-xlg {
+  display: inline-block;
+  width: 32px;
+  height: 32px; }
+  .icon-xlg__img {
+    width: 100%;
+    height: 100%; }
+
+/*
+    card (it's a pre build card with a background image)
+
+    Markup:
+    <div class="card">text</div>
+
+    Styleguide Lib.cards.card
+*/
+.card {
+  background-image: url("../../../img/card-bg.svg");
+  width: 230px;
+  height: 130px;
+  padding: 1.5rem;
+  color: white; }
+
+/*
+    th-five (table head five items)
+
+    Markup:
+
+*/
+.th-five {
+  height: 3.75rem; }
+
+/*
+    Budgets-item (budgets single item)
+
+    Markup:
+    <div class="budgets-item">
+        <div class="budgets-item__info">
+            <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
+            <p class="budgets-item__info__text">some text</p>
+        </div>
+        <div class="budgets-item__amount">
+            200/-
+        </div>
+    </div>
+
+    Styleguide Lib.items.budgets-item
+*/
+.budgets-item {
+  width: 20rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px; }
+  .budgets-item__info {
+    background-color: #263268;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px 0px 0px 20px;
+    width: 70%;
+    height: 100%;
+    padding: 1rem; }
+    .budgets-item__info__text {
+      flex-grow: 2;
+      margin-left: 0.8rem;
+      font-size: 14px;
+      color: #fff; }
+  .budgets-item__amount {
+    width: 26%;
+    background: #fff;
+    border-radius: 0px 20px 20px 0px;
+    padding: 1rem; }
+
+/*
+    Trans-item (transaction single item)
+
+    Markup:
+    <div class="trans-item">
+        <div class="trans-item__info">
+            <img class="trans-item__info__icon" src="../../icons/in.svg"/>
+            <div class="trans-item__info__text">
+                <h4 class="trans-item__info__text__title">some text<h4>
+                <p class="trans-item__info__text__sub-title">Bank name</p>
+            </div>
+        </div>
+        <div class="trans-item__amount">
+            200 TK
+        </div>
+    </div>
+    <div class="trans-item">
+        <div class="trans-item__info">
+            <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+            <div class="trans-item__info__text">
+                <h4 class="trans-item__info__text__title">some text<h4>
+                <p class="trans-item__info__text__sub-title">bank name</p>
+            </div>
+        </div>
+        <div class="trans-item__amount">
+            -200 TK
+        </div>
+    </div>
+
+    Styleguide Lib.items.trans-item
+*/
+.trans-item {
+  width: 24rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  position: relative; }
+  .trans-item__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+    padding: 1rem;
+    color: #424242; }
+    .trans-item__info__text {
+      flex-grow: 2;
+      margin-left: 1.5rem;
+      font-weight: 500; }
+      .trans-item__info__text__sub-title {
+        font-size: 8px;
+        margin-top: .2rem; }
+  .trans-item__amount {
+    width: 30%;
+    background: #fff;
+    padding: 1rem;
+    color: #424242; }
+  .trans-item::before {
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 0.0725rem;
+    background: #EBEEFF;
+    left: 15px;
+    bottom: 0px; }
+
+.container {
+  display: flex;
+  background: #fff;
+  width: 65%;
+  height: 50rem;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 3.25rem auto;
+  position: relative; }
+  .container .container__form {
+    width: 50%;
+    height: 100%;
+    background-color: #506df5; }
+  .container .container__img {
+    width: 50%;
+    position: absolute;
+    bottom: -4px;
+    right: 2rem; }
+    .container .container__img-image {
+      width: 41rem; }
+
+.title-section {
+  margin-top: 4rem;
+  height: 5rem; }
+  .title-section__title {
+    font-size: 36px; }
+  .title-section__moto {
+    font-size: 16px;
+    font-weight: 700;
+    width: 14rem;
+    position: relative; }
+    .title-section__moto::before {
+      content: "";
+      position: absolute;
+      border-bottom: 0.8px solid #EBEEFF;
+      top: 35px;
+      left: 16px;
+      width: 12rem; }
+
+.form-section {
+  margin: 9rem auto; }
+  .form-section__legend-title {
+    font-size: 18px;
+    font-weight: 700; }

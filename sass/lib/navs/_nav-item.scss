@@ -1,0 +1,35 @@
+/*
+    nav-item (navigation-item)
+
+    Markup:
+    <li class="nav-item">
+        <img class="nav-item__icon" src="../../icons/setting-ac.svg"/>
+        <a class="nav-item__link" href="#">Settings</a>
+    </li>
+
+    Styleguide Lib.Navs.nav-item
+*/
+
+.nav-item{
+    width:15rem;
+    padding:1rem;
+    font-weight: $font-weight-medium;
+    font-size: $font-size-title-lg;
+    list-style-type: none;
+    @include d-flex(space-between);
+    border:1px solid red;
+
+    // &__icon{
+    //     /*not used any kind of design*/
+        
+    // }
+
+    &__link{
+        text-decoration: none;
+        color:$black-color;
+        flex-grow: 2;
+        margin-left:0.8rem;
+    }
+
+
+}
