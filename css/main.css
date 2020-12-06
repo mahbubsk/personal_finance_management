@@ -726,13 +726,13 @@ active classes
     justify-content: space-between;
     border-radius: 1.5rem 0px 0px 1.5rem;
     height: 100%;
-    width: 74%; }
+    width: 65%; }
     .budgets-item__info__text {
       flex-grow: 2;
       margin-left: 0.8rem;
       font-size: 14px; }
   .budgets-item__amount {
-    width: 26%;
+    width: 35%;
     height: 100%;
     text-align: center;
     padding: 1.7rem;
@@ -998,6 +998,8 @@ active classes
       /* Firefox */
       height: 16rem;
       overflow: scroll; }
+    .transaction-wrap__budgets .budgets-items::-webkit-scrollbar {
+      display: none; }
   .transaction-wrap__transactions {
     border-radius: 1.25rem;
     width: 48%; }
