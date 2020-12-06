@@ -1,0 +1,47 @@
+/*
+    Modal-Simple (simple modal is here)
+
+    Markup:
+    <div class="modal-simple shadow--lg">
+        <form class="modal-simple__form">
+            <p class="modal-simple__form__label">Enter Card Number</p>
+            <input value="Eastern Bank" type="text" class="input-field-lg margin--tmd bg--ash border-outline--none"/>
+            <p class="modal-simple__form__label margin--tmd">Enter current amount</p>
+            <input value="27,550 TK" type="text" class="input-field-lg margin--tmd bg--ash border-outline--none"/>
+            <div class="modal-simple__form__btns margin--tmd">
+                <button class="btn-sm border-outline--none">cencle</button>
+                <button class="btn-sm margin-lmd border-outline--none text--white bg--success">save</button>
+            </div>
+        </form>
+    </div>
+
+    Styleguide Blocks.modal.modal-simple
+*/
+
+.modal-simple{
+    width:41.875rem;
+    height: 21.875rem;
+    background:$white-color;
+    padding:3rem 6rem;
+    font-size:$font-size-title-lg;
+    border-radius: 5px;
+
+    &__form{
+        width:84%;
+
+
+        &__label{
+            color:$color-gray;
+        }
+
+        &__btns{
+            float: right;
+
+            button{
+                border-radius: 3px;
+                font-size: $font-size-title-lg;
+            }
+        }
+    }
+
+}

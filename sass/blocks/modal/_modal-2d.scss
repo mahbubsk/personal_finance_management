@@ -1,0 +1,60 @@
+/*
+    Modal-Flex (flex modal is here)
+
+    Markup:
+    <div class="modal-flex shadow--lg">
+        <form class="modal-tow-d__form">
+            <p class="modal-tow-d__form__label">Transaction Name</p>
+            <input value="31st Night Sell" type="text" class="input-field-sm margin--tmd bg--ash border-outline--none"/>
+            <p class="modal-tow-d__form__label margin--tmd">Income/ Expense</p>
+            <div class="margin--tmd">
+                <button class="btn-xsm border-outline--none">+</button>
+                <button class="btn-xsm border-outline--none">-</button>
+            </div>
+        </form>
+        <form class="modal-tow-d__form">
+            <p class="modal-tow-d__form__label">Enter Card Number</p>
+            <input value="Eastern Bank" type="text" class="input-field-sm margin--tmd bg--ash border-outline--none"/>
+            <p class="modal-tow-d__form__label margin--tmd">Enter current amount</p>
+            <input value="27,550 TK" type="text" class="input-field-sm margin--tmd bg--ash border-outline--none"/>
+            <div class="modal-tow-d__form__btns margin--tmd">
+                <button class="btn-sm border-outline--none">cencle</button>
+                <button class="btn-sm margin-lmd border-outline--none text--white bg--success">text</button>
+            </div>
+        </form>
+    </div>
+
+    Styleguide Blocks.modal.modal-flex
+*/
+
+.modal-flex{
+    width:41.875rem;
+    height: 21.875rem;
+    background:$white-color;
+    padding:3rem 6rem;
+    font-size:$font-size-title-lg;
+    border-radius: 5px;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    &__form{
+        width:100%;
+
+
+        &__label{
+            color:$color-gray;
+        }
+
+        &__btns{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+                border-radius: 3px;
+                font-size: $font-size-title-lg;
+            }
+        }
+    }
+
+}

@@ -2,9 +2,9 @@
     container (this is main container of dashboard)
 
     Markup:
-    <main class="main-content">
+    <main class="main-content margin-tb--auto">
         <section class="main-content__stack-menu"></section>
-        <section class="main-content__stack-content"></section>
+        <section class="main-content__stack-content margin--md"></section>
     </main>
 
     Styleguide Pages.dashboard.main-content

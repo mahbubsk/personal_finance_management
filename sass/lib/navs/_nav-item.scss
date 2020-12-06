@@ -4,17 +4,17 @@
     Markup:
     <li class="nav-item">
         <img class="nav-item__icon" src="../../icons/setting-ac.svg"/>
-        <a class="nav-item__link" href="#">Settings</a>
+        <a class="nav-item__link text--ash" href="#">Settings</a>
     </li>
 
     Styleguide Lib.Navs.nav-item
 */
 
 .nav-item{
-    width: 10rem;
+    width: 12rem;
     padding: .5rem;
     font-weight: $font-weight-medium;
-    font-size: $font-size-title-lg;
+    font-size: $font-size-title-md;
     list-style-type: none;
     @include d-flex(space-between);
 
@@ -26,7 +26,6 @@
 
     &__link{
         text-decoration: none;
-        color: $ash-color;
         flex-grow: 2;
         margin-left:0.8rem;
     }

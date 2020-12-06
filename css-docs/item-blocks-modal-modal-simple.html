@@ -69,15 +69,15 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-3" id="kssref-lib-items-budgets-item">
+            <header class="kss-section kss-section--depth-3" id="kssref-blocks-modal-modal-simple">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>sass/lib/items/_budgets-item.scss</span>, line <span>1</span></p>
+                <p class="kss-section__source">Source: <span>sass/blocks/modal/_modal-simple.scss</span>, line <span>1</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-lib-items-budgets-item">
+              <a class="kss-section__permalink" href="#kssref-blocks-modal-modal-simple">
                 <h3 class="kss-section__item kss-section__item--depth-3">
-                  <span class="kss-section__ref">2.5.1</span>
-                  <span class="kss-section__name">Budgets-item (budgets single item)</span>
+                  <span class="kss-section__ref">1.2.2</span>
+                  <span class="kss-section__name">Modal-Simple (simple modal is here)</span>
                 </h3>
               </a>
 
@@ -88,27 +88,33 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><div class="budgets-item">
-    <div class="budgets-item__info">
-        <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
-        <p class="budgets-item__info__text">some text</p>
-    </div>
-    <div class="budgets-item__amount">
-        200/-
-    </div>
+                <div class="kss-modifiers__example"><div class="modal-simple shadow--lg">
+    <form class="modal-simple__form">
+        <p class="modal-simple__form__label">Enter Card Number</p>
+        <input value="Eastern Bank" type="text" class="input-field-lg margin--tmd bg--ash border-outline--none"/>
+        <p class="modal-simple__form__label margin--tmd">Enter current amount</p>
+        <input value="27,550 TK" type="text" class="input-field-lg margin--tmd bg--ash border-outline--none"/>
+        <div class="modal-simple__form__btns margin--tmd">
+            <button class="btn-sm border-outline--none">cencle</button>
+            <button class="btn-sm margin-lmd border-outline--none text--white bg--success">save</button>
+        </div>
+    </form>
 </div></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;budgets-item&quot;&gt;
-    &lt;div class&#x3D;&quot;budgets-item__info&quot;&gt;
-        &lt;img class&#x3D;&quot;budgets-item__info__icon&quot; src&#x3D;&quot;../../icons/travel.svg&quot;/&gt;
-        &lt;p class&#x3D;&quot;budgets-item__info__text&quot;&gt;some text&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;budgets-item__amount&quot;&gt;
-        200/-
-    &lt;/div&gt;
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;modal-simple shadow--lg&quot;&gt;
+    &lt;form class&#x3D;&quot;modal-simple__form&quot;&gt;
+        &lt;p class&#x3D;&quot;modal-simple__form__label&quot;&gt;Enter Card Number&lt;/p&gt;
+        &lt;input value&#x3D;&quot;Eastern Bank&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;input-field-lg margin--tmd bg--ash border-outline--none&quot;/&gt;
+        &lt;p class&#x3D;&quot;modal-simple__form__label margin--tmd&quot;&gt;Enter current amount&lt;/p&gt;
+        &lt;input value&#x3D;&quot;27,550 TK&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;input-field-lg margin--tmd bg--ash border-outline--none&quot;/&gt;
+        &lt;div class&#x3D;&quot;modal-simple__form__btns margin--tmd&quot;&gt;
+            &lt;button class&#x3D;&quot;btn-sm border-outline--none&quot;&gt;cencle&lt;/button&gt;
+            &lt;button class&#x3D;&quot;btn-sm margin-lmd border-outline--none text--white bg--success&quot;&gt;save&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
 &lt;/div&gt;</code></pre>
                 </article>
 

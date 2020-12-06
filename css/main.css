@@ -15,7 +15,7 @@ body {
 .margin--auto {
   margin: auto; }
 
-.margin--tb-auto {
+.margin-tb--auto {
   margin: 2rem auto; }
 
 .margin {
@@ -223,6 +223,12 @@ colors utilities..
 .text--ash {
   color: #EBEEFF; }
 
+.text--gray {
+  color: #757575; }
+
+.bg--gray {
+  background: #757575; }
+
 .bg--secondary {
   background-color: #506df5; }
 
@@ -248,11 +254,8 @@ colors utilities..
 /*active classes
 */
 .active {
-  color: #fff;
   background-color: #889DFF;
   border-radius: .25rem; }
-  .active a {
-    color: #fff; }
 
 /*
 active classes
@@ -261,10 +264,117 @@ active classes
 * Utility Rules Defined end here
 * All Type of Utility Tools will Describe Here
 */
-.form {
-  text-align: center;
-  width: 19rem;
-  height: 20.125rem; }
+/*
+    Modal-Simple (simple modal is here)
+
+    Markup:
+    <div class="modal-simple shadow--lg">
+        <form class="modal-simple__form">
+            <p class="modal-simple__form__label">Enter Card Number</p>
+            <input value="Eastern Bank" type="text" class="input-field-lg margin--tmd bg--ash border-outline--none"/>
+            <p class="modal-simple__form__label margin--tmd">Enter current amount</p>
+            <input value="27,550 TK" type="text" class="input-field-lg margin--tmd bg--ash border-outline--none"/>
+            <div class="modal-simple__form__btns margin--tmd">
+                <button class="btn-sm border-outline--none">cencle</button>
+                <button class="btn-sm margin-lmd border-outline--none text--white bg--success">save</button>
+            </div>
+        </form>
+    </div>
+
+    Styleguide Blocks.modal.modal-simple
+*/
+.modal-simple {
+  width: 41.875rem;
+  height: 21.875rem;
+  background: #fff;
+  padding: 3rem 6rem;
+  font-size: 18px;
+  border-radius: 5px; }
+  .modal-simple__form {
+    width: 84%; }
+    .modal-simple__form__label {
+      color: #757575; }
+    .modal-simple__form__btns {
+      float: right; }
+      .modal-simple__form__btns button {
+        border-radius: 3px;
+        font-size: 18px; }
+
+/*
+    Modal-Flex (flex modal is here)
+
+    Markup:
+    <div class="modal-flex shadow--lg">
+        <form class="modal-tow-d__form">
+            <p class="modal-tow-d__form__label">Transaction Name</p>
+            <input value="31st Night Sell" type="text" class="input-field-sm margin--tmd bg--ash border-outline--none"/>
+            <p class="modal-tow-d__form__label margin--tmd">Income/ Expense</p>
+            <div class="margin--tmd">
+                <button class="btn-xsm border-outline--none">+</button>
+                <button class="btn-xsm border-outline--none">-</button>
+            </div>
+        </form>
+        <form class="modal-tow-d__form">
+            <p class="modal-tow-d__form__label">Enter Card Number</p>
+            <input value="Eastern Bank" type="text" class="input-field-sm margin--tmd bg--ash border-outline--none"/>
+            <p class="modal-tow-d__form__label margin--tmd">Enter current amount</p>
+            <input value="27,550 TK" type="text" class="input-field-sm margin--tmd bg--ash border-outline--none"/>
+            <div class="modal-tow-d__form__btns margin--tmd">
+                <button class="btn-sm border-outline--none">cencle</button>
+                <button class="btn-sm margin-lmd border-outline--none text--white bg--success">text</button>
+            </div>
+        </form>
+    </div>
+
+    Styleguide Blocks.modal.modal-flex
+*/
+.modal-flex {
+  width: 41.875rem;
+  height: 21.875rem;
+  background: #fff;
+  padding: 3rem 6rem;
+  font-size: 18px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr; }
+  .modal-flex__form {
+    width: 100%; }
+    .modal-flex__form__label {
+      color: #757575; }
+    .modal-flex__form__btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .modal-flex__form__btns button {
+        border-radius: 3px;
+        font-size: 18px; }
+
+/*
+    Dropdown-Menu (dropdown menu with some navigation items)
+
+    Markup:
+    <ul class="dropdown-menu shadow--lg padding--md">
+        <li class="nav-item">
+            <img class="nav-item__icon" src="../../icons/accounts-drop.svg"/>
+            <a class="nav-item__link text--gray" href="#">add account</a>
+        </li>
+        <li class="nav-item">
+            <img class="nav-item__icon" src="../../icons/transaction-drop.svg"/>
+            <a class="nav-item__link text--gray" href="#">add transaction</a>
+        </li>
+        <li class="nav-item">
+            <img class="nav-item__icon" src="../../icons/budget-drop.svg"/>
+            <a class="nav-item__link text--gray" href="#">add budget</a>
+        </li>
+    </ul>
+
+    Styleguide Blocks.dropdown.dropdown-menu
+*/
+.dropdown-menu {
+  width: 14rem;
+  height: 11.25rem;
+  background: #fff; }
 
 /*
     btn-xsm (button extra small)
@@ -391,23 +501,22 @@ active classes
     Markup:
     <li class="nav-item">
         <img class="nav-item__icon" src="../../icons/setting-ac.svg"/>
-        <a class="nav-item__link" href="#">Settings</a>
+        <a class="nav-item__link text--ash" href="#">Settings</a>
     </li>
 
     Styleguide Lib.Navs.nav-item
 */
 .nav-item {
-  width: 10rem;
+  width: 12rem;
   padding: .5rem;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: space-between; }
   .nav-item__link {
     text-decoration: none;
-    color: #EBEEFF;
     flex-grow: 2;
     margin-left: 0.8rem; }
 
@@ -676,7 +785,10 @@ active classes
       width: 12rem; }
 
 .form-section {
-  margin: 9rem auto; }
+  margin: 9rem auto;
+  text-align: center;
+  width: 19rem;
+  height: 20.125rem; }
   .form-section__legend-title {
     font-size: 18px;
     font-weight: 700; }
@@ -685,9 +797,9 @@ active classes
     container (this is main container of dashboard)
 
     Markup:
-    <main class="main-content">
+    <main class="main-content margin-tb--auto">
         <section class="main-content__stack-menu"></section>
-        <section class="main-content__stack-content"></section>
+        <section class="main-content__stack-content margin--md"></section>
     </main>
 
     Styleguide Pages.dashboard.main-content
@@ -704,3 +816,6 @@ active classes
     width: 86%;
     background-color: #f5f5f5;
     border-radius: 2.5rem; }
+
+.stack-navigation {
+  margin-top: 5rem; }

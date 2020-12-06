@@ -9,7 +9,7 @@
 .margin--auto{
 	margin:  auto;
 }
-.margin--tb-auto {
+.margin-tb--auto {
 	margin: 2rem auto;
 }
 .margin {
@@ -273,7 +273,7 @@
 colors utilities..
 */
 .text--secondary{
-    color:$secondary-color;
+	color:$secondary-color;
 }
 .text--primary{
     color:$primary-color;
@@ -294,7 +294,15 @@ colors utilities..
 .text--ash{
 	color:$ash-color;
 }
+.text--gray{
+	color:$color-gray;
+}
 
+
+
+.bg--gray{
+	background: $color-gray;
+}
 .bg--secondary{
     background-color:$secondary-color;
 }
@@ -323,16 +331,9 @@ colors utilities..
 /*active classes
 */ 
 .active {
-	color: $white-color;
 	background-color: #889DFF;
 	border-radius: .25rem;
-	
-	a{
-		color: $white-color;
-	}
 } 
-
-
 /*
 active classes
 */

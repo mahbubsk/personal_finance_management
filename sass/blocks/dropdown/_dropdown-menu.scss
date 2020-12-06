@@ -1,0 +1,29 @@
+/*
+    Dropdown-Menu (dropdown menu with some navigation items)
+
+    Markup:
+    <ul class="dropdown-menu shadow--lg padding--md">
+        <li class="nav-item">
+            <img class="nav-item__icon" src="../../icons/accounts-drop.svg"/>
+            <a class="nav-item__link text--gray" href="#">add account</a>
+        </li>
+        <li class="nav-item">
+            <img class="nav-item__icon" src="../../icons/transaction-drop.svg"/>
+            <a class="nav-item__link text--gray" href="#">add transaction</a>
+        </li>
+        <li class="nav-item">
+            <img class="nav-item__icon" src="../../icons/budget-drop.svg"/>
+            <a class="nav-item__link text--gray" href="#">add budget</a>
+        </li>
+    </ul>
+
+    Styleguide Blocks.dropdown.dropdown-menu
+*/
+
+
+.dropdown-menu{
+    width:14rem;
+    height:11.25rem;
+    background:$white-color;
+
+}
