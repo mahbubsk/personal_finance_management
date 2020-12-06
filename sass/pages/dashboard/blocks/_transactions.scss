@@ -46,7 +46,7 @@
     height: 37vh;
 
     &__budgets{
-        
+        width:48%;
         .budgets-items{
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
@@ -58,7 +58,7 @@
     &__transactions{
 
         border-radius: $border-radius-sm;
-
+        width:48%;
         .transaction-items{
             border-radius: $border-radius-sm;
             -ms-overflow-style: none;  /* IE and Edge */

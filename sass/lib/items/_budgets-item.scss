@@ -17,7 +17,7 @@
 
 
 .budgets-item{
-    width:22rem;
+    width:100%;
     height: 4.5rem;
     @include d-flex(space-between);
     border-radius: $border-radius-md;
