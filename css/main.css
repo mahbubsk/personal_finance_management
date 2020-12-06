@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-y: hidden; }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -260,6 +261,52 @@ colors utilities..
 /*
 active classes
 */
+/*layout utility*/
+.container {
+  width: 100%;
+  margin: 0 auto; }
+
+.row {
+  display: flex;
+  flex-flow: row wrap; }
+
+.col--1 {
+  flex-basis: calc((100% * 1) / 12); }
+
+.col--2 {
+  flex-basis: calc((100% * 2) / 12); }
+
+.col--3 {
+  flex-basis: calc((100% * 3) / 12); }
+
+.col--4 {
+  flex-basis: calc((100% * 4) / 12); }
+
+.col--5 {
+  flex-basis: calc((100% * 5) / 12); }
+
+.col--6 {
+  flex-basis: calc((100% * 6) / 12); }
+
+.col--7 {
+  flex-basis: calc((100% * 7) / 12); }
+
+.col--8 {
+  flex-basis: calc((100% * 8) / 12); }
+
+.col--9 {
+  flex-basis: calc((100% * 9) / 12); }
+
+.col--10 {
+  flex-basis: calc((100% * 10) / 12); }
+
+.col--11 {
+  flex-basis: calc((100% * 11) / 12); }
+
+.col--12 {
+  flex-basis: calc((100% * 12) / 12); }
+
+/*layout utility*/
 /*
 * Utility Rules Defined end here
 * All Type of Utility Tools will Describe Here
@@ -315,7 +362,7 @@ active classes
                     <button class="btn-xsm border-outline--none">-</button>
                 </div>
             </div>
-            <div class="modal-two-d__form-right">
+            <div class="modal-two-d__form-right margin--l">
                 <p class="modal-tow-d__form__label">Enter Card Number</p>
                 <input value="Eastern Bank" type="text" class="input-field-sm margin--tmd bg--ash border-outline--none"/>
                 <p class="modal-tow-d__form__label margin--tmd">Enter current amount</p>
@@ -338,12 +385,11 @@ active classes
   font-size: 18px;
   border-radius: 5px; }
   .modal-tow-d__form {
-    width: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr; }
-    .modal-tow-d__form__label {
-      color: #757575; }
+    grid-template-columns: 1fr 1fr;
+    width: 94%;
+    height: 100%; }
     .modal-tow-d__form__btns {
       display: flex;
       justify-content: space-between;
@@ -446,6 +492,19 @@ active classes
   font-weight: 700; }
 
 /*
+    input-field-xsm (input field extra small )
+
+    Markup:
+    <input placeholder="text" type="text" class="input-field-xsm"/>
+
+    Styleguide Lib.Inputs.input-field-xsm
+*/
+.input-field-xsm {
+  width: 7.5rem;
+  padding: 1rem;
+  border-radius: 0.8rem; }
+
+/*
     input-field-sm (input field small)
 
     Markup:
@@ -493,9 +552,9 @@ active classes
     Styleguide Lib.Inputs.input-field-xlg
 */
 .input-field-xlg {
-  width: 40rem;
+  width: 100%;
   padding: 1rem;
-  border-radius: 0.8rem; }
+  border-radius: 1.5rem; }
 
 /*
     nav-item (navigation-item)
@@ -640,50 +699,49 @@ active classes
     Budgets-item (budgets single item)
 
     Markup:
-    <div class="budgets-item">
-        <div class="budgets-item__info">
+    <li class="budgets-item shadow--sm margin--t">
+        <div class="budgets-item__info padding--md">
             <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
-            <p class="budgets-item__info__text">some text</p>
+            <p class="budgets-item__info__text text--white">some text</p>
         </div>
-        <div class="budgets-item__amount">
-            200/-
+        <div class="budgets-item__amount bg--white">
+            <p>200/-</p>
         </div>
-    </div>
+    </li>
 
     Styleguide Lib.items.budgets-item
 */
 .budgets-item {
-  width: 20rem;
+  width: 22rem;
   height: 4.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 20px; }
+  border-radius: 1.5rem; }
   .budgets-item__info {
     background-color: #263268;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 20px 0px 0px 20px;
-    width: 70%;
+    border-radius: 1.5rem 0px 0px 1.5rem;
     height: 100%;
-    padding: 1rem; }
+    width: 74%; }
     .budgets-item__info__text {
       flex-grow: 2;
       margin-left: 0.8rem;
-      font-size: 14px;
-      color: #fff; }
+      font-size: 14px; }
   .budgets-item__amount {
     width: 26%;
-    background: #fff;
-    border-radius: 0px 20px 20px 0px;
-    padding: 1rem; }
+    height: 100%;
+    text-align: center;
+    padding: 1.7rem;
+    border-radius: 0px 1.5rem 1.5rem 0px; }
 
 /*
     Trans-item (transaction single item)
 
     Markup:
-    <div class="trans-item">
+    <li class="trans-item margin--t">
         <div class="trans-item__info">
             <img class="trans-item__info__icon" src="../../icons/in.svg"/>
             <div class="trans-item__info__text">
@@ -691,22 +749,22 @@ active classes
                 <p class="trans-item__info__text__sub-title">Bank name</p>
             </div>
         </div>
-        <div class="trans-item__amount">
+        <div class="trans-item__amount padding--md bg--white">
             200 TK
         </div>
-    </div>
-    <div class="trans-item">
+    </li>
+    <li class="trans-item margin--t">
         <div class="trans-item__info">
             <img class="trans-item__info__icon" src="../../icons/out.svg"/>
             <div class="trans-item__info__text">
                 <h4 class="trans-item__info__text__title">some text<h4>
-                <p class="trans-item__info__text__sub-title">bank name</p>
+                <p class="trans-item__info__text__sub-title">Bank name</p>
             </div>
         </div>
-        <div class="trans-item__amount">
+        <div class="trans-item__amount padding--md bg--white">
             -200 TK
         </div>
-    </div>
+    </li>
 
     Styleguide Lib.items.trans-item
 */
@@ -716,7 +774,7 @@ active classes
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   position: relative; }
   .trans-item__info {
     display: flex;
@@ -724,7 +782,6 @@ active classes
     justify-content: space-between;
     width: 70%;
     height: 100%;
-    padding: 1rem;
     color: #424242; }
     .trans-item__info__text {
       flex-grow: 2;
@@ -735,8 +792,6 @@ active classes
         margin-top: .2rem; }
   .trans-item__amount {
     width: 30%;
-    background: #fff;
-    padding: 1rem;
     color: #424242; }
   .trans-item::before {
     content: "";
@@ -799,25 +854,147 @@ active classes
     container (this is main container of dashboard)
 
     Markup:
-    <main class="main-content margin-tb--auto">
-        <section class="main-content__stack-menu"></section>
-        <section class="main-content__stack-content margin--md"></section>
+    <main class="container margin-tb--auto">
+        <section class="container__nav-menu"></section>
+        <section class="container__content-main margin--md"></section>
     </main>
 
     Styleguide Pages.dashboard.main-content
 */
-.main-content {
+.container {
   background-color: #506df5;
-  height: 90vh;
-  width: 95vw;
   border-radius: 3.1rem;
-  display: flex; }
-  .main-content__stack-menu {
+  display: flex;
+  height: 90vh;
+  width: 95vw; }
+  .container__nav-menu {
     width: 14%; }
-  .main-content__stack-content {
-    width: 86%;
-    background-color: #f5f5f5;
-    border-radius: 2.5rem; }
+  .container__content-main {
+    width: 86%; }
 
-.stack-navigation {
+.nav-navigation {
   margin-top: 5rem; }
+
+/*
+    content-main (This is the main content of Dashboard)
+    
+    Markup:
+    <section class="container__content-main margin--md">
+        <div class="content-left padding--lg">
+        </div>
+        <div class="content-right">
+        </div>
+    </section>
+
+    Styleguide Pages.dashboard.content-main
+*/
+.container__content-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border-radius: 2.5rem; }
+  .container__content-main .content-left {
+    width: 70%;
+    height: 100%;
+    border-right: 1px solid #e0e0e0; }
+  .container__content-main .content-right {
+    width: 30%;
+    height: 100%; }
+
+/*
+    Search-box (this is the header search bar of dashboard)
+
+    Markup:
+    <div class="search-box shadow--sm">
+        <div class="search-box__search-bar shadow--sm bg--white">
+            <img class="margin--lmd" src="../../../icons/search.svg" alt="">
+            <input placeholder="Search" type="text" class="input-field-xlg border-outline--none "/>
+        </div>
+        <div class="search-box__notification margin--lmd">
+            <img src="../../../icons/notification.svg" alt="">
+        </div>
+        <div class="search-box__add margin--lmd">
+            <img src="../../../icons/plus.svg" alt="">
+        </div>
+    </div>
+
+    Styleguide Pages.dashboard.search-box
+*/
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .search-box__search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    flex-grow: 1; }
+
+.money-status__statis-img {
+  width: 100%; }
+
+/*
+    transaction-wrap (this is wrapping budgets items section and transaction item seciton)
+
+    Markup:
+    <div class="transaction-wrap">
+        <div class="transaction-wrap__budgets">
+            <h3 class="margin--tlg margin--lmd">Budgets</h3>
+            <ul class="budgets-items  padding--md">
+                <li class="budgets-item shadow--sm">
+                    <div class="budgets-item__info padding--md">
+                        <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
+                        <p class="budgets-item__info__text text--white">some text</p>
+                    </div>
+                    <div class="budgets-item__amount bg--white">
+                        <p>200/-</p>
+                    </div>
+                </li>            
+            </ul>
+        </div>
+        <div class="transaction-wrap__transaction">
+            <h3 class="margin--tlg">Recent Transactions</h3>
+            <ul class="transaction-items bg--white padding--md margin--tmd">
+                <li class="trans-item">
+                    <div class="trans-item__info">
+                        <img class="trans-item__info__icon" src="../../icons/in.svg"/>
+                        <div class="trans-item__info__text">
+                            <h4 class="trans-item__info__text__title">some text<h4>
+                            <p class="trans-item__info__text__sub-title">Bank name</p>
+                        </div>
+                        </div>
+                    <div class="trans-item__amount padding--md ">
+                        200 TK
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    Styleguide Pages.dashboard.transactions
+*/
+.transaction-wrap {
+  display: flex;
+  align-items: start;
+  justify-content: space-between; }
+  .transaction-wrap__budgets .budgets-items {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    height: 20rem;
+    overflow: scroll; }
+  .transaction-wrap__transaction {
+    border-radius: 1.25rem; }
+    .transaction-wrap__transaction .transaction-items {
+      border-radius: 1.25rem;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+      height: 19rem;
+      overflow: scroll; }
+    .transaction-wrap__transaction .transaction-items::-webkit-scrollbar {
+      display: none; }

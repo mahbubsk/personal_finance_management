@@ -1,0 +1,73 @@
+/*
+    transaction-wrap (this is wrapping budgets items section and transaction item seciton)
+
+    Markup:
+    <div class="transaction-wrap">
+        <div class="transaction-wrap__budgets">
+            <h3 class="margin--tlg margin--lmd">Budgets</h3>
+            <ul class="budgets-items  padding--md">
+                <li class="budgets-item shadow--sm">
+                    <div class="budgets-item__info padding--md">
+                        <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
+                        <p class="budgets-item__info__text text--white">some text</p>
+                    </div>
+                    <div class="budgets-item__amount bg--white">
+                        <p>200/-</p>
+                    </div>
+                </li>            
+            </ul>
+        </div>
+        <div class="transaction-wrap__transaction">
+            <h3 class="margin--tlg">Recent Transactions</h3>
+            <ul class="transaction-items bg--white padding--md margin--tmd">
+                <li class="trans-item">
+                    <div class="trans-item__info">
+                        <img class="trans-item__info__icon" src="../../icons/in.svg"/>
+                        <div class="trans-item__info__text">
+                            <h4 class="trans-item__info__text__title">some text<h4>
+                            <p class="trans-item__info__text__sub-title">Bank name</p>
+                        </div>
+                        </div>
+                    <div class="trans-item__amount padding--md ">
+                        200 TK
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    Styleguide Pages.dashboard.transactions
+*/
+
+
+
+.transaction-wrap{
+    @include d-flex-align(start);
+    
+    &__budgets{
+        
+        .budgets-items{
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+            height:20rem;
+            overflow: scroll;
+        }
+    }
+
+    &__transaction{
+
+        border-radius: $border-radius-sm;
+
+        .transaction-items{
+            border-radius: $border-radius-sm;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+            height:19rem;
+            overflow: scroll;
+        }
+        .transaction-items::-webkit-scrollbar{
+            display: none;
+        }
+
+    }
+}

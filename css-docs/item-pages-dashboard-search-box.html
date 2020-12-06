@@ -69,15 +69,15 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-3" id="kssref-lib-items-budgets-item">
+            <header class="kss-section kss-section--depth-3" id="kssref-pages-dashboard-search-box">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>sass/lib/items/_budgets-item.scss</span>, line <span>1</span></p>
+                <p class="kss-section__source">Source: <span>sass/pages/dashboard/blocks/_search-box.scss</span>, line <span>1</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-lib-items-budgets-item">
+              <a class="kss-section__permalink" href="#kssref-pages-dashboard-search-box">
                 <h3 class="kss-section__item kss-section__item--depth-3">
-                  <span class="kss-section__ref">2.5.1</span>
-                  <span class="kss-section__name">Budgets-item (budgets single item)</span>
+                  <span class="kss-section__ref">3.1.3</span>
+                  <span class="kss-section__name">Search-box (this is the header search bar of dashboard)</span>
                 </h3>
               </a>
 
@@ -88,28 +88,34 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><li class="budgets-item shadow--sm margin--t">
-    <div class="budgets-item__info padding--md">
-        <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
-        <p class="budgets-item__info__text text--white">some text</p>
+                <div class="kss-modifiers__example"><div class="search-box shadow--sm">
+    <div class="search-box__search-bar shadow--sm bg--white">
+        <img class="margin--lmd" src="../../../icons/search.svg" alt="">
+        <input placeholder="Search" type="text" class="input-field-xlg border-outline--none "/>
     </div>
-    <div class="budgets-item__amount bg--white">
-        <p>200/-</p>
+    <div class="search-box__notification margin--lmd">
+        <img src="../../../icons/notification.svg" alt="">
     </div>
-</li></div>
+    <div class="search-box__add margin--lmd">
+        <img src="../../../icons/plus.svg" alt="">
+    </div>
+</div></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;li class&#x3D;&quot;budgets-item shadow--sm margin--t&quot;&gt;
-    &lt;div class&#x3D;&quot;budgets-item__info padding--md&quot;&gt;
-        &lt;img class&#x3D;&quot;budgets-item__info__icon&quot; src&#x3D;&quot;../../icons/travel.svg&quot;/&gt;
-        &lt;p class&#x3D;&quot;budgets-item__info__text text--white&quot;&gt;some text&lt;/p&gt;
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;search-box shadow--sm&quot;&gt;
+    &lt;div class&#x3D;&quot;search-box__search-bar shadow--sm bg--white&quot;&gt;
+        &lt;img class&#x3D;&quot;margin--lmd&quot; src&#x3D;&quot;../../../icons/search.svg&quot; alt&#x3D;&quot;&quot;&gt;
+        &lt;input placeholder&#x3D;&quot;Search&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;input-field-xlg border-outline--none &quot;/&gt;
     &lt;/div&gt;
-    &lt;div class&#x3D;&quot;budgets-item__amount bg--white&quot;&gt;
-        &lt;p&gt;200/-&lt;/p&gt;
+    &lt;div class&#x3D;&quot;search-box__notification margin--lmd&quot;&gt;
+        &lt;img src&#x3D;&quot;../../../icons/notification.svg&quot; alt&#x3D;&quot;&quot;&gt;
     &lt;/div&gt;
-&lt;/li&gt;</code></pre>
+    &lt;div class&#x3D;&quot;search-box__add margin--lmd&quot;&gt;
+        &lt;img src&#x3D;&quot;../../../icons/plus.svg&quot; alt&#x3D;&quot;&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                 </article>
 
             </header>

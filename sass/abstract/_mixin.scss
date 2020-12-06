@@ -1,5 +1,11 @@
-@mixin d-flex($space-value) {
+@mixin d-flex($justify-content) {
     display: flex;
     align-items: center;
-    justify-content: $space-value;
+    justify-content: $justify-content;
+}
+
+@mixin d-flex-align($align-items) {
+    display:flex;
+    align-items: $align-items;
+    justify-content: space-between;
 }

@@ -1,0 +1,33 @@
+/*
+    content-main (This is the main content of Dashboard)
+    
+    Markup:
+    <section class="container__content-main margin--md">
+        <div class="content-left padding--lg">
+        </div>
+        <div class="content-right">
+        </div>
+    </section>
+
+    Styleguide Pages.dashboard.content-main
+*/
+
+
+.container__content-main {
+    @include d-flex(space-between);
+    background-color: $primary-color;
+    border-radius: $border-radius-lg;
+
+    .content-left {
+        width: 70%;
+        height: 100%;
+        border-right: 1px solid #e0e0e0;
+        
+    }
+
+    .content-right {
+        width: 30%;
+        height: 100%;
+    }
+
+}

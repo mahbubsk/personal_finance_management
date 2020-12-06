@@ -2,33 +2,32 @@
     Budgets-item (budgets single item)
 
     Markup:
-    <div class="budgets-item">
-        <div class="budgets-item__info">
+    <li class="budgets-item shadow--sm margin--t">
+        <div class="budgets-item__info padding--md">
             <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
-            <p class="budgets-item__info__text">some text</p>
+            <p class="budgets-item__info__text text--white">some text</p>
         </div>
-        <div class="budgets-item__amount">
-            200/-
+        <div class="budgets-item__amount bg--white">
+            <p>200/-</p>
         </div>
-    </div>
+    </li>
 
     Styleguide Lib.items.budgets-item
 */
 
 
 .budgets-item{
-    width:20rem;
+    width:22rem;
     height: 4.5rem;
     @include d-flex(space-between);
-    border-radius: 20px;
+    border-radius: $border-radius-md;
 
     &__info{
         background-color: $info-color;
         @include d-flex(space-between);
-        border-radius: 20px 0px 0px 20px;
-        width:70%;
+        border-radius: $border-radius-md 0px 0px $border-radius-md;
         height: 100%;
-        padding:1rem;
+        width:74%;
 
         // &__icon{
 
@@ -38,16 +37,15 @@
             flex-grow: 2;
             margin-left: 0.8rem;
             font-size: $font-size-title-sm;
-            color:$white-color;
         }
 
     }
 
     &__amount{
         width:26%;
-        background:$white-color;
-        border-radius: 0px 20px 20px 0px;
-        padding:1rem;
-
+        height:100%;
+        text-align: center;
+        padding:1.7rem;
+        border-radius: 0px $border-radius-md $border-radius-md 0px;
     }
 }

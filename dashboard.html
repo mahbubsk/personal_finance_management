@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <main class="main-content margin-tb--auto">
-        <section class="main-content__stack-menu">
-            <div class="stack-logo margin--llg">
+    <main class="container margin-tb--auto">
+
+        <section class="container__nav-menu">
+
+            <div class="brand-logo margin--llg">
                 <img src="./img/brand_logo.svg" alt="">
             </div>
-            <div class="stack-navigation">
-                <ul class="stack-navigation__nav-items margin--lmd"> 
+
+            <div class="nav-navigation">
+                <ul class="navigation-items margin--lmd"> 
                     <li class="nav-item active margin--tmd">
                         <img class="nav-item__icon" src="./icons/dashboard-ac.svg"/>
                         <a class="nav-item__link text--white" href="#">Dashboard</a>
@@ -36,19 +39,158 @@
                     </li>
                 </ul>
             </div>
+
         </section>
-        <section class="main-content__stack-content margin--md">
-            <div class="content-left">
-                <div class="search-box"></div>
-                <div class="money-status"></div>
+
+         <section class="container__content-main margin--md">
+
+            <div class="content-left padding--lg">
+                <div class="search-box">
+                    <div class="search-box__search-bar bg--white">
+                        <img class="margin--lmd" src="./icons/search.svg" alt="">
+                        <input placeholder="Search" type="text" class="input-field-xlg border-outline--none "/>
+                    </div>
+                    <div class="search-box__notification margin--lmd">
+                        <img src="./icons/notification.svg" alt="">
+                    </div>
+                    <div class="search-box__add margin--lmd">
+                        <img src="./icons/plus.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="money-status">
+                    <h4 class="money-status__money-text margin--tmd">Money Status</h4>
+                    <img class="money-status__statis-img margin--tmd" src="./img/stat.png" alt="">
+                </div>
+
                 <div class="transaction-wrap">
-                    <div class="budgets"></div>
-                    <div class="recent-transactions"></div>
+                    
+                    <div class="transaction-wrap__budgets">
+                        <h3 class="margin--tlg margin--lmd">Budgets</h3>
+
+                        <ul class="budgets-items  padding--md">
+                            <li class="budgets-item shadow--sm">
+                                <div class="budgets-item__info padding--md">
+                                    <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
+                                    <p class="budgets-item__info__text text--white">some text</p>
+                                </div>
+                                <div class="budgets-item__amount bg--white">
+                                    <p>200/-</p>
+                                </div>
+                            </li>
+                            <li class="budgets-item shadow--sm margin--t">
+                                <div class="budgets-item__info padding--md">
+                                    <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
+                                    <p class="budgets-item__info__text text--white">some text</p>
+                                </div>
+                                <div class="budgets-item__amount bg--white">
+                                    <p>200/-</p>
+                                </div>
+                            </li>
+                            <li class="budgets-item shadow--sm margin--t">
+                                <div class="budgets-item__info padding--md">
+                                    <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
+                                    <p class="budgets-item__info__text text--white">some text</p>
+                                </div>
+                                <div class="budgets-item__amount bg--white">
+                                    <p>200/-</p>
+                                </div>
+                            </li>
+                            <li class="budgets-item shadow--sm margin--t">
+                                <div class="budgets-item__info padding--md">
+                                    <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
+                                    <p class="budgets-item__info__text text--white">some text</p>
+                                </div>
+                                <div class="budgets-item__amount bg--white">
+                                    <p>200/-</p>
+                                </div>
+                            </li>
+                            <li class="budgets-item shadow--sm margin--t">
+                                <div class="budgets-item__info padding--md">
+                                    <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
+                                    <p class="budgets-item__info__text text--white">some text</p>
+                                </div>
+                                <div class="budgets-item__amount bg--white">
+                                    <p>200/-</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="transaction-wrap__transaction">
+                        <h3 class="margin--tlg">Recent Transactions</h3>
+
+                        <ul class="transaction-items bg--white padding--md margin--tmd">
+                            
+                            <li class="trans-item">
+                                <div class="trans-item__info">
+                                    <img class="trans-item__info__icon" src="../../icons/in.svg"/>
+                                    <div class="trans-item__info__text">
+                                        <h4 class="trans-item__info__text__title">some text<h4>
+                                        <p class="trans-item__info__text__sub-title">Bank name</p>
+                                    </div>
+                                </div>
+                                <div class="trans-item__amount padding--md ">
+                                    200 TK
+                                </div>
+                            </li>
+    
+                            <li class="trans-item margin--t">
+                                <div class="trans-item__info">
+                                    <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+                                    <div class="trans-item__info__text">
+                                        <h4 class="trans-item__info__text__title">some text<h4>
+                                        <p class="trans-item__info__text__sub-title">Bank name</p>
+                                    </div>
+                                </div>
+                                <div class="trans-item__amount padding--md ">
+                                    -200 TK
+                                </div>
+                            </li>
+    
+                            <li class="trans-item margin--t">
+                                <div class="trans-item__info">
+                                    <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+                                    <div class="trans-item__info__text">
+                                        <h4 class="trans-item__info__text__title">some text<h4>
+                                        <p class="trans-item__info__text__sub-title">Bank name</p>
+                                    </div>
+                                </div>
+                                <div class="trans-item__amount padding--md">
+                                    -200 TK
+                                </div>
+                            </li>
+                            
+                            <li class="trans-item margin--t">
+                                <div class="trans-item__info">
+                                    <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+                                    <div class="trans-item__info__text">
+                                        <h4 class="trans-item__info__text__title">some text<h4>
+                                        <p class="trans-item__info__text__sub-title">Bank name</p>
+                                    </div>
+                                </div>
+                                <div class="trans-item__amount padding--md">
+                                    -200 TK
+                                </div>
+                            </li>
+                            <li class="trans-item margin--t">
+                                <div class="trans-item__info">
+                                    <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+                                    <div class="trans-item__info__text">
+                                        <h4 class="trans-item__info__text__title">some text<h4>
+                                        <p class="trans-item__info__text__sub-title">Bank name</p>
+                                    </div>
+                                </div>
+                                <div class="trans-item__amount padding--md">
+                                    -200 TK
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            
             <div class="content-right">
-                <div class="profile"></div>
-                <div class="wallet-balance"></div>
             </div>
         </section>
     </main>

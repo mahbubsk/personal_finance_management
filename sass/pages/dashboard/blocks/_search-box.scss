@@ -1,0 +1,29 @@
+/*
+    Search-box (this is the header search bar of dashboard)
+
+    Markup:
+    <div class="search-box shadow--sm">
+        <div class="search-box__search-bar shadow--sm bg--white">
+            <img class="margin--lmd" src="../../../icons/search.svg" alt="">
+            <input placeholder="Search" type="text" class="input-field-xlg border-outline--none "/>
+        </div>
+        <div class="search-box__notification margin--lmd">
+            <img src="../../../icons/notification.svg" alt="">
+        </div>
+        <div class="search-box__add margin--lmd">
+            <img src="../../../icons/plus.svg" alt="">
+        </div>
+    </div>
+
+    Styleguide Pages.dashboard.search-box
+*/
+
+.search-box {
+    @include d-flex(space-between);
+
+    &__search-bar {
+        @include d-flex(space-between);
+        border-radius: $border-radius-md; 
+        flex-grow:1
+    }
+}

@@ -13,7 +13,7 @@
                     <button class="btn-xsm border-outline--none">-</button>
                 </div>
             </div>
-            <div class="modal-two-d__form-right">
+            <div class="modal-two-d__form-right margin--l">
                 <p class="modal-tow-d__form__label">Enter Card Number</p>
                 <input value="Eastern Bank" type="text" class="input-field-sm margin--tmd bg--ash border-outline--none"/>
                 <p class="modal-tow-d__form__label margin--tmd">Enter current amount</p>
@@ -39,14 +39,12 @@
    
 
     &__form{
-        width:100%;
         display:grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-
-        &__label{
-            color:$color-gray;
-        }
+        width:94%;
+        height: 100%;
+        
 
         &__btns{
             display:flex;

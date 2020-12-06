@@ -2,7 +2,7 @@
     Trans-item (transaction single item)
 
     Markup:
-    <div class="trans-item">
+    <li class="trans-item margin--t">
         <div class="trans-item__info">
             <img class="trans-item__info__icon" src="../../icons/in.svg"/>
             <div class="trans-item__info__text">
@@ -10,22 +10,22 @@
                 <p class="trans-item__info__text__sub-title">Bank name</p>
             </div>
         </div>
-        <div class="trans-item__amount">
+        <div class="trans-item__amount padding--md bg--white">
             200 TK
         </div>
-    </div>
-    <div class="trans-item">
+    </li>
+    <li class="trans-item margin--t">
         <div class="trans-item__info">
             <img class="trans-item__info__icon" src="../../icons/out.svg"/>
             <div class="trans-item__info__text">
                 <h4 class="trans-item__info__text__title">some text<h4>
-                <p class="trans-item__info__text__sub-title">bank name</p>
+                <p class="trans-item__info__text__sub-title">Bank name</p>
             </div>
         </div>
-        <div class="trans-item__amount">
+        <div class="trans-item__amount padding--md bg--white">
             -200 TK
         </div>
-    </div>
+    </li>
 
     Styleguide Lib.items.trans-item
 */
@@ -35,7 +35,7 @@
     width:24rem;
     height: 4.5rem;
     @include d-flex(space-between);
-    border-radius: 20px;
+    border-radius: $border-radius-sm;
     position: relative;
     
 
@@ -43,7 +43,6 @@
         @include d-flex(space-between);
         width:70%;
         height: 100%;
-        padding:1rem;
         color:$text-color;
 
         // &__icon{
@@ -66,11 +65,7 @@
 
     &__amount{
         width:30%;
-        background:$white-color;
-        padding:1rem;
         color:$text-color;
-        
-
     }
 
 
