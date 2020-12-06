@@ -53,6 +53,9 @@
             height:16rem;
             overflow: scroll;
         }
+        .budgets-items::-webkit-scrollbar{
+            display:none;
+        }
     }
 
     &__transactions{
