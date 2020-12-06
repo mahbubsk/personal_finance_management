@@ -1,0 +1,11 @@
+.brand-logo{
+    width:100%;
+
+    &__logo{
+        width:50%;
+    }
+
+    &__title{
+        font-size: $font-size-title-lg;
+    }
+}

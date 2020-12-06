@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  overflow-x: hidden; }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -872,6 +873,13 @@ active classes
   .container__content-main {
     width: 86%; }
 
+.brand-logo {
+  width: 100%; }
+  .brand-logo__logo {
+    width: 50%; }
+  .brand-logo__title {
+    font-size: 18px; }
+
 .nav-navigation {
   margin-top: 5rem; }
 
@@ -896,11 +904,9 @@ active classes
   border-radius: 2.5rem; }
   .container__content-main .content-left {
     width: 70%;
-    height: 100%;
     border-right: 1px solid #e0e0e0; }
   .container__content-main .content-right {
-    width: 30%;
-    height: 100%; }
+    width: 30%; }
 
 /*
     Search-box (this is the header search bar of dashboard)
@@ -924,7 +930,8 @@ active classes
 .search-box {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  height: 15vh; }
   .search-box__search-bar {
     display: flex;
     align-items: center;
@@ -932,8 +939,10 @@ active classes
     border-radius: 1.5rem;
     flex-grow: 1; }
 
-.money-status__statis-img {
-  width: 100%; }
+.money-status {
+  height: 37vh; }
+  .money-status__statis-img {
+    width: 100%; }
 
 /*
     transaction-wrap (this is wrapping budgets items section and transaction item seciton)
@@ -978,23 +987,24 @@ active classes
 .transaction-wrap {
   display: flex;
   align-items: start;
-  justify-content: space-between; }
+  justify-content: space-between;
+  height: 37vh; }
   .transaction-wrap__budgets .budgets-items {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
-    height: 20rem;
+    height: 16rem;
     overflow: scroll; }
-  .transaction-wrap__transaction {
+  .transaction-wrap__transactions {
     border-radius: 1.25rem; }
-    .transaction-wrap__transaction .transaction-items {
+    .transaction-wrap__transactions .transaction-items {
       border-radius: 1.25rem;
       -ms-overflow-style: none;
       /* IE and Edge */
       scrollbar-width: none;
       /* Firefox */
-      height: 19rem;
+      height: 15rem;
       overflow: scroll; }
-    .transaction-wrap__transaction .transaction-items::-webkit-scrollbar {
+    .transaction-wrap__transactions .transaction-items::-webkit-scrollbar {
       display: none; }

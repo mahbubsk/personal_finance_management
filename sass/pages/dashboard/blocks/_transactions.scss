@@ -43,18 +43,19 @@
 
 .transaction-wrap{
     @include d-flex-align(start);
-    
+    height: 37vh;
+
     &__budgets{
         
         .budgets-items{
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
-            height:20rem;
+            height:16rem;
             overflow: scroll;
         }
     }
 
-    &__transaction{
+    &__transactions{
 
         border-radius: $border-radius-sm;
 
@@ -62,7 +63,7 @@
             border-radius: $border-radius-sm;
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
-            height:19rem;
+            height:15rem;
             overflow: scroll;
         }
         .transaction-items::-webkit-scrollbar{
