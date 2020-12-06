@@ -2,29 +2,27 @@
     container (this is main container of dashboard)
 
     Markup:
-    <main class="main-content">
-        <section class="main-content__stack-menu"></section>
-        <section class="main-content__stack-content"></section>
+    <main class="container">
+        <section class="container-content__manu-main"></section>
+        <section class="container-content__content-main"></section>
     </main>
 
-    Styleguide Pages.dashboard.main-content
+    Styleguide Pages.dashboard.container
 */
 
 
-.main-content {
+.container {
     background-color: $secondary-color;
     height: 90vh;
     width: 95vw;
     border-radius: $border-radius-xlg;
     display: flex;
 
-    &__stack-menu {
+    .menu-main {
         width: 14%;
     }
 
-    &__stack-content {
+    .content-main {
         width: 86%;
-        background-color: $primary-color;
-        border-radius: $border-radius-lg;
     }
 }

@@ -1,0 +1,13 @@
+.transaction-wrap {
+    @include d-flex(space-between);
+
+    &__budgets {
+        width: 40%;
+        height: 28vh;
+    }
+
+    &__recent-transactions {
+       width: 60%;
+       height: 28vh;
+    }
+}

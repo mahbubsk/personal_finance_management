@@ -1,0 +1,20 @@
+.search-box {
+    @include d-flex(space-between);
+
+    &__search-bar {
+        @include d-flex(space-between);
+        border-radius: $border-radius-md;
+        width:38rem; 
+    }
+
+    &__search-notification {
+        flex-grow: 3;
+    }
+
+    &__search-add {
+        flex-grow: 3;
+    }
+    &__add {
+        margin-top: .3rem;
+    }
+}

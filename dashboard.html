@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <main class="main-content margin--tb-auto">
-        <section class="main-content__stack-menu">
-            <div class="stack-logo">
+    <main class="container margin--tb-auto">
+
+        <section class="menu-main">
+            <div class="brand-logo">
                 <img src="./img/brand_logo.svg" alt="">
             </div>
-            <div class="stack-navigation">
-                <ul class="stack-navigation__nav-items margin--tlg margin--lmd"> 
+            <div class="menu-navigation">
+                <ul class="menu__nav-items margin--tlg margin--lmd"> 
                     <li class="nav-item active margin--tmd">
                         <img class="nav-item__icon" src="./icons/dashboard-ac.svg"/>
                         <a class="nav-item__link" href="#">Dashboard</a>
@@ -37,20 +38,64 @@
                 </ul>
             </div>
         </section>
-        <section class="main-content__stack-content margin--md">
-            <div class="content-left">
-                <div class="search-box"></div>
-                <div class="money-status"></div>
+
+        <section class="content-main margin--md">
+
+            <div class="content-left padding--lg">
+                <div class="search-box">
+                    <div class="search-box__search-bar bg--white">
+                        <img class="margin--lmd" src="./icons/search.svg" alt="">
+                        <input placeholder="Search" type="text" class="input-field-xlg border-outline--none "/>
+                    </div>
+                    <div class="search-box__notification">
+                        <img src="./icons/notification.svg" alt="">
+                    </div>
+                    <div class="search-box__add">
+                        <img src="./icons/plus.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="money-status">
+                    <h4 class="money-status__money-text margin--tmd">Money Status</h4>
+                    <img class="money-status__statis-img margin--tmd" src="./img/stat.png" alt="">
+                </div>
+
                 <div class="transaction-wrap">
-                    <div class="budgets"></div>
-                    <div class="recent-transactions"></div>
+                    <div class="transaction-wrap__budgets">
+                        <h3>Budgets</h3>
+                        <div class="budgets-item">
+                            <div class="budgets-item__info">
+                                <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
+                                <p class="budgets-item__info__text">some text</p>
+                            </div>
+                            <div class="budgets-item__amount">
+                                200/-
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transaction-wrap__recent-transactions">
+                        <h3>Recent Transactions</h3>
+                    </div>
                 </div>
             </div>
+            
             <div class="content-right">
-                <div class="profile"></div>
+                <div class="profile">
+                    <img class="profile__image" src="./img/boy.png" alt="">
+                    <div class="profile__details">
+                        <h4 class="profile__name">Shegufa Taranjum</h4>
+                        <p class="profile__email">taranjum3731@gmail.com</p>
+                    </div>
+                    <div class="profile__icon">
+                        <img src="./icons/sign-out-option.svg" alt="" style="height: 1rem; width: 1rem;">
+                    </div>
+                </div>
                 <div class="wallet-balance"></div>
             </div>
         </section>
+
+
+
     </main>
 </body>
-</html>
+</html> 

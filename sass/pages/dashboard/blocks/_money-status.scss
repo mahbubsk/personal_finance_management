@@ -1,0 +1,18 @@
+/*
+    Money Status (Statistics of time base transactions like weekly,monthly,yearly)
+
+    Markup:
+    <div class="money-status">
+        <h4 class="money-status__money-text margin--tmd">Money Status</h4>
+        <img class="money-status__statis-img margin--tmd" src="../../../../img/stat.png" alt="">
+    </div>
+
+    Styleguide Pages.dashboard.money-status
+*/
+
+.money-status{
+    
+    &__statis-img{
+        width:100%;
+    }
+}

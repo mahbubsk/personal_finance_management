@@ -57,9 +57,21 @@
                       </a>
                     </li>
                     <li class="kss-nav__item kss-nav__item--grandchild">
-                      <a href="section-pages.html#kssref-pages-dashboard-main-content">
+                      <a href="section-pages.html#kssref-pages-dashboard-container">
                         <span class="kss-nav__ref">2.1.1</span>
                         <span class="kss-nav__name">container (this is main container of dashboard)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-pages.html#kssref-pages-dashboard-content-main">
+                        <span class="kss-nav__ref">2.1.2</span>
+                        <span class="kss-nav__name">content-main (This is the main content of Dashboard)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-pages.html#kssref-pages-dashboard-money-status">
+                        <span class="kss-nav__ref">2.1.3</span>
+                        <span class="kss-nav__name">Money Status (Statistics of time base transactions like weekly,monthly,yearly)</span>
                       </a>
                     </li>
                 </ul>
@@ -109,12 +121,12 @@
 
 
             </section>
-            <section class="kss-section kss-section--depth-3" id="kssref-pages-dashboard-main-content">
+            <section class="kss-section kss-section--depth-3" id="kssref-pages-dashboard-container">
 
             <article class="kss-section__content">
                 <p class="kss-section__source">Source: <span>sass/pages/dashboard/blocks/_container.scss</span>, line <span>1</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-pages-dashboard-main-content">
+              <a class="kss-section__permalink" href="#kssref-pages-dashboard-container">
                 <h3 class="kss-section__item kss-section__item--depth-3">
                   <span class="kss-section__ref">2.1.1</span>
                   <span class="kss-section__name">container (this is main container of dashboard)</span>
@@ -128,18 +140,90 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><main class="main-content margin--md">
-    <section class="main-content__stack-menu"></section>
-    <section class="main-content__stack-content"></section>
+                <div class="kss-modifiers__example"><main class="container">
+    <section class="container-content__manu-main"></section>
+    <section class="container-content__content-main"></section>
 </main></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;main class&#x3D;&quot;main-content margin--md&quot;&gt;
-    &lt;section class&#x3D;&quot;main-content__stack-menu&quot;&gt;&lt;/section&gt;
-    &lt;section class&#x3D;&quot;main-content__stack-content&quot;&gt;&lt;/section&gt;
+                  <pre><code class="language-markup">&lt;main class&#x3D;&quot;container&quot;&gt;
+    &lt;section class&#x3D;&quot;container-content__manu-main&quot;&gt;&lt;/section&gt;
+    &lt;section class&#x3D;&quot;container-content__content-main&quot;&gt;&lt;/section&gt;
 &lt;/main&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-pages-dashboard-content-main">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/pages/dashboard/blocks/_content-main.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-pages-dashboard-content-main">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">2.1.2</span>
+                  <span class="kss-section__name">content-main (This is the main content of Dashboard)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><section class="content-main margin--md">
+    <div class="content-left padding--lg">
+    </div>
+    <div class="content-right">
+    </div>
+</section></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;section class&#x3D;&quot;content-main margin--md&quot;&gt;
+    &lt;div class&#x3D;&quot;content-left padding--lg&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;content-right&quot;&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-pages-dashboard-money-status">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/pages/dashboard/blocks/_money-status.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-pages-dashboard-money-status">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">2.1.3</span>
+                  <span class="kss-section__name">Money Status (Statistics of time base transactions like weekly,monthly,yearly)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class="money-status">
+    <h4 class="money-status__money-text margin--tmd">Money Status</h4>
+    <img class="money-status__statis-img margin--tmd" src="../../../../img/stat.png" alt="">
+</div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;money-status&quot;&gt;
+    &lt;h4 class&#x3D;&quot;money-status__money-text margin--tmd&quot;&gt;Money Status&lt;/h4&gt;
+    &lt;img class&#x3D;&quot;money-status__statis-img margin--tmd&quot; src&#x3D;&quot;../../../../img/stat.png&quot; alt&#x3D;&quot;&quot;&gt;
+&lt;/div&gt;</code></pre>
                 </article>
 
             </section>

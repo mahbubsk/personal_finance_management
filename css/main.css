@@ -334,6 +334,19 @@ active classes
   font-weight: 700; }
 
 /*
+    input-field-xsm (input field extra small )
+
+    Markup:
+    <input placeholder="text" type="text" class="input-field-xsm"/>
+
+    Styleguide Lib.Inputs.input-field-xsm
+*/
+.input-field-xsm {
+  width: 20%;
+  padding: 1rem;
+  border-radius: 1.5rem; }
+
+/*
     input-field-sm (input field small)
 
     Markup:
@@ -342,7 +355,7 @@ active classes
     Styleguide Lib.Inputs.input-field-sm
 */
 .input-field-sm {
-  width: 14.375rem;
+  width: 40%;
   padding: 1rem;
   border-radius: 0.8rem; }
 
@@ -355,7 +368,7 @@ active classes
     Styleguide Lib.Inputs.input-field-md
 */
 .input-field-md {
-  width: 17.5rem;
+  width: 60%;
   padding: 1rem;
   border-radius: 0.5rem; }
 
@@ -368,7 +381,7 @@ active classes
     Styleguide Lib.Inputs.input-field-lg
 */
 .input-field-lg {
-  width: 25rem;
+  width: 80%;
   padding: 1rem;
   border-radius: 0.5rem; }
 
@@ -381,9 +394,9 @@ active classes
     Styleguide Lib.Inputs.input-field-xlg
 */
 .input-field-xlg {
-  width: 40rem;
+  width: 100%;
   padding: 1rem;
-  border-radius: 0.8rem; }
+  border-radius: 1.5rem; }
 
 /*
     nav-item (navigation-item)
@@ -685,22 +698,119 @@ active classes
     container (this is main container of dashboard)
 
     Markup:
-    <main class="main-content">
-        <section class="main-content__stack-menu"></section>
-        <section class="main-content__stack-content"></section>
+    <main class="container">
+        <section class="container-content__manu-main"></section>
+        <section class="container-content__content-main"></section>
     </main>
 
-    Styleguide Pages.dashboard.main-content
+    Styleguide Pages.dashboard.container
 */
-.main-content {
+.container {
   background-color: #506df5;
   height: 90vh;
   width: 95vw;
   border-radius: 3.1rem;
   display: flex; }
-  .main-content__stack-menu {
+  .container .menu-main {
     width: 14%; }
-  .main-content__stack-content {
-    width: 86%;
-    background-color: #f5f5f5;
-    border-radius: 2.5rem; }
+  .container .content-main {
+    width: 86%; }
+
+/*
+    content-main (This is the main content of Dashboard)
+
+    Markup:
+    <section class="content-main margin--md">
+        <div class="content-left padding--lg">
+        </div>
+        <div class="content-right">
+        </div>
+    </section>
+
+    Styleguide Pages.dashboard.content-main
+
+*/
+.content-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border-radius: 2.5rem; }
+  .content-main .content-left {
+    width: 75%;
+    height: 100%;
+    border-right: 1px solid #e0e0e0; }
+  .content-main .content-right {
+    width: 25%;
+    height: 100%; }
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .search-box__search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    width: 38rem; }
+  .search-box__search-notification {
+    flex-grow: 3; }
+  .search-box__search-add {
+    flex-grow: 3; }
+  .search-box__add {
+    margin-top: .3rem; }
+
+/*
+    Money Status (Statistics of time base transactions like weekly,monthly,yearly)
+
+    Markup:
+    <div class="money-status">
+        <h4 class="money-status__money-text margin--tmd">Money Status</h4>
+        <img class="money-status__statis-img margin--tmd" src="../../../../img/stat.png" alt="">
+    </div>
+
+    Styleguide Pages.dashboard.money-status
+*/
+.money-status__statis-img {
+  width: 100%; }
+
+.transaction-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .transaction-wrap__budgets {
+    width: 40%;
+    height: 28vh; }
+  .transaction-wrap__recent-transactions {
+    width: 60%;
+    height: 28vh; }
+
+.profile {
+  padding: 2.1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; }
+  .profile:after {
+    content: '';
+    position: absolute;
+    top: 6rem;
+    left: 1rem;
+    height: 1px;
+    width: 15rem;
+    background-color: #e0e0e0; }
+  .profile__image {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 8px 5px #e0e0e0; }
+  .profile__name {
+    color: #424242;
+    margin-left: -1.5rem;
+    margin-top: .1rem; }
+  .profile__email {
+    color: #757575;
+    font-size: .7rem;
+    margin-left: -1.5rem;
+    margin-top: .2rem; }
