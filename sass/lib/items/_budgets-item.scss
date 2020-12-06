@@ -27,7 +27,7 @@
         @include d-flex(space-between);
         border-radius: $border-radius-md 0px 0px $border-radius-md;
         height: 100%;
-        width:74%;
+        width:65%;
 
         // &__icon{
 
@@ -42,7 +42,7 @@
     }
 
     &__amount{
-        width:26%;
+        width:35%;
         height:100%;
         text-align: center;
         padding:1.7rem;
