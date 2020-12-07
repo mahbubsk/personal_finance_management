@@ -14,17 +14,20 @@
 
 
 .container__content-main {
-    @include d-flex(space-between);
+    @include d-flex-align(flex-start);
+    
     background-color: $primary-color;
     border-radius: $border-radius-lg;
-    
+
     .content-left {
-        max-width: 70%;
-        border-right: 1px solid #e0e0e0;
+        width: 70%;
+        
     }
 
     .content-right {
-        max-width: 30%;
-    }
+        width: 30%;
+        border-left: 1px solid #e0e0e0;
+        height: 100%;
+    }   
 
 }

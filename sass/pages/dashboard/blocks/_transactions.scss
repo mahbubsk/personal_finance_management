@@ -43,7 +43,8 @@
 
 .transaction-wrap{
     @include d-flex-align(flex-start);
-    max-height: 30vh;
+    height: 30vh;
+
     &__budgets{
         width:48%;
         .budgets-items{
@@ -59,7 +60,6 @@
 
     &__transactions{
         width:48%;
-
         .transaction-items{
             border-radius: $border-radius-sm;
             -ms-overflow-style: none;  /* IE and Edge */

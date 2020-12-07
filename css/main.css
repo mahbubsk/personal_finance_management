@@ -899,15 +899,16 @@ active classes
 */
 .container__content-main {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   background-color: #f5f5f5;
   border-radius: 2.5rem; }
   .container__content-main .content-left {
-    max-width: 70%;
-    border-right: 1px solid #e0e0e0; }
+    width: 70%; }
   .container__content-main .content-right {
-    max-width: 30%; }
+    width: 30%;
+    border-left: 1px solid #e0e0e0;
+    height: 100%; }
 
 /*
     Search-box (this is the header search bar of dashboard)
@@ -931,8 +932,7 @@ active classes
 .search-box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-height: 20%; }
+  justify-content: space-between; }
   .search-box__search-bar {
     display: flex;
     align-items: center;
@@ -989,7 +989,7 @@ active classes
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  max-height: 30vh; }
+  height: 30vh; }
   .transaction-wrap__budgets {
     width: 48%; }
     .transaction-wrap__budgets .budgets-items {
