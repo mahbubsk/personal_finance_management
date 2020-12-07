@@ -2,15 +2,17 @@
     card (it's a pre build card with a background image)
 
     Markup:
-    <div class="card">text</div>
+    <li class="card">text</li>
 
     Styleguide Lib.cards.card
 */
 
 .card{
     background-image:url("../../../img/card-bg.svg");
-    width:230px;
-    height: 130px;
-    padding:1.5rem;
-    color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:14.375rem;
+    height: 8.125rem;
+    display:block;
 }

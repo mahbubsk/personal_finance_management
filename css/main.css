@@ -228,6 +228,9 @@ colors utilities..
 .text--gray {
   color: #757575; }
 
+.text-deep--gray {
+  color: #424242; }
+
 .bg--gray {
   background: #757575; }
 
@@ -251,6 +254,9 @@ colors utilities..
 
 .bg--ash {
   background-color: #EBEEFF; }
+
+.bg-deep--gray {
+  background-color: #424242; }
 
 /*colors utilities*/
 /*active classes
@@ -561,7 +567,7 @@ active classes
     nav-item (navigation-item)
 
     Markup:
-    <li class="nav-item padding--sm">
+    <li class="nav-item padding--md margin--tmd">
         <img class="nav-item__icon" src="../../icons/setting-ac.svg"/>
         <a class="nav-item__link text--ash" href="#">Settings</a>
     </li>
@@ -675,16 +681,18 @@ active classes
     card (it's a pre build card with a background image)
 
     Markup:
-    <div class="card">text</div>
+    <li class="card">text</li>
 
     Styleguide Lib.cards.card
 */
 .card {
   background-image: url("../../../img/card-bg.svg");
-  width: 230px;
-  height: 130px;
-  padding: 1.5rem;
-  color: white; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 14.375rem;
+  height: 8.125rem;
+  display: block; }
 
 /*
     th-five (table head five items)
@@ -796,7 +804,7 @@ active classes
   .trans-item::before {
     content: "";
     position: absolute;
-    width: 20rem;
+    width: 100%;
     height: 0.0725rem;
     background: #EBEEFF;
     left: 15px;
@@ -989,7 +997,7 @@ active classes
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  height: 25vh; }
+  height: 28vh; }
   .transaction-wrap__budgets {
     width: 48%; }
     .transaction-wrap__budgets .budgets-items {
@@ -997,7 +1005,7 @@ active classes
       /* IE and Edge */
       scrollbar-width: none;
       /* Firefox */
-      height: 16rem;
+      height: 15rem;
       overflow: scroll; }
     .transaction-wrap__budgets .budgets-items::-webkit-scrollbar {
       display: none; }
@@ -1013,3 +1021,52 @@ active classes
       overflow: scroll; }
     .transaction-wrap__transactions .transaction-items::-webkit-scrollbar {
       display: none; }
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%; }
+  .user-profile__avatar {
+    width: 3rem;
+    height: 3rem; }
+    .user-profile__avatar__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
+  .user-profile__email-name {
+    flex-grow: 1; }
+    .user-profile__email-name__name {
+      font-size: 1.125rem; }
+    .user-profile__email-name__email {
+      font-size: 0.625rem; }
+  .user-profile__logout {
+    cursor: pointer; }
+  .user-profile::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.0725rem;
+    background: #e0e0e0;
+    left: 15px;
+    bottom: 0px; }
+
+.wallet-balance {
+  text-align: center; }
+  .wallet-balance__title {
+    font-size: 1.125rem; }
+  .wallet-balance__balance {
+    font-size: 1.875rem; }
+
+.card-wrap {
+  display: block;
+  height: 26rem;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
+
+.card-wrap::-webkit-scrollbar {
+  display: none; }

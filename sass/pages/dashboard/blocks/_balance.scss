@@ -1,0 +1,9 @@
+.wallet-balance{
+    text-align: center;
+    &__title{
+        font-size:$font-size-title-lg;
+    }
+    &__balance{
+        font-size:$wallet-balance-size;
+    }
+}
