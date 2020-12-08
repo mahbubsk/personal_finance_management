@@ -17,7 +17,7 @@ body {
 .margin--auto {
   margin: auto; }
 
-.margin-tb--auto {
+.margin-t--auto {
   margin: 2rem auto; }
 
 .margin {
@@ -681,7 +681,14 @@ active classes
     card (it's a pre build card with a background image)
 
     Markup:
-    <li class="card">text</li>
+    <li class="card margin--auto margin--b padding--md text--white">
+        <p class="card__title">
+            Dutch Bangla Bank
+        </p>
+        <p class="card__footer text--white">
+            27,550 TK
+        </p>
+    </li>
 
     Styleguide Lib.cards.card
 */
@@ -692,7 +699,16 @@ active classes
   background-position: center;
   width: 14.375rem;
   height: 8.125rem;
-  display: block; }
+  position: relative; }
+  .card__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    position: absolute; }
+  .card__footer {
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 15px;
+    right: 15px; }
 
 /*
     th-five (table head five items)
@@ -712,7 +728,7 @@ active classes
             <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
             <p class="budgets-item__info__text text--white">some text</p>
         </div>
-        <div class="budgets-item__amount bg--white">
+        <div class="budgets-item__amount bg--white align--center">
             <p>200/-</p>
         </div>
     </li>
@@ -739,10 +755,11 @@ active classes
       margin-left: 0.8rem;
       font-size: 0.875rem; }
   .budgets-item__amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 35%;
     height: 100%;
-    text-align: center;
-    padding: 1.7rem;
     border-radius: 0px 1.5rem 1.5rem 0px; }
 
 /*

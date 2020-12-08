@@ -7,7 +7,7 @@
             <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
             <p class="budgets-item__info__text text--white">some text</p>
         </div>
-        <div class="budgets-item__amount bg--white">
+        <div class="budgets-item__amount bg--white align--center">
             <p>200/-</p>
         </div>
     </li>
@@ -42,10 +42,9 @@
     }
 
     &__amount{
+        @include d-flex(center);
         width:35%;
         height:100%;
-        text-align: center;
-        padding:1.7rem;
         border-radius: 0px $border-radius-md $border-radius-md 0px;
     }
 }

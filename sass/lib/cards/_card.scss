@@ -2,7 +2,14 @@
     card (it's a pre build card with a background image)
 
     Markup:
-    <li class="card">text</li>
+    <li class="card margin--auto margin--b padding--md text--white">
+        <p class="card__title">
+            Dutch Bangla Bank
+        </p>
+        <p class="card__footer text--white">
+            27,550 TK
+        </p>
+    </li>
 
     Styleguide Lib.cards.card
 */
@@ -14,5 +21,18 @@
     background-position: center;
     width:14.375rem;
     height: 8.125rem;
-    display:block;
+    position: relative;
+    &__title{
+        font-size: $font-size-title-lg;
+        font-weight: $font-weight-semi-bold;
+        position: absolute;
+        
+    }
+
+    &__footer{
+        font-size: $font-size-title-xlg;
+        position: absolute;
+        bottom:15px;
+        right:15px;
+    }
 }
