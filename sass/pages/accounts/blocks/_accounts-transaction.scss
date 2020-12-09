@@ -1,0 +1,9 @@
+.accounts-transaction{
+    border-radius: $border-radius-sm;
+    height:70%;
+    @include overflow-scroll;
+}
+
+.accounts-transaction::-webkit-scrollbar{
+    display: none;
+}

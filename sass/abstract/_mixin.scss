@@ -9,3 +9,9 @@
     align-items: $align-items;
     justify-content: space-between;
 }
+
+@mixin overflow-scroll{
+    overflow:scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

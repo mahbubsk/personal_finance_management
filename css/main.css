@@ -216,6 +216,9 @@ colors utilities..
 .text--white {
   color: #fff; }
 
+.text--black {
+  color: #000; }
+
 .text--berry {
   color: #263268; }
 
@@ -264,15 +267,17 @@ colors utilities..
 .active {
   background-color: #889DFF;
   border-radius: .25rem; }
+  .active a {
+    color: #fff; }
+
+.active--tab {
+  position: relative;
+  border-bottom: 4px solid #506df5; }
 
 /*
 active classes
 */
 /*layout utility*/
-.container {
-  width: 100%;
-  margin: 0 auto; }
-
 .row {
   display: flex;
   flex-flow: row wrap; }
@@ -569,7 +574,7 @@ active classes
     Markup:
     <li class="nav-item padding--md margin--tmd">
         <img class="nav-item__icon" src="../../icons/setting-ac.svg"/>
-        <a class="nav-item__link text--ash" href="#">Settings</a>
+        <a class="nav-item__link" href="#">Settings</a>
     </li>
 
     Styleguide Lib.Navs.nav-item
@@ -585,7 +590,13 @@ active classes
   .nav-item__link {
     text-decoration: none;
     flex-grow: 2;
-    margin-left: 0.8rem; }
+    margin-left: 0.8rem;
+    color: #EBEEFF; }
+
+.tab-item {
+  list-style-type: none; }
+  .tab-item__link {
+    text-decoration: none; }
 
 /*
     icon-xsm (icon extra small ---> size: 16/16)
@@ -1014,7 +1025,7 @@ active classes
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  height: 28vh; }
+  height: 30vh; }
   .transaction-wrap__budgets {
     width: 48%; }
     .transaction-wrap__budgets .budgets-items {
@@ -1022,7 +1033,7 @@ active classes
       /* IE and Edge */
       scrollbar-width: none;
       /* Firefox */
-      height: 15rem;
+      max-height: 18rem;
       overflow: scroll; }
     .transaction-wrap__budgets .budgets-items::-webkit-scrollbar {
       display: none; }
@@ -1086,4 +1097,76 @@ active classes
   /* Firefox */ }
 
 .card-wrap::-webkit-scrollbar {
+  display: none; }
+
+.account-tab .tab-items {
+  display: flex;
+  align-items: center; }
+
+/*
+    Transaction-history-card 
+
+    Markup:
+    <li class="trans-history-card padding--md margin--bmd">
+        <div class="card margin--b padding--md text--white">
+            <p class="card__title">
+                Dutch Bangla Bank
+            </p>
+            <p class="card__footer text--white">
+                27,550 TK
+            </p>
+        </div>
+        <div class="trans-history-card__extend">
+            <h2 class="align--center margin--blg">27,550 TK</h2>
+            <div class="row">
+                <div class="col--6">
+                    <div class="align--center">
+                        <img src="../../icons/arrow-down.svg" alt="">
+                    </div>
+                    <h5 class="align--center">
+                        15,000.00 TK
+                    </h5>
+                </div>
+                <div class="col--6">
+                    <div class="align--center">
+                        <img src="../../icons/arrow-up.svg" alt="">
+                    </div>
+                    <h5 class="align--center">
+                        9750.00 TK
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </li>
+
+    Styleguide Pages.accounts.trans-history-card
+*/
+.trans-history-cards {
+  height: 35rem;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
+  .trans-history-cards .trans-history-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 65%;
+    background: linear-gradient(270deg, #EBE9E9 9.03%, rgba(235, 233, 233, 0.69) 39.07%);
+    border-radius: 1rem; }
+
+.trans-history-cards::-webkit-scrollbar {
+  display: none; }
+
+.accounts-transaction {
+  border-radius: 1.25rem;
+  height: 70%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
+
+.accounts-transaction::-webkit-scrollbar {
   display: none; }

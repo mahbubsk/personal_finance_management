@@ -284,6 +284,9 @@ colors utilities..
 .text--white{
     color:$white-color;
 }
+.text--black{
+	color:$black-color;
+}
 .text--berry{
     color:$blue-berry-color;
 }
@@ -340,7 +343,15 @@ colors utilities..
 .active {
 	background-color: #889DFF;
 	border-radius: .25rem;
+	a{
+		color:$white-color;
+	}
 } 
+.active--tab{
+	position: relative;
+	border-bottom:4px solid $secondary-color;
+}
+
 /*
 active classes
 */
@@ -348,10 +359,11 @@ active classes
 
 /*layout utility*/
 
-.container {
-	width: 100%;
-	margin: 0 auto;
-}
+// .container {
+// 	width: 100%;
+// 	margin: 0 auto;
+// }
+
 .row {
 	display: flex;
 	flex-flow: row wrap;

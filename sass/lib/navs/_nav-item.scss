@@ -4,7 +4,7 @@
     Markup:
     <li class="nav-item padding--md margin--tmd">
         <img class="nav-item__icon" src="../../icons/setting-ac.svg"/>
-        <a class="nav-item__link text--ash" href="#">Settings</a>
+        <a class="nav-item__link" href="#">Settings</a>
     </li>
 
     Styleguide Lib.Navs.nav-item
@@ -27,6 +27,7 @@
         text-decoration: none;
         flex-grow: 2;
         margin-left:0.8rem;
+        color:$ash-color;
     }
 
 

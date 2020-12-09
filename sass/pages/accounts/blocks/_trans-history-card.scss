@@ -1,0 +1,53 @@
+/*
+    Transaction-history-card 
+
+    Markup:
+    <li class="trans-history-card padding--md margin--bmd">
+        <div class="card margin--b padding--md text--white">
+            <p class="card__title">
+                Dutch Bangla Bank
+            </p>
+            <p class="card__footer text--white">
+                27,550 TK
+            </p>
+        </div>
+        <div class="trans-history-card__extend">
+            <h2 class="align--center margin--blg">27,550 TK</h2>
+            <div class="row">
+                <div class="col--6">
+                    <div class="align--center">
+                        <img src="../../icons/arrow-down.svg" alt="">
+                    </div>
+                    <h5 class="align--center">
+                        15,000.00 TK
+                    </h5>
+                </div>
+                <div class="col--6">
+                    <div class="align--center">
+                        <img src="../../icons/arrow-up.svg" alt="">
+                    </div>
+                    <h5 class="align--center">
+                        9750.00 TK
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </li>
+
+    Styleguide Pages.accounts.trans-history-card
+*/
+.trans-history-cards{
+    height:35rem;
+    @include overflow-scroll;
+
+    .trans-history-card{
+        @include d-flex(space-around);
+        width:65%;
+        background: linear-gradient(270deg, #EBE9E9 9.03%, rgba(235, 233, 233, 0.69) 39.07%);
+        border-radius: 1rem;
+    
+    }
+}
+.trans-history-cards::-webkit-scrollbar{
+    display: none;
+}

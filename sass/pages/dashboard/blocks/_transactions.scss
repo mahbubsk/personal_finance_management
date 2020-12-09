@@ -43,7 +43,7 @@
 
 .transaction-wrap{
     @include d-flex-align(flex-start);
-    height: 28vh;
+    height: 30vh;
 
     &__budgets{
         width:48%;
@@ -51,7 +51,7 @@
         .budgets-items{
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
-            height:15rem;
+            max-height:18rem;
             overflow: scroll;
         }
         .budgets-items::-webkit-scrollbar{
