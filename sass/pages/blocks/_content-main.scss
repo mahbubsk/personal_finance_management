@@ -14,7 +14,7 @@
 
 
 .container__content-main {
-    @include d-flex-align(flex-start);
+    // @include d-flex-align(flex-start);
     
     background-color: $primary-color;
     border-radius: $border-radius-lg;
@@ -26,8 +26,6 @@
 
     .content-right {
         width: 30%;
-        border-left: 1px solid #e0e0e0;
-        height: 100%;
     }   
 
 }

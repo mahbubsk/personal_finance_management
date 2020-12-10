@@ -7,7 +7,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  width: 100vw;
+  height: 100vh; }
 
 /* 
 * Utility Rules Defined Here
@@ -273,10 +275,28 @@ colors utilities..
 .active--tab {
   position: relative;
   border-bottom: 4px solid #506df5; }
+  .active--tab a {
+    color: #000; }
 
 /*
 active classes
 */
+/*border classes, those utilities use just in this project*/
+.border--left {
+  border-left: 1px solid #e0e0e0; }
+
+.border--bottom {
+  position: relative; }
+  .border--bottom::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.0725rem;
+    background: #e0e0e0;
+    left: 15px;
+    bottom: 0px; }
+
+/**/
 /*layout utility*/
 .row {
   display: flex;
@@ -838,26 +858,88 @@ active classes
     left: 15px;
     bottom: 0px; }
 
-.container {
+.brand-logo {
+  width: 100%;
+  text-align: center; }
+  .brand-logo__logo {
+    width: 50%; }
+  .brand-logo__title {
+    font-size: 1.125rem; }
+
+.nav-navigation {
+  margin-top: 5rem; }
+
+/*
+    content-main (This is the main content of Dashboard)
+    
+    Markup:
+    <section class="container__content-main margin--md">
+        <div class="content-left padding--lg">
+        </div>
+        <div class="content-right">
+        </div>
+    </section>
+
+    Styleguide Pages.dashboard.content-main
+*/
+.container__content-main {
+  background-color: #f5f5f5;
+  border-radius: 2.5rem; }
+  .container__content-main .content-left {
+    width: 70%; }
+  .container__content-main .content-right {
+    width: 30%; }
+
+/*
+    Search-box (this is the header search bar of dashboard)
+
+    Markup:
+    <div class="search-box shadow--sm">
+        <div class="search-box__search-bar shadow--sm bg--white">
+            <img class="margin--lmd" src="../../../icons/search.svg" alt="">
+            <input placeholder="Search" type="text" class="input-field-xlg border-outline--none "/>
+        </div>
+        <div class="search-box__notification margin--lmd">
+            <img src="../../../icons/notification.svg" alt="">
+        </div>
+        <div class="search-box__add margin--lmd">
+            <img src="../../../icons/plus.svg" alt="">
+        </div>
+    </div>
+
+    Styleguide Pages.dashboard.search-box
+*/
+.search-box {
   display: flex;
-  background: #fff;
+  align-items: center;
+  justify-content: space-between;
+  height: 15%; }
+  .search-box__search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    flex-grow: 1; }
+
+.sign-container {
+  display: flex;
   width: 65%;
-  height: 50rem;
-  overflow: hidden;
+  height: 88%;
   border-radius: 10px;
-  margin: 3.25rem auto;
+  margin: 3rem auto;
   position: relative; }
-  .container .container__form {
+  .sign-container__form {
     width: 50%;
     height: 100%;
     background-color: #506df5; }
-  .container .container__img {
+  .sign-container__img {
     width: 50%;
-    position: absolute;
-    bottom: -4px;
-    right: 2rem; }
-    .container .container__img-image {
-      width: 41rem; }
+    height: 100%; }
+    .sign-container__img-image {
+      width: 54%;
+      position: absolute;
+      bottom: -4px;
+      right: 4px; }
 
 .title-section {
   margin-top: 4rem;
@@ -898,7 +980,6 @@ active classes
     Styleguide Pages.dashboard.main-content
 */
 .container {
-  background-color: #506df5;
   border-radius: 3.1rem;
   display: flex;
   height: 90vh;
@@ -908,73 +989,6 @@ active classes
   .container__content-main {
     width: 85%;
     height: 100%; }
-
-.brand-logo {
-  width: 100%;
-  text-align: center; }
-  .brand-logo__logo {
-    width: 50%; }
-  .brand-logo__title {
-    font-size: 1.125rem; }
-
-.nav-navigation {
-  margin-top: 5rem; }
-
-/*
-    content-main (This is the main content of Dashboard)
-    
-    Markup:
-    <section class="container__content-main margin--md">
-        <div class="content-left padding--lg">
-        </div>
-        <div class="content-right">
-        </div>
-    </section>
-
-    Styleguide Pages.dashboard.content-main
-*/
-.container__content-main {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: #f5f5f5;
-  border-radius: 2.5rem; }
-  .container__content-main .content-left {
-    width: 70%; }
-  .container__content-main .content-right {
-    width: 30%;
-    border-left: 1px solid #e0e0e0;
-    height: 100%; }
-
-/*
-    Search-box (this is the header search bar of dashboard)
-
-    Markup:
-    <div class="search-box shadow--sm">
-        <div class="search-box__search-bar shadow--sm bg--white">
-            <img class="margin--lmd" src="../../../icons/search.svg" alt="">
-            <input placeholder="Search" type="text" class="input-field-xlg border-outline--none "/>
-        </div>
-        <div class="search-box__notification margin--lmd">
-            <img src="../../../icons/notification.svg" alt="">
-        </div>
-        <div class="search-box__add margin--lmd">
-            <img src="../../../icons/plus.svg" alt="">
-        </div>
-    </div>
-
-    Styleguide Pages.dashboard.search-box
-*/
-.search-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-  .search-box__search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 1.5rem;
-    flex-grow: 1; }
 
 .money-status {
   height: 35vh; }
@@ -1050,36 +1064,6 @@ active classes
     .transaction-wrap__transactions .transaction-items::-webkit-scrollbar {
       display: none; }
 
-.user-profile {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  width: 100%; }
-  .user-profile__avatar {
-    width: 3rem;
-    height: 3rem; }
-    .user-profile__avatar__img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%; }
-  .user-profile__email-name {
-    flex-grow: 1; }
-    .user-profile__email-name__name {
-      font-size: 1.125rem; }
-    .user-profile__email-name__email {
-      font-size: 0.625rem; }
-  .user-profile__logout {
-    cursor: pointer; }
-  .user-profile::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0.0725rem;
-    background: #e0e0e0;
-    left: 15px;
-    bottom: 0px; }
-
 .wallet-balance {
   text-align: center; }
   .wallet-balance__title {
@@ -1102,6 +1086,54 @@ active classes
 .account-tab .tab-items {
   display: flex;
   align-items: center; }
+
+.accounts-card {
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  height: 40%;
+  width: 100%; }
+
+.accounts-card::-webkit-scrollbar {
+  display: none; }
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; }
+  .user-profile__avatar {
+    width: 3rem;
+    height: 3rem; }
+    .user-profile__avatar__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
+  .user-profile__email-name {
+    flex-grow: 1; }
+    .user-profile__email-name__name {
+      font-size: 1.125rem; }
+    .user-profile__email-name__email {
+      font-size: 0.625rem; }
+  .user-profile__logout {
+    cursor: pointer; }
+
+.current-balance {
+  width: 100%;
+  height: 100%;
+  background-color: #889DFF;
+  border-radius: 0.5rem; }
+  .current-balance__title {
+    font-size: 1rem;
+    font-weight: 500; }
+  .current-balance__money {
+    font-weight: 500;
+    font-size: 1.625rem; }
+
+.line-chart {
+  margin-top: 5rem; }
 
 /*
     Transaction-history-card 
@@ -1152,9 +1184,11 @@ active classes
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 65%;
+    width: 70%;
     background: linear-gradient(270deg, #EBE9E9 9.03%, rgba(235, 233, 233, 0.69) 39.07%);
     border-radius: 1rem; }
+    .trans-history-cards .trans-history-card .trans-history-card__extend {
+      width: 40%; }
 
 .trans-history-cards::-webkit-scrollbar {
   display: none; }

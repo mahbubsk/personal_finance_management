@@ -1,0 +1,8 @@
+.accounts-card{
+    @include overflow-scroll;
+    height: 40%;
+    width:100%;
+}
+.accounts-card::-webkit-scrollbar{
+    display: none;
+}

@@ -350,12 +350,34 @@ colors utilities..
 .active--tab{
 	position: relative;
 	border-bottom:4px solid $secondary-color;
+
+	a{
+		color:$black-color
+	}
 }
 
 /*
 active classes
 */
 
+/*border classes, those utilities use just in this project*/
+.border--left{
+	border-left: 1px solid #e0e0e0;
+}
+.border--bottom{
+	position: relative;
+
+	&::before{
+        content: "";
+        position: absolute;
+        width:100%;
+        height:0.0725rem;
+        background:#e0e0e0;
+        left:15px;
+        bottom:0px;    
+    }
+}
+/**/
 
 /*layout utility*/
 

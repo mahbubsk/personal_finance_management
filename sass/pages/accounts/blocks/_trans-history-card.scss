@@ -42,11 +42,16 @@
 
     .trans-history-card{
         @include d-flex(space-around);
-        width:65%;
+        width:70%;
         background: linear-gradient(270deg, #EBE9E9 9.03%, rgba(235, 233, 233, 0.69) 39.07%);
         border-radius: 1rem;
+
+        .trans-history-card__extend{
+            width:40%;
+        }
     
     }
+    
 }
 .trans-history-cards::-webkit-scrollbar{
     display: none;

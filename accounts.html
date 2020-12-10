@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <main class="container margin-t--auto padding--md">
+    <main class="container bg--secondary margin-t--auto padding--md">
 
         <section class="container__nav-menu">
 
@@ -45,9 +45,9 @@
 
         </section>
 
-         <section class="container__content-main">
+        <section class="container__content-main row">
 
-            <div class="content-left padding--lg">
+            <div class="content-left col--8  padding--lg">
                 <div class="search-box">
                     <div class="search-box__search-bar bg--white">
                         <img class="margin--lmd" src="./icons/search.svg" alt="">
@@ -63,12 +63,26 @@
 
                 <nav class="account-tab">
                     <ul class="tab-items padding--md">
-                        <li class="tab-items__tab-item padding--sm margin--lmd"><a class="tab-item__link text--gray" href="#">Accounts</a></li>
-                        <li class="tab-items__tab-item padding--sm margin--lmd active--tab"><a class="text--black tab-item__link" href="#">Trans History</a></li>
+                        <li class="tab-items__tab-item padding--sm margin--lmd active--tab"><a class="tab-item__link text--black" href="#">Accounts</a></li>
+                        <li class="tab-items__tab-item padding--sm margin--lmd "><a class="text--gray tab-item__link" href="#">Trans History</a></li>
                     </ul>
                 </nav>
 
-                <ul class="trans-history-cards">
+                <!--account tab content here-->
+                <div class="row">
+                    <div class="col--5 align--center">
+                        <div class="current-balance padding--lg">
+                            <p class="current-balance__title margin--tlg text--ash">CURRENT BALANCE</p>
+                            <p class="current-balance__money text--white margin--tlg">54329.00 TK</p>
+                        </div>
+                    </div>
+                    <div class="col--7 align--center">
+                        <img src="./icons/pi-chart.svg" alt="">
+                    </div>
+                </div>
+
+
+                <ul class="trans-history-cards display--n">
                     <li class="trans-history-card padding--md margin--bmd">
                         <div class="card margin--b padding--md text--white">
                             <p class="card__title">
@@ -81,20 +95,20 @@
                         <div class="trans-history-card__extend">
                             <h2 class="align--center margin--blg">27,550 TK</h2>
                             <div class="row">
-                                <div class="col--6">
-                                    <div class="align--center">
+                                <div class="col--6 align--center">
+                                    <div>
                                         <img src="./icons/arrow-down.svg" alt="">
                                     </div>
-                                    <h5 class="align--center">
+                                    <h5>
                                         15,000.00 TK
                                     </h5>
                                 </div>
 
-                                <div class="col--6">
-                                    <div class="align--center">
+                                <div class="col--6 align--center">
+                                    <div>
                                         <img src="./icons/arrow-up.svg" alt="">
                                     </div>
-                                    <h5 class="align--center">
+                                    <h5>
                                         9750.00 TK
                                     </h5>
                                 </div>
@@ -114,21 +128,21 @@
                         <div class="trans-history-card__extend">
                             <h2 class="align--center margin--blg">2,550 TK</h2>
                             <div class="row">
-                                <div class="col--6">
-                                    <div class="align--center">
+                                <div class="col--6 align--center">
+                                    <div>
                                         <img src="./icons/arrow-down.svg" alt="">
                                     </div>
-                                    <h5 class="align--center">
-                                        1000.00 TK
+                                    <h5>
+                                        15,000.00 TK
                                     </h5>
                                 </div>
 
-                                <div class="col--6">
-                                    <div class="align--center">
+                                <div class="col--6 align--center">
+                                    <div>
                                         <img src="./icons/arrow-up.svg" alt="">
                                     </div>
-                                    <h5 class="align--center  margin--l">
-                                        1550.00 TK
+                                    <h5>
+                                        9750.00 TK
                                     </h5>
                                 </div>
                                 
@@ -147,21 +161,21 @@
                         <div class="trans-history-card__extend">
                             <h2 class="align--center margin--blg">2,550 TK</h2>
                             <div class="row">
-                                <div class="col--6">
-                                    <div class="align--center">
+                                <div class="col--6 align--center">
+                                    <div>
                                         <img src="./icons/arrow-down.svg" alt="">
                                     </div>
-                                    <h5 class="align--center">
-                                        1000.00 TK
+                                    <h5>
+                                        15,000.00 TK
                                     </h5>
                                 </div>
 
-                                <div class="col--6">
-                                    <div class="align--center">
+                                <div class="col--6 align--center">
+                                    <div>
                                         <img src="./icons/arrow-up.svg" alt="">
                                     </div>
-                                    <h5 class="align--center  margin--l">
-                                        1550.00 TK
+                                    <h5>
+                                        9750.00 TK
                                     </h5>
                                 </div>
                                 
@@ -180,21 +194,21 @@
                         <div class="trans-history-card__extend">
                             <h2 class="align--center margin--blg">2,550 TK</h2>
                             <div class="row">
-                                <div class="col--6">
-                                    <div class="align--center">
+                                <div class="col--6 align--center">
+                                    <div>
                                         <img src="./icons/arrow-down.svg" alt="">
                                     </div>
-                                    <h5 class="align--center">
-                                        1000.00 TK
+                                    <h5>
+                                        15,000.00 TK
                                     </h5>
                                 </div>
 
-                                <div class="col--6">
-                                    <div class="align--center">
+                                <div class="col--6 align--center">
+                                    <div>
                                         <img src="./icons/arrow-up.svg" alt="">
                                     </div>
-                                    <h5 class="align--center  margin--l">
-                                        1550.00 TK
+                                    <h5>
+                                        9750.00 TK
                                     </h5>
                                 </div>
                                 
@@ -204,6 +218,8 @@
                     <div class="padding--lg margin--blg"></div>
                     <div class="padding--lg margin--blg"></div>
                 </ul>
+
+
             </div>
 
 
@@ -211,7 +227,7 @@
 
             
             
-            <div class="content-right padding--md ">
+            <div class="content-right col--4 padding--md">
                 <div class="user-profile padding--sm">
                     <div class="user-profile__avatar">
                         <img class="user-profile__avatar__img" src="./img/profile.png" alt="profile">
@@ -224,135 +240,255 @@
                         <img src="./icons/logout.svg" alt="log-out icon">
                     </div>
                 </div>
-                <h4 class="margin--tlg">All Transaction History</h2>
-                <ul class="transaction-items accounts-transaction bg--white shadow--lg padding--md margin--tlg">
-                    
-                    <li class="trans-item">
-                        <div class="trans-item__info">
-                            <img class="trans-item__info__icon" src="../../icons/in.svg"/>
-                            <div class="trans-item__info__text">
-                                <h4 class="trans-item__info__text__title">some text<h4>
-                                <p class="trans-item__info__text__sub-title">Bank name</p>
-                            </div>
-                        </div>
-                        <div class="trans-item__amount padding--md ">
-                            200 TK
-                        </div>
-                    </li>
+                <!--account tab content here.-->
+                <div class="line-chart">
+                    <img src="./icons/line-chart.svg" alt="">
+                </div>
 
-                    <li class="trans-item margin--t">
-                        <div class="trans-item__info">
-                            <img class="trans-item__info__icon" src="../../icons/out.svg"/>
-                            <div class="trans-item__info__text">
-                                <h4 class="trans-item__info__text__title">some text<h4>
-                                <p class="trans-item__info__text__sub-title">Bank name</p>
-                            </div>
-                        </div>
-                        <div class="trans-item__amount padding--md ">
-                            -200 TK
-                        </div>
-                    </li>
 
-                    <li class="trans-item margin--t">
-                        <div class="trans-item__info">
-                            <img class="trans-item__info__icon" src="../../icons/out.svg"/>
-                            <div class="trans-item__info__text">
-                                <h4 class="trans-item__info__text__title">some text<h4>
-                                <p class="trans-item__info__text__sub-title">Bank name</p>
+
+                <!--transaction tab content here-->
+                <!-- <div class="display--n">
+                    <h4 class="margin--tlg">All Transaction History</h2>
+                    <ul class="transaction-items accounts-transaction bg--white shadow--lg padding--md margin--tlg">
+                        
+                        <li class="trans-item">
+                            <div class="trans-item__info">
+                                <img class="trans-item__info__icon" src="../../icons/in.svg"/>
+                                <div class="trans-item__info__text">
+                                    <h4 class="trans-item__info__text__title">some text<h4>
+                                    <p class="trans-item__info__text__sub-title">Bank name</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="trans-item__amount padding--md">
-                            -200 TK
-                        </div>
-                    </li>
-                    
-                    <li class="trans-item margin--t">
-                        <div class="trans-item__info">
-                            <img class="trans-item__info__icon" src="../../icons/out.svg"/>
-                            <div class="trans-item__info__text">
-                                <h4 class="trans-item__info__text__title">some text<h4>
-                                <p class="trans-item__info__text__sub-title">Bank name</p>
+                            <div class="trans-item__amount padding--md ">
+                                200 TK
                             </div>
-                        </div>
-                        <div class="trans-item__amount padding--md">
-                            -200 TK
-                        </div>
-                    </li>
-                    <li class="trans-item margin--t">
-                        <div class="trans-item__info">
-                            <img class="trans-item__info__icon" src="../../icons/out.svg"/>
-                            <div class="trans-item__info__text">
-                                <h4 class="trans-item__info__text__title">some text<h4>
-                                <p class="trans-item__info__text__sub-title">Bank name</p>
+                        </li>
+
+                        <li class="trans-item margin--t">
+                            <div class="trans-item__info">
+                                <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+                                <div class="trans-item__info__text">
+                                    <h4 class="trans-item__info__text__title">some text<h4>
+                                    <p class="trans-item__info__text__sub-title">Bank name</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="trans-item__amount padding--md">
-                            -200 TK
-                        </div>
-                    </li>
-                    <li class="trans-item margin--t">
-                        <div class="trans-item__info">
-                            <img class="trans-item__info__icon" src="../../icons/out.svg"/>
-                            <div class="trans-item__info__text">
-                                <h4 class="trans-item__info__text__title">some text<h4>
-                                <p class="trans-item__info__text__sub-title">Bank name</p>
+                            <div class="trans-item__amount padding--md ">
+                                -200 TK
                             </div>
-                        </div>
-                        <div class="trans-item__amount padding--md">
-                            -200 TK
-                        </div>
-                    </li>
-                    <li class="trans-item margin--t">
-                        <div class="trans-item__info">
-                            <img class="trans-item__info__icon" src="../../icons/out.svg"/>
-                            <div class="trans-item__info__text">
-                                <h4 class="trans-item__info__text__title">some text<h4>
-                                <p class="trans-item__info__text__sub-title">Bank name</p>
+                        </li>
+
+                        <li class="trans-item margin--t">
+                            <div class="trans-item__info">
+                                <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+                                <div class="trans-item__info__text">
+                                    <h4 class="trans-item__info__text__title">some text<h4>
+                                    <p class="trans-item__info__text__sub-title">Bank name</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="trans-item__amount padding--md">
-                            -200 TK
-                        </div>
-                    </li>
-                    <li class="trans-item margin--t">
-                        <div class="trans-item__info">
-                            <img class="trans-item__info__icon" src="../../icons/out.svg"/>
-                            <div class="trans-item__info__text">
-                                <h4 class="trans-item__info__text__title">some text<h4>
-                                <p class="trans-item__info__text__sub-title">Bank name</p>
+                            <div class="trans-item__amount padding--md">
+                                -200 TK
                             </div>
-                        </div>
-                        <div class="trans-item__amount padding--md">
-                            -200 TK
-                        </div>
-                    </li>
-                    <li class="trans-item margin--t">
-                        <div class="trans-item__info">
-                            <img class="trans-item__info__icon" src="../../icons/out.svg"/>
-                            <div class="trans-item__info__text">
-                                <h4 class="trans-item__info__text__title">some text<h4>
-                                <p class="trans-item__info__text__sub-title">Bank name</p>
+                        </li>
+                        
+                        <li class="trans-item margin--t">
+                            <div class="trans-item__info">
+                                <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+                                <div class="trans-item__info__text">
+                                    <h4 class="trans-item__info__text__title">some text<h4>
+                                    <p class="trans-item__info__text__sub-title">Bank name</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="trans-item__amount padding--md">
-                            -200 TK
-                        </div>
-                    </li>
-                    <li class="trans-item margin--t">
-                        <div class="trans-item__info">
-                            <img class="trans-item__info__icon" src="../../icons/out.svg"/>
-                            <div class="trans-item__info__text">
-                                <h4 class="trans-item__info__text__title">some text<h4>
-                                <p class="trans-item__info__text__sub-title">Bank name</p>
+                            <div class="trans-item__amount padding--md">
+                                -200 TK
                             </div>
-                        </div>
-                        <div class="trans-item__amount padding--md">
-                            -200 TK
-                        </div>
-                    </li>
-                    <div class="padding--md"></div>
-                </ul>
+                        </li>
+                        <li class="trans-item margin--t">
+                            <div class="trans-item__info">
+                                <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+                                <div class="trans-item__info__text">
+                                    <h4 class="trans-item__info__text__title">some text<h4>
+                                    <p class="trans-item__info__text__sub-title">Bank name</p>
+                                </div>
+                            </div>
+                            <div class="trans-item__amount padding--md">
+                                -200 TK
+                            </div>
+                        </li>
+                        <li class="trans-item margin--t">
+                            <div class="trans-item__info">
+                                <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+                                <div class="trans-item__info__text">
+                                    <h4 class="trans-item__info__text__title">some text<h4>
+                                    <p class="trans-item__info__text__sub-title">Bank name</p>
+                                </div>
+                            </div>
+                            <div class="trans-item__amount padding--md">
+                                -200 TK
+                            </div>
+                        </li>
+                        <li class="trans-item margin--t">
+                            <div class="trans-item__info">
+                                <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+                                <div class="trans-item__info__text">
+                                    <h4 class="trans-item__info__text__title">some text<h4>
+                                    <p class="trans-item__info__text__sub-title">Bank name</p>
+                                </div>
+                            </div>
+                            <div class="trans-item__amount padding--md">
+                                -200 TK
+                            </div>
+                        </li>
+                        <li class="trans-item margin--t">
+                            <div class="trans-item__info">
+                                <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+                                <div class="trans-item__info__text">
+                                    <h4 class="trans-item__info__text__title">some text<h4>
+                                    <p class="trans-item__info__text__sub-title">Bank name</p>
+                                </div>
+                            </div>
+                            <div class="trans-item__amount padding--md">
+                                -200 TK
+                            </div>
+                        </li>
+                        <li class="trans-item margin--t">
+                            <div class="trans-item__info">
+                                <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+                                <div class="trans-item__info__text">
+                                    <h4 class="trans-item__info__text__title">some text<h4>
+                                    <p class="trans-item__info__text__sub-title">Bank name</p>
+                                </div>
+                            </div>
+                            <div class="trans-item__amount padding--md">
+                                -200 TK
+                            </div>
+                        </li>
+                        <li class="trans-item margin--t">
+                            <div class="trans-item__info">
+                                <img class="trans-item__info__icon" src="../../icons/out.svg"/>
+                                <div class="trans-item__info__text">
+                                    <h4 class="trans-item__info__text__title">some text<h4>
+                                    <p class="trans-item__info__text__sub-title">Bank name</p>
+                                </div>
+                            </div>
+                            <div class="trans-item__amount padding--md">
+                                -200 TK
+                            </div>
+                        </li>
+                        <div class="padding--md"></div>
+                    </ul>
+                </div> -->
+                
             </div>
+
+            <div class="accounts-card row padding--lg margin--auto">
+                <div class="col--12 row ">
+                    <div class="col--3 margin--b">
+                        <li class="card padding--md text--white">
+                            <p class="card__title">
+                                Dutch Bangla Bank
+                            </p>
+                            <p class="card__footer text--white">
+                                27,550 TK
+                            </p>
+                        </li>
+                    </div>
+                    
+                    <div class="col--3 margin--b">
+                        <li class="card padding--md text--white">
+                            <p class="card__title">
+                                Dutch Bangla Bank
+                            </p>
+                            <p class="card__footer text--white">
+                                27,550 TK
+                            </p>
+                        </li>
+                    </div>
+                    <div class="col--3 margin--b">
+                        <li class="card padding--md text--white">
+                            <p class="card__title">
+                                Dutch Bangla Bank
+                            </p>
+                            <p class="card__footer text--white">
+                                27,550 TK
+                            </p>
+                        </li>
+                    </div>
+                    <div class="col--3 margin--b">
+                        <li class="card padding--md text--white">
+                            <p class="card__title">
+                                Dutch Bangla Bank
+                            </p>
+                            <p class="card__footer text--white">
+                                27,550 TK
+                            </p>
+                        </li>
+                    </div>
+                    <div class="col--3 margin--b">
+                        <li class="card padding--md text--white">
+                            <p class="card__title">
+                                Dutch Bangla Bank
+                            </p>
+                            <p class="card__footer text--white">
+                                27,550 TK
+                            </p>
+                        </li>
+                    </div>
+                    <div class="col--3 margin--b">
+                        <li class="card padding--md text--white">
+                            <p class="card__title">
+                                Dutch Bangla Bank
+                            </p>
+                            <p class="card__footer text--white">
+                                27,550 TK
+                            </p>
+                        </li>
+                    </div>
+                    <div class="col--3 margin--b">
+                        <li class="card padding--md text--white">
+                            <p class="card__title">
+                                Dutch Bangla Bank
+                            </p>
+                            <p class="card__footer text--white">
+                                27,550 TK
+                            </p>
+                        </li>
+                    </div>
+                    <div class="col--3 margin--b">
+                        <li class="card padding--md text--white">
+                            <p class="card__title">
+                                Dutch Bangla Bank
+                            </p>
+                            <p class="card__footer text--white">
+                                27,550 TK
+                            </p>
+                        </li>
+                    </div>
+                    <div class="col--3 margin--b">
+                        <li class="card padding--md text--white">
+                            <p class="card__title">
+                                Dutch Bangla Bank
+                            </p>
+                            <p class="card__footer text--white">
+                                27,550 TK
+                            </p>
+                        </li>
+                    </div> 
+                    <div class="col--3 margin--b">
+                        <li class="card padding--md text--white">
+                            <p class="card__title">
+                                Dutch Bangla Bank
+                            </p>
+                            <p class="card__footer text--white">
+                                27,550 TK
+                            </p>
+                        </li>
+                    </div>
+                    
+
+                </div>
+            </div>
+
         </section>
     </main>
 </body>
