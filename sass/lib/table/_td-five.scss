@@ -1,0 +1,47 @@
+/*
+    td-five (td five element here)
+
+    Markup:
+    <tr class="td-five border--bottom">
+        <td class="align--center">
+            <div class="td-five__td__first-col">
+                <img class="icon-sm" src="./icons/out.svg"/>
+                <span class="margin--lmd">Settings</span>
+            </div>
+        </td>
+        <td class="align--center">
+            12/9/2020
+        </td>
+        <td class="align--center">
+            city bank
+        </td>
+        <td class="align--center">
+            -1590 TK
+        </td>
+        <td class="align--center">
+            <img src="./icons/out.svg" alt=""/>
+            <img src="./icons/in.svg" alt=""/>
+        </td>
+    </tr>
+
+    Styleguide Lib.Table.td-five
+*/
+
+.td-five-body{
+    display:block;
+    @include overflow-scroll;
+    height:30rem;
+
+    &__row{
+        height:3.75rem;
+
+        &__col{
+            width:17.1875rem;
+
+            &--first{
+                @include d-flex(center);
+            }
+
+        }
+    }
+}

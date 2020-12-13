@@ -1,0 +1,12 @@
+.total-trans-history-table{
+    width: 90%;
+    height: 100%;
+    
+
+    &__table{
+        width:100%;
+        border-radius: $border-radius-sm $border-radius-sm 0 0;
+        border-collapse: collapse;
+    }
+}
+

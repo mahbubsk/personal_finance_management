@@ -16,7 +16,7 @@
     font-size: $font-size-title-md;
     list-style-type: none;
     @include d-flex(space-between);
-
+    transition: .4s;
 
     // &__icon{
     //     /*not used any kind of design*/
@@ -31,4 +31,12 @@
     }
 
 
+
+}
+.nav-item:hover{
+    background-color: #889DFF;
+	border-radius: .25rem;
+	a{
+		color:$white-color;
+	}
 }

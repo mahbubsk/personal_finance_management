@@ -11,338 +11,6 @@ body {
   width: 100vw;
   height: 100vh; }
 
-/* 
-* Utility Rules Defined Here
-* All Type of Utility Tools will Describe Here
-*/
-/*margin-utility*/
-.margin--auto {
-  margin: auto; }
-
-.margin-t--auto {
-  margin: 2rem auto; }
-
-.margin {
-  margin: 0.5rem; }
-
-.margin--md {
-  margin: 1rem; }
-
-.margin--lg {
-  margin: 2rem; }
-
-.margin--y {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem; }
-
-.margin--ymd {
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
-
-.margin--ylg {
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-
-.margin--x {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem; }
-
-.margin--xmd {
-  margin-left: 1rem;
-  margin-right: 1rem; }
-
-.margin--xlg {
-  margin-left: 2rem;
-  margin-right: 2rem; }
-
-.margin--t {
-  margin-top: 0.5rem; }
-
-.margin--tmd {
-  margin-top: 1rem; }
-
-.margin--tlg {
-  margin-top: 2rem; }
-
-.margin--r {
-  margin-right: 0.5rem; }
-
-.margin--rmd {
-  margin-right: 1rem; }
-
-.margin--rlg {
-  margin-right: 2rem; }
-
-.margin--b {
-  margin-bottom: 0.5rem; }
-
-.margin--bmd {
-  margin-bottom: 1rem; }
-
-.margin--blg {
-  margin-bottom: 2rem; }
-
-.margin--l {
-  margin-left: 0.5rem; }
-
-.margin--lmd {
-  margin-left: 1rem; }
-
-.margin--llg {
-  margin-left: 2rem; }
-
-/*margin-utility*/
-/*padding utility*/
-.padding--sm {
-  padding: 0.5rem; }
-
-.padding--md {
-  padding: 1rem; }
-
-.padding--lg {
-  padding: 2rem; }
-
-.padding--y {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; }
-
-.padding--ymd {
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-
-.padding--ylg {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
-
-.padding--x {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem; }
-
-.padding--xmd {
-  padding-left: 1rem;
-  padding-right: 1rem; }
-
-.padding--xlg {
-  padding-left: 2rem;
-  padding-right: 2rem; }
-
-.padding--t {
-  padding-top: 0.5rem; }
-
-.padding--tmd {
-  padding-top: 1rem; }
-
-.padding--tlg {
-  padding-top: 2rem; }
-
-.padding--r {
-  padding-right: 0.5rem; }
-
-.padding--rmd {
-  padding-right: 1rem; }
-
-.padding--rlg {
-  padding-right: 2rem; }
-
-.padding--b {
-  padding-bottom: 0.5rem; }
-
-.padding--bmd {
-  padding-bottom: 1rem; }
-
-.padding--blg {
-  padding-bottom: 2rem; }
-
-.padding--l {
-  margin-left: 0.5rem; }
-
-.padding--lmd {
-  padding-left: 1rem; }
-
-.padding--llg {
-  padding-left: 2rem; }
-
-/*padding utility*/
-/*border outline none*/
-.border-outline--none {
-  outline: none;
-  border: none; }
-
-/*shadow utility*/
-.shadow--lg {
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25); }
-
-.shadow--md {
-  box-shadow: 1 1 5px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 1 1 5px 0 rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 1 1 5px 0 rgba(0, 0, 0, 0.25); }
-
-.shadow--sm {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1); }
-
-/*shadow utility*/
-.display--i {
-  display: inline; }
-
-.display--n {
-  display: none; }
-
-.display--b {
-  display: block; }
-
-.align--right {
-  text-align: right; }
-
-.align--left {
-  text-align: left; }
-
-.align--center {
-  text-align: center; }
-
-/*
-colors utilities..
-*/
-.text--secondary {
-  color: #506df5; }
-
-.text--primary {
-  color: #f5f5f5; }
-
-.text--info {
-  color: #263268; }
-
-.text--white {
-  color: #fff; }
-
-.text--black {
-  color: #000; }
-
-.text--berry {
-  color: #263268; }
-
-.text--success {
-  color: #0F801B; }
-
-.text--ash {
-  color: #EBEEFF; }
-
-.text--gray {
-  color: #757575; }
-
-.text-deep--gray {
-  color: #424242; }
-
-.bg--gray {
-  background: #757575; }
-
-.bg--secondary {
-  background-color: #506df5; }
-
-.bg--primary {
-  background-color: #f5f5f5; }
-
-.bg--info {
-  background-color: #263268; }
-
-.bg--white {
-  background-color: #fff; }
-
-.bg--berry {
-  background-color: #263268; }
-
-.bg--success {
-  background-color: #0F801B; }
-
-.bg--ash {
-  background-color: #EBEEFF; }
-
-.bg-deep--gray {
-  background-color: #424242; }
-
-/*colors utilities*/
-/*active classes
-*/
-.active {
-  background-color: #889DFF;
-  border-radius: .25rem; }
-  .active a {
-    color: #fff; }
-
-.active--tab {
-  position: relative;
-  border-bottom: 4px solid #506df5; }
-  .active--tab a {
-    color: #000; }
-
-/*
-active classes
-*/
-/*border classes, those utilities use just in this project*/
-.border--left {
-  border-left: 1px solid #e0e0e0; }
-
-.border--bottom {
-  position: relative; }
-  .border--bottom::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0.0725rem;
-    background: #e0e0e0;
-    left: 15px;
-    bottom: 0px; }
-
-/**/
-/*layout utility*/
-.row {
-  display: flex;
-  flex-flow: row wrap; }
-
-.col--1 {
-  flex-basis: calc((100% * 1) / 12); }
-
-.col--2 {
-  flex-basis: calc((100% * 2) / 12); }
-
-.col--3 {
-  flex-basis: calc((100% * 3) / 12); }
-
-.col--4 {
-  flex-basis: calc((100% * 4) / 12); }
-
-.col--5 {
-  flex-basis: calc((100% * 5) / 12); }
-
-.col--6 {
-  flex-basis: calc((100% * 6) / 12); }
-
-.col--7 {
-  flex-basis: calc((100% * 7) / 12); }
-
-.col--8 {
-  flex-basis: calc((100% * 8) / 12); }
-
-.col--9 {
-  flex-basis: calc((100% * 9) / 12); }
-
-.col--10 {
-  flex-basis: calc((100% * 10) / 12); }
-
-.col--11 {
-  flex-basis: calc((100% * 11) / 12); }
-
-.col--12 {
-  flex-basis: calc((100% * 12) / 12); }
-
-/*layout utility*/
-/*
-* Utility Rules Defined end here
-* All Type of Utility Tools will Describe Here
-*/
 /*
     Modal-Simple (simple modal is here)
 
@@ -606,12 +274,19 @@ active classes
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  transition: .4s; }
   .nav-item__link {
     text-decoration: none;
     flex-grow: 2;
     margin-left: 0.8rem;
     color: #EBEEFF; }
+
+.nav-item:hover {
+  background-color: #889DFF;
+  border-radius: .25rem; }
+  .nav-item:hover a {
+    color: #fff; }
 
 .tab-item {
   list-style-type: none; }
@@ -745,10 +420,70 @@ active classes
     th-five (table head five items)
 
     Markup:
+    <thead  class="th-five-head">
+        <tr class="th-five-head__row">
+            <th class="th-five-head__row__col">Name</th>
+            <th class="th-five-head__row__col">Date</th>
+            <th class="th-five-head__row__col">Account</th>
+            <th class="th-five-head__row__col">Amount</th>
+            <th class="th-five-head__row__col">Actions</th>
+        </tr>
+    </thead>
+
+    Styleguide Lib.Table.th-five
 
 */
-.th-five {
-  height: 3.75rem; }
+.th-five-head {
+  display: block; }
+  .th-five-head__row {
+    height: 3.75rem; }
+    .th-five-head__row__col {
+      width: 17.1875rem; }
+
+/*
+    td-five (td five element here)
+
+    Markup:
+    <tr class="td-five border--bottom">
+        <td class="align--center">
+            <div class="td-five__td__first-col">
+                <img class="icon-sm" src="./icons/out.svg"/>
+                <span class="margin--lmd">Settings</span>
+            </div>
+        </td>
+        <td class="align--center">
+            12/9/2020
+        </td>
+        <td class="align--center">
+            city bank
+        </td>
+        <td class="align--center">
+            -1590 TK
+        </td>
+        <td class="align--center">
+            <img src="./icons/out.svg" alt=""/>
+            <img src="./icons/in.svg" alt=""/>
+        </td>
+    </tr>
+
+    Styleguide Lib.Table.td-five
+*/
+.td-five-body {
+  display: block;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  height: 30rem; }
+  .td-five-body__row {
+    height: 3.75rem; }
+    .td-five-body__row__col {
+      width: 17.1875rem; }
+      .td-five-body__row__col--first {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
 
 /*
     Budgets-item (budgets single item)
@@ -866,9 +601,6 @@ active classes
   .brand-logo__title {
     font-size: 1.125rem; }
 
-.nav-navigation {
-  margin-top: 5rem; }
-
 /*
     content-main (This is the main content of Dashboard)
     
@@ -912,8 +644,7 @@ active classes
 .search-box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 15%; }
+  justify-content: space-between; }
   .search-box__search-bar {
     display: flex;
     align-items: center;
@@ -1204,3 +935,345 @@ active classes
 
 .accounts-transaction::-webkit-scrollbar {
   display: none; }
+
+.accounts-transaction-wrapper {
+  width: 100%;
+  height: 100%; }
+
+.total-trans-history-table {
+  width: 90%;
+  height: 100%; }
+  .total-trans-history-table__table {
+    width: 100%;
+    border-radius: 1.25rem 1.25rem 0 0;
+    border-collapse: collapse; }
+
+/* 
+* Utility Rules Defined Here
+* All Type of Utility Tools will Describe Here
+*/
+/*layout utility*/
+.row {
+  display: flex;
+  flex-flow: row wrap; }
+
+.col--1 {
+  flex-basis: calc((100% * 1) / 12); }
+
+.col--2 {
+  flex-basis: calc((100% * 2) / 12); }
+
+.col--3 {
+  flex-basis: calc((100% * 3) / 12); }
+
+.col--4 {
+  flex-basis: calc((100% * 4) / 12); }
+
+.col--5 {
+  flex-basis: calc((100% * 5) / 12); }
+
+.col--6 {
+  flex-basis: calc((100% * 6) / 12); }
+
+.col--7 {
+  flex-basis: calc((100% * 7) / 12); }
+
+.col--8 {
+  flex-basis: calc((100% * 8) / 12); }
+
+.col--9 {
+  flex-basis: calc((100% * 9) / 12); }
+
+.col--10 {
+  flex-basis: calc((100% * 10) / 12); }
+
+.col--11 {
+  flex-basis: calc((100% * 11) / 12); }
+
+.col--12 {
+  flex-basis: calc((100% * 12) / 12); }
+
+/*layout utility*/
+/*
+* Utility Rules Defined end here
+* All Type of Utility Tools will Describe Here
+*/
+/*margin-utility*/
+.margin--auto {
+  margin: auto; }
+
+.margin-t--auto {
+  margin: 2rem auto; }
+
+.margin {
+  margin: 0.5rem; }
+
+.margin--md {
+  margin: 1rem; }
+
+.margin--lg {
+  margin: 2rem; }
+
+.margin--y {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+.margin--ymd {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.margin--ylg {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.margin--x {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem; }
+
+.margin--xmd {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.margin--xlg {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.margin--t {
+  margin-top: 0.5rem; }
+
+.margin--tmd {
+  margin-top: 1rem; }
+
+.margin--tlg {
+  margin-top: 2rem; }
+
+.margin--r {
+  margin-right: 0.5rem; }
+
+.margin--rmd {
+  margin-right: 1rem; }
+
+.margin--rlg {
+  margin-right: 2rem; }
+
+.margin--b {
+  margin-bottom: 0.5rem; }
+
+.margin--bmd {
+  margin-bottom: 1rem; }
+
+.margin--blg {
+  margin-bottom: 2rem; }
+
+.margin--l {
+  margin-left: 0.5rem; }
+
+.margin--lmd {
+  margin-left: 1rem; }
+
+.margin--llg {
+  margin-left: 2rem; }
+
+/*margin-utility*/
+/*padding utility*/
+.padding--sm {
+  padding: 0.5rem; }
+
+.padding--md {
+  padding: 1rem; }
+
+.padding--lg {
+  padding: 2rem; }
+
+.padding--y {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.padding--ymd {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.padding--ylg {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.padding--x {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+.padding--xmd {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.padding--xlg {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.padding--t {
+  padding-top: 0.5rem; }
+
+.padding--tmd {
+  padding-top: 1rem; }
+
+.padding--tlg {
+  padding-top: 2rem; }
+
+.padding--r {
+  padding-right: 0.5rem; }
+
+.padding--rmd {
+  padding-right: 1rem; }
+
+.padding--rlg {
+  padding-right: 2rem; }
+
+.padding--b {
+  padding-bottom: 0.5rem; }
+
+.padding--bmd {
+  padding-bottom: 1rem; }
+
+.padding--blg {
+  padding-bottom: 2rem; }
+
+.padding--l {
+  margin-left: 0.5rem; }
+
+.padding--lmd {
+  padding-left: 1rem; }
+
+.padding--llg {
+  padding-left: 2rem; }
+
+/*padding utility*/
+/*border outline none*/
+.border-outline--none {
+  outline: none;
+  border: none; }
+
+/*shadow utility*/
+.shadow--lg {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25); }
+
+.shadow--md {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25); }
+
+.shadow--sm {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1); }
+
+/*shadow utility*/
+.display--i {
+  display: inline; }
+
+.display--n {
+  display: none; }
+
+.display--b {
+  display: block; }
+
+.align--right {
+  text-align: right; }
+
+.align--left {
+  text-align: left; }
+
+.align--center {
+  text-align: center; }
+
+/*
+colors utilities..
+*/
+.text--secondary {
+  color: #506df5; }
+
+.text--primary {
+  color: #f5f5f5; }
+
+.text--info {
+  color: #263268; }
+
+.text--white {
+  color: #fff; }
+
+.text--black {
+  color: #000; }
+
+.text--berry {
+  color: #263268; }
+
+.text--success {
+  color: #0F801B; }
+
+.text--ash {
+  color: #EBEEFF; }
+
+.text--gray {
+  color: #757575; }
+
+.text-deep--gray {
+  color: #424242; }
+
+.bg--gray {
+  background: #757575; }
+
+.bg--secondary {
+  background-color: #506df5; }
+
+.bg--primary {
+  background-color: #f5f5f5; }
+
+.bg--info {
+  background-color: #263268; }
+
+.bg--white {
+  background-color: #fff; }
+
+.bg--berry {
+  background-color: #263268; }
+
+.bg--success {
+  background-color: #0F801B; }
+
+.bg--ash {
+  background-color: #EBEEFF; }
+
+.bg-deep--gray {
+  background-color: #424242; }
+
+/*colors utilities*/
+/*active classes
+*/
+.active {
+  background-color: #889DFF;
+  border-radius: .25rem; }
+  .active a {
+    color: #fff; }
+
+.active--tab {
+  position: relative;
+  border-bottom: 4px solid #506df5; }
+  .active--tab a {
+    color: #000; }
+
+/*
+active classes
+*/
+/*border classes, those utilities use just in this project*/
+.border--left {
+  border-left: 1px solid #e0e0e0; }
+
+.border--bottom {
+  border-bottom: 1px solid #e0e0e0; }
+
+/*border classes, those utilities use just in this project*/
+/*scroll clearfix classes is writtern here.*/
+.scroll--clearfix {
+  height: 15rem; }
+
+/*scroll clearfix classes is written here.*/

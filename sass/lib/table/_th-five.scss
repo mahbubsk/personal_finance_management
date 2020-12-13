@@ -2,9 +2,29 @@
     th-five (table head five items)
 
     Markup:
+    <thead  class="th-five-head">
+        <tr class="th-five-head__row">
+            <th class="th-five-head__row__col">Name</th>
+            <th class="th-five-head__row__col">Date</th>
+            <th class="th-five-head__row__col">Account</th>
+            <th class="th-five-head__row__col">Amount</th>
+            <th class="th-five-head__row__col">Actions</th>
+        </tr>
+    </thead>
+
+    Styleguide Lib.Table.th-five
 
 */
 
-.th-five{
-    height: 3.75rem;
+.th-five-head{
+    display: block;
+
+    &__row{
+        height:3.75rem;
+        
+        &__col{
+            width:17.1875rem;
+        }
+    }
+    
 }

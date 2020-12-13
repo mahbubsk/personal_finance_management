@@ -20,7 +20,6 @@
 
 .search-box {
     @include d-flex(space-between);
-    height: 15%;
     &__search-bar {
         @include d-flex(space-between);
         border-radius: $border-radius-md; 

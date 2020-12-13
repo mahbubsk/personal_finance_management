@@ -3,8 +3,8 @@
 @import "./abstract/function";
 
 
-@import "./base/base";
-@import "./base/utilities";
+@import "./resets/resets";
+
 
 @import "./blocks/blocks-main.scss";
 
@@ -12,3 +12,6 @@
 @import "./lib/lib-main.scss";
 
 @import "./pages/pages";
+
+@import "./utilities/utilities";
+
