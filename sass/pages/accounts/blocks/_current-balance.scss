@@ -1,8 +1,9 @@
 .current-balance{
-    width:100%;
-    height:100%;
+    width:30%;
+    height:85%;
     background-color: $balance-card-bg;
     border-radius: $border-radius-xsm;
+    @include d-flex(center);
 
     &__title{
         font-size: $font-size-title-md;

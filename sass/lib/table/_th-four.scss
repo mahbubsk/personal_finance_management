@@ -1,0 +1,31 @@
+/*
+    th-four (table head four items)
+
+    Markup:
+    <thead  class="th-four-head">
+        <tr class="th-four-head__row">
+            <th class="th-four-head__row__col">Budget Name</th>
+            <th class="th-four-head__row__col">Created Date</th>
+            <th class="th-four-head__row__col">Amount</th>
+            <th class="th-four-head__row__col">Actions</th>
+        </tr>
+    </thead>
+
+    Styleguide Lib.Table.th-four
+
+*/
+
+.th-four-head{
+    display: block;
+    border-radius: $border-radius-sm;
+
+    &__row{
+        height:3.75rem;
+        
+        
+        &__col{
+            width:18rem;
+        }
+    }
+    
+}

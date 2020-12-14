@@ -1,0 +1,54 @@
+/*
+    td-four (table body four items)
+
+    Markup:
+    <tbody  class="td-four-body">
+        <tr class="td-four-body__row border--bottom">
+            <td class="td-four-body__row__col">
+                <div class="td-four-body__row__col--first">
+                    <img class="icon-sm" src="./icons/out.svg"/>
+                    <span class="margin--lmd">Settings</span>
+                </div>
+            </td>
+            <td class="align--center td-four-body__row__col">
+                12/9/2020
+            </td>
+            <td class="align--center td-four-body__row__col">
+                -1590 TK
+            </td>
+            <td class="align--center td-four-body__row__col">
+                <img src="./icons/delete.svg" alt=""/>
+                <img class="margin--lmd" src="./icons/markar.svg" alt=""/>
+            </td>
+        </tr>
+    </tbody>
+
+    Styleguide Lib.Table.td-four
+
+*/
+
+.td-four-body{
+    display: block;
+    @include overflow-scroll;
+    height:30rem;
+
+    &__row{
+        height:3.75rem;
+        border-radius:$border-radius-sm;
+        
+        &__col{
+            width:17rem;
+
+            &--first{
+                @include d-flex(center);
+                height:3.75rem;
+                border-radius: $border-radius-sm 0 0 $border-radius-sm;
+            }
+        }
+    }
+    
+}
+
+.td-four-body::-webkit-scrollbar{
+    display:none;
+}

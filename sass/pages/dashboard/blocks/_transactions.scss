@@ -49,10 +49,8 @@
         width:48%;
 
         .budgets-items{
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
+            @include overflow-scroll;
             max-height:18rem;
-            overflow: scroll;
         }
         .budgets-items::-webkit-scrollbar{
             display: none;
@@ -64,10 +62,8 @@
         
         .transaction-items{
             border-radius: $border-radius-sm;
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
+            @include overflow-scroll;
             height:15rem;
-            overflow: scroll;
         }
         .transaction-items::-webkit-scrollbar{
             display: none;

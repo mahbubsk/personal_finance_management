@@ -1,29 +1,30 @@
 /*
-    th-five (table head five items)
+    th-four (table head four items)
 
     Markup:
-    <thead  class="th-five-head">
-        <tr class="th-five-head__row">
-            <th class="th-five-head__row__col">Name</th>
-            <th class="th-five-head__row__col">Date</th>
-            <th class="th-five-head__row__col">Account</th>
-            <th class="th-five-head__row__col">Amount</th>
-            <th class="th-five-head__row__col">Actions</th>
+    <thead  class="th-four-head">
+        <tr class="th-four-head__row">
+            <th class="th-four-head__row__col">Name</th>
+            <th class="th-four-head__row__col">Date</th>
+            <th class="th-four-head__row__col">Account</th>
+            <th class="th-four-head__row__col">Amount</th>
+            <th class="th-four-head__row__col">Actions</th>
         </tr>
     </thead>
 
-    Styleguide Lib.Table.th-five
+    Styleguide Lib.Table.th-four
 
 */
 
 .th-five-head{
     display: block;
 
+
     &__row{
         height:3.75rem;
         
         &__col{
-            width:17.1875rem;
+            width:18rem;
         }
     }
     

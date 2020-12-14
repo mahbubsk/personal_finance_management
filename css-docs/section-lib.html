@@ -207,15 +207,27 @@
                       </a>
                     </li>
                     <li class="kss-nav__item kss-nav__item--grandchild">
-                      <a href="section-lib.html#kssref-lib-table-td-five">
+                      <a href="section-lib.html#kssref-lib-table-td-five-body">
                         <span class="kss-nav__ref">2.7.1</span>
                         <span class="kss-nav__name">td-five (td five element here)</span>
                       </a>
                     </li>
                     <li class="kss-nav__item kss-nav__item--grandchild">
-                      <a href="section-lib.html#kssref-lib-table-th-five">
+                      <a href="section-lib.html#kssref-lib-table-td-four">
                         <span class="kss-nav__ref">2.7.2</span>
-                        <span class="kss-nav__name">th-five (table head five items)</span>
+                        <span class="kss-nav__name">td-four (table body four items)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-table-th-four">
+                        <span class="kss-nav__ref">2.7.3</span>
+                        <span class="kss-nav__name">th-four (table head four items)</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-lib.html#kssref-lib-table-th-four">
+                        <span class="kss-nav__ref">2.7.3</span>
+                        <span class="kss-nav__name">th-four (table head four items)</span>
                       </a>
                     </li>
                 </ul>
@@ -1001,12 +1013,12 @@
 
 
             </section>
-            <section class="kss-section kss-section--depth-3" id="kssref-lib-table-td-five">
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-table-td-five-body">
 
             <article class="kss-section__content">
                 <p class="kss-section__source">Source: <span>sass/lib/table/_td-five.scss</span>, line <span>1</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-lib-table-td-five">
+              <a class="kss-section__permalink" href="#kssref-lib-table-td-five-body">
                 <h3 class="kss-section__item kss-section__item--depth-3">
                   <span class="kss-section__ref">2.7.1</span>
                   <span class="kss-section__name">td-five (td five element here)</span>
@@ -1020,64 +1032,68 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><tr class="td-five border--bottom">
-    <td class="align--center">
-        <div class="td-five__td__first-col">
-            <img class="icon-sm" src="./icons/out.svg"/>
-            <span class="margin--lmd">Settings</span>
-        </div>
-    </td>
-    <td class="align--center">
-        12/9/2020
-    </td>
-    <td class="align--center">
-        city bank
-    </td>
-    <td class="align--center">
-        -1590 TK
-    </td>
-    <td class="align--center">
-        <img src="./icons/out.svg" alt=""/>
-        <img src="./icons/in.svg" alt=""/>
-    </td>
-</tr></div>
+                <div class="kss-modifiers__example"> <tbody class="td-five-body">
+    <tr class="td-five-body__row border--bottom">
+        <td class="td-five-body__row__col">
+            <div class="td-five-body__row__col--first">
+                <img class="icon-sm" src="../../icons/out.svg"/>
+                <span class="margin--lmd">Settings</span>
+            </div>
+        </td>
+        <td class="align--center td-five-body__row__col">
+            12/9/2020
+        </td>
+        <td class="align--center td-five-body__row__col">
+            city bank
+        </td>
+        <td class="align--center td-five-body__row__col">
+            -1590 TK
+        </td>
+        <td class="align--center td-five-body__row__col">
+            <img src="./icons/delete.svg" alt=""/>
+            <img class="margin--lmd" src="./icons/markar.svg" alt=""/>
+        </td>
+    </tr>
+</tbody></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;tr class&#x3D;&quot;td-five border--bottom&quot;&gt;
-    &lt;td class&#x3D;&quot;align--center&quot;&gt;
-        &lt;div class&#x3D;&quot;td-five__td__first-col&quot;&gt;
-            &lt;img class&#x3D;&quot;icon-sm&quot; src&#x3D;&quot;./icons/out.svg&quot;/&gt;
-            &lt;span class&#x3D;&quot;margin--lmd&quot;&gt;Settings&lt;/span&gt;
-        &lt;/div&gt;
-    &lt;/td&gt;
-    &lt;td class&#x3D;&quot;align--center&quot;&gt;
-        12/9/2020
-    &lt;/td&gt;
-    &lt;td class&#x3D;&quot;align--center&quot;&gt;
-        city bank
-    &lt;/td&gt;
-    &lt;td class&#x3D;&quot;align--center&quot;&gt;
-        -1590 TK
-    &lt;/td&gt;
-    &lt;td class&#x3D;&quot;align--center&quot;&gt;
-        &lt;img src&#x3D;&quot;./icons/out.svg&quot; alt&#x3D;&quot;&quot;/&gt;
-        &lt;img src&#x3D;&quot;./icons/in.svg&quot; alt&#x3D;&quot;&quot;/&gt;
-    &lt;/td&gt;
-&lt;/tr&gt;</code></pre>
+                  <pre><code class="language-markup"> &lt;tbody class&#x3D;&quot;td-five-body&quot;&gt;
+    &lt;tr class&#x3D;&quot;td-five-body__row border--bottom&quot;&gt;
+        &lt;td class&#x3D;&quot;td-five-body__row__col&quot;&gt;
+            &lt;div class&#x3D;&quot;td-five-body__row__col--first&quot;&gt;
+                &lt;img class&#x3D;&quot;icon-sm&quot; src&#x3D;&quot;../../icons/out.svg&quot;/&gt;
+                &lt;span class&#x3D;&quot;margin--lmd&quot;&gt;Settings&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td class&#x3D;&quot;align--center td-five-body__row__col&quot;&gt;
+            12/9/2020
+        &lt;/td&gt;
+        &lt;td class&#x3D;&quot;align--center td-five-body__row__col&quot;&gt;
+            city bank
+        &lt;/td&gt;
+        &lt;td class&#x3D;&quot;align--center td-five-body__row__col&quot;&gt;
+            -1590 TK
+        &lt;/td&gt;
+        &lt;td class&#x3D;&quot;align--center td-five-body__row__col&quot;&gt;
+            &lt;img src&#x3D;&quot;./icons/delete.svg&quot; alt&#x3D;&quot;&quot;/&gt;
+            &lt;img class&#x3D;&quot;margin--lmd&quot; src&#x3D;&quot;./icons/markar.svg&quot; alt&#x3D;&quot;&quot;/&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;</code></pre>
                 </article>
 
             </section>
-            <section class="kss-section kss-section--depth-3" id="kssref-lib-table-th-five">
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-table-td-four">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>sass/lib/table/_th-five.scss</span>, line <span>1</span></p>
+                <p class="kss-section__source">Source: <span>sass/lib/table/_td-four.scss</span>, line <span>1</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-lib-table-th-five">
+              <a class="kss-section__permalink" href="#kssref-lib-table-td-four">
                 <h3 class="kss-section__item kss-section__item--depth-3">
                   <span class="kss-section__ref">2.7.2</span>
-                  <span class="kss-section__name">th-five (table head five items)</span>
+                  <span class="kss-section__name">td-four (table body four items)</span>
                 </h3>
               </a>
 
@@ -1088,26 +1104,136 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><thead  class="th-five-head">
-    <tr class="th-five-head__row">
-        <th class="th-five-head__row__col">Name</th>
-        <th class="th-five-head__row__col">Date</th>
-        <th class="th-five-head__row__col">Account</th>
-        <th class="th-five-head__row__col">Amount</th>
-        <th class="th-five-head__row__col">Actions</th>
+                <div class="kss-modifiers__example"><tbody  class="td-four-body">
+    <tr class="td-four-body__row border--bottom">
+        <td class="td-four-body__row__col">
+            <div class="td-four-body__row__col--first">
+                <img class="icon-sm" src="./icons/out.svg"/>
+                <span class="margin--lmd">Settings</span>
+            </div>
+        </td>
+        <td class="align--center td-four-body__row__col">
+            12/9/2020
+        </td>
+        <td class="align--center td-four-body__row__col">
+            -1590 TK
+        </td>
+        <td class="align--center td-four-body__row__col">
+            <img src="./icons/delete.svg" alt=""/>
+            <img class="margin--lmd" src="./icons/markar.svg" alt=""/>
+        </td>
+    </tr>
+</tbody></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;tbody  class&#x3D;&quot;td-four-body&quot;&gt;
+    &lt;tr class&#x3D;&quot;td-four-body__row border--bottom&quot;&gt;
+        &lt;td class&#x3D;&quot;td-four-body__row__col&quot;&gt;
+            &lt;div class&#x3D;&quot;td-four-body__row__col--first&quot;&gt;
+                &lt;img class&#x3D;&quot;icon-sm&quot; src&#x3D;&quot;./icons/out.svg&quot;/&gt;
+                &lt;span class&#x3D;&quot;margin--lmd&quot;&gt;Settings&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td class&#x3D;&quot;align--center td-four-body__row__col&quot;&gt;
+            12/9/2020
+        &lt;/td&gt;
+        &lt;td class&#x3D;&quot;align--center td-four-body__row__col&quot;&gt;
+            -1590 TK
+        &lt;/td&gt;
+        &lt;td class&#x3D;&quot;align--center td-four-body__row__col&quot;&gt;
+            &lt;img src&#x3D;&quot;./icons/delete.svg&quot; alt&#x3D;&quot;&quot;/&gt;
+            &lt;img class&#x3D;&quot;margin--lmd&quot; src&#x3D;&quot;./icons/markar.svg&quot; alt&#x3D;&quot;&quot;/&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-table-th-four">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/table/_th-four.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-table-th-four">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">2.7.3</span>
+                  <span class="kss-section__name">th-four (table head four items)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><thead  class="th-four-head">
+    <tr class="th-four-head__row">
+        <th class="th-four-head__row__col">Name</th>
+        <th class="th-four-head__row__col">Date</th>
+        <th class="th-four-head__row__col">Account</th>
+        <th class="th-four-head__row__col">Amount</th>
+        <th class="th-four-head__row__col">Actions</th>
     </tr>
 </thead></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;thead  class&#x3D;&quot;th-five-head&quot;&gt;
-    &lt;tr class&#x3D;&quot;th-five-head__row&quot;&gt;
-        &lt;th class&#x3D;&quot;th-five-head__row__col&quot;&gt;Name&lt;/th&gt;
-        &lt;th class&#x3D;&quot;th-five-head__row__col&quot;&gt;Date&lt;/th&gt;
-        &lt;th class&#x3D;&quot;th-five-head__row__col&quot;&gt;Account&lt;/th&gt;
-        &lt;th class&#x3D;&quot;th-five-head__row__col&quot;&gt;Amount&lt;/th&gt;
-        &lt;th class&#x3D;&quot;th-five-head__row__col&quot;&gt;Actions&lt;/th&gt;
+                  <pre><code class="language-markup">&lt;thead  class&#x3D;&quot;th-four-head&quot;&gt;
+    &lt;tr class&#x3D;&quot;th-four-head__row&quot;&gt;
+        &lt;th class&#x3D;&quot;th-four-head__row__col&quot;&gt;Name&lt;/th&gt;
+        &lt;th class&#x3D;&quot;th-four-head__row__col&quot;&gt;Date&lt;/th&gt;
+        &lt;th class&#x3D;&quot;th-four-head__row__col&quot;&gt;Account&lt;/th&gt;
+        &lt;th class&#x3D;&quot;th-four-head__row__col&quot;&gt;Amount&lt;/th&gt;
+        &lt;th class&#x3D;&quot;th-four-head__row__col&quot;&gt;Actions&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-lib-table-th-four">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>sass/lib/table/_th-five.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-lib-table-th-four">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">2.7.3</span>
+                  <span class="kss-section__name">th-four (table head four items)</span>
+                </h3>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><thead  class="th-four-head">
+    <tr class="th-four-head__row">
+        <th class="th-four-head__row__col">Name</th>
+        <th class="th-four-head__row__col">Date</th>
+        <th class="th-four-head__row__col">Account</th>
+        <th class="th-four-head__row__col">Amount</th>
+        <th class="th-four-head__row__col">Actions</th>
+    </tr>
+</thead></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;thead  class&#x3D;&quot;th-four-head&quot;&gt;
+    &lt;tr class&#x3D;&quot;th-four-head__row&quot;&gt;
+        &lt;th class&#x3D;&quot;th-four-head__row__col&quot;&gt;Name&lt;/th&gt;
+        &lt;th class&#x3D;&quot;th-four-head__row__col&quot;&gt;Date&lt;/th&gt;
+        &lt;th class&#x3D;&quot;th-four-head__row__col&quot;&gt;Account&lt;/th&gt;
+        &lt;th class&#x3D;&quot;th-four-head__row__col&quot;&gt;Amount&lt;/th&gt;
+        &lt;th class&#x3D;&quot;th-four-head__row__col&quot;&gt;Actions&lt;/th&gt;
     &lt;/tr&gt;
 &lt;/thead&gt;</code></pre>
                 </article>

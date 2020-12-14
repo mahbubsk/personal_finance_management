@@ -417,20 +417,44 @@ body {
     right: 15px; }
 
 /*
-    th-five (table head five items)
+    th-four (table head four items)
 
     Markup:
-    <thead  class="th-five-head">
-        <tr class="th-five-head__row">
-            <th class="th-five-head__row__col">Name</th>
-            <th class="th-five-head__row__col">Date</th>
-            <th class="th-five-head__row__col">Account</th>
-            <th class="th-five-head__row__col">Amount</th>
-            <th class="th-five-head__row__col">Actions</th>
+    <thead  class="th-four-head">
+        <tr class="th-four-head__row">
+            <th class="th-four-head__row__col">Budget Name</th>
+            <th class="th-four-head__row__col">Created Date</th>
+            <th class="th-four-head__row__col">Amount</th>
+            <th class="th-four-head__row__col">Actions</th>
         </tr>
     </thead>
 
-    Styleguide Lib.Table.th-five
+    Styleguide Lib.Table.th-four
+
+*/
+.th-four-head {
+  display: block;
+  border-radius: 1.25rem; }
+  .th-four-head__row {
+    height: 3.75rem; }
+    .th-four-head__row__col {
+      width: 18rem; }
+
+/*
+    th-four (table head four items)
+
+    Markup:
+    <thead  class="th-four-head">
+        <tr class="th-four-head__row">
+            <th class="th-four-head__row__col">Name</th>
+            <th class="th-four-head__row__col">Date</th>
+            <th class="th-four-head__row__col">Account</th>
+            <th class="th-four-head__row__col">Amount</th>
+            <th class="th-four-head__row__col">Actions</th>
+        </tr>
+    </thead>
+
+    Styleguide Lib.Table.th-four
 
 */
 .th-five-head {
@@ -438,35 +462,88 @@ body {
   .th-five-head__row {
     height: 3.75rem; }
     .th-five-head__row__col {
-      width: 17.1875rem; }
+      width: 18rem; }
+
+/*
+    td-four (table body four items)
+
+    Markup:
+    <tbody  class="td-four-body">
+        <tr class="td-four-body__row border--bottom">
+            <td class="td-four-body__row__col">
+                <div class="td-four-body__row__col--first">
+                    <img class="icon-sm" src="./icons/out.svg"/>
+                    <span class="margin--lmd">Settings</span>
+                </div>
+            </td>
+            <td class="align--center td-four-body__row__col">
+                12/9/2020
+            </td>
+            <td class="align--center td-four-body__row__col">
+                -1590 TK
+            </td>
+            <td class="align--center td-four-body__row__col">
+                <img src="./icons/delete.svg" alt=""/>
+                <img class="margin--lmd" src="./icons/markar.svg" alt=""/>
+            </td>
+        </tr>
+    </tbody>
+
+    Styleguide Lib.Table.td-four
+
+*/
+.td-four-body {
+  display: block;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  height: 30rem; }
+  .td-four-body__row {
+    height: 3.75rem;
+    border-radius: 1.25rem; }
+    .td-four-body__row__col {
+      width: 17rem; }
+      .td-four-body__row__col--first {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.75rem;
+        border-radius: 1.25rem 0 0 1.25rem; }
+
+.td-four-body::-webkit-scrollbar {
+  display: none; }
 
 /*
     td-five (td five element here)
 
     Markup:
-    <tr class="td-five border--bottom">
-        <td class="align--center">
-            <div class="td-five__td__first-col">
-                <img class="icon-sm" src="./icons/out.svg"/>
-                <span class="margin--lmd">Settings</span>
-            </div>
-        </td>
-        <td class="align--center">
-            12/9/2020
-        </td>
-        <td class="align--center">
-            city bank
-        </td>
-        <td class="align--center">
-            -1590 TK
-        </td>
-        <td class="align--center">
-            <img src="./icons/out.svg" alt=""/>
-            <img src="./icons/in.svg" alt=""/>
-        </td>
-    </tr>
+     <tbody class="td-five-body">
+        <tr class="td-five-body__row border--bottom">
+            <td class="td-five-body__row__col">
+                <div class="td-five-body__row__col--first">
+                    <img class="icon-sm" src="../../icons/out.svg"/>
+                    <span class="margin--lmd">Settings</span>
+                </div>
+            </td>
+            <td class="align--center td-five-body__row__col">
+                12/9/2020
+            </td>
+            <td class="align--center td-five-body__row__col">
+                city bank
+            </td>
+            <td class="align--center td-five-body__row__col">
+                -1590 TK
+            </td>
+            <td class="align--center td-five-body__row__col">
+                <img src="./icons/delete.svg" alt=""/>
+                <img class="margin--lmd" src="./icons/markar.svg" alt=""/>
+            </td>
+        </tr>
+    </tbody>
 
-    Styleguide Lib.Table.td-five
+    Styleguide Lib.Table.td-five-body
 */
 .td-five-body {
   display: block;
@@ -479,11 +556,14 @@ body {
   .td-five-body__row {
     height: 3.75rem; }
     .td-five-body__row__col {
-      width: 17.1875rem; }
+      width: 18rem; }
       .td-five-body__row__col--first {
         display: flex;
         align-items: center;
         justify-content: center; }
+
+.td-five-body::-webkit-scrollbar {
+  display: none; }
 
 /*
     Budgets-item (budgets single item)
@@ -618,9 +698,11 @@ body {
   background-color: #f5f5f5;
   border-radius: 2.5rem; }
   .container__content-main .content-left {
-    width: 70%; }
+    width: 70%;
+    height: 15%; }
   .container__content-main .content-right {
-    width: 30%; }
+    width: 30%;
+    height: 15%; }
 
 /*
     Search-box (this is the header search bar of dashboard)
@@ -774,24 +856,24 @@ body {
   .transaction-wrap__budgets {
     width: 48%; }
     .transaction-wrap__budgets .budgets-items {
+      overflow: scroll;
       -ms-overflow-style: none;
       /* IE and Edge */
       scrollbar-width: none;
       /* Firefox */
-      max-height: 18rem;
-      overflow: scroll; }
+      max-height: 18rem; }
     .transaction-wrap__budgets .budgets-items::-webkit-scrollbar {
       display: none; }
   .transaction-wrap__transactions {
     width: 48%; }
     .transaction-wrap__transactions .transaction-items {
       border-radius: 1.25rem;
+      overflow: scroll;
       -ms-overflow-style: none;
       /* IE and Edge */
       scrollbar-width: none;
       /* Firefox */
-      height: 15rem;
-      overflow: scroll; }
+      height: 15rem; }
     .transaction-wrap__transactions .transaction-items::-webkit-scrollbar {
       display: none; }
 
@@ -825,7 +907,7 @@ body {
   scrollbar-width: none;
   /* Firefox */
   height: 40%;
-  width: 100%; }
+  width: 94%; }
 
 .accounts-card::-webkit-scrollbar {
   display: none; }
@@ -851,20 +933,26 @@ body {
   .user-profile__logout {
     cursor: pointer; }
 
-.current-balance {
+.accounts-transaction-statistics {
   width: 100%;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.current-balance {
+  width: 30%;
+  height: 85%;
   background-color: #889DFF;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .current-balance__title {
     font-size: 1rem;
     font-weight: 500; }
   .current-balance__money {
     font-weight: 500;
     font-size: 1.625rem; }
-
-.line-chart {
-  margin-top: 5rem; }
 
 /*
     Transaction-history-card 
@@ -947,6 +1035,13 @@ body {
     width: 100%;
     border-radius: 1.25rem 1.25rem 0 0;
     border-collapse: collapse; }
+
+.total-budgets-history-table {
+  width: 90%;
+  height: 100%; }
+  .total-budgets-history-table__table {
+    width: 90%;
+    border-radius: 1.25rem; }
 
 /* 
 * Utility Rules Defined Here
