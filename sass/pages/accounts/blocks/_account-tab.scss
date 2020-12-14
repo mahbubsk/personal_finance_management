@@ -1,8 +1,6 @@
 .account-tab{
+    width:20rem;
     .tab-items{
-        // @include d-flex(center);
-        display:flex;
-        align-items: center;
-
+        @include d-flex(center);
     }
 }

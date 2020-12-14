@@ -438,7 +438,7 @@ body {
   .th-four-head__row {
     height: 3.75rem; }
     .th-four-head__row__col {
-      width: 18rem; }
+      width: 17rem; }
 
 /*
     th-four (table head four items)
@@ -502,15 +502,16 @@ body {
   height: 30rem; }
   .td-four-body__row {
     height: 3.75rem;
-    border-radius: 1.25rem; }
+    border-radius: 1.25rem;
+    display: block; }
     .td-four-body__row__col {
       width: 17rem; }
       .td-four-body__row__col--first {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 3.75rem;
-        border-radius: 1.25rem 0 0 1.25rem; }
+        height: 3.85rem;
+        border-radius: 1.25rem 0px 0px 1.25rem; }
 
 .td-four-body::-webkit-scrollbar {
   display: none; }
@@ -698,11 +699,9 @@ body {
   background-color: #f5f5f5;
   border-radius: 2.5rem; }
   .container__content-main .content-left {
-    width: 70%;
-    height: 15%; }
+    width: 70%; }
   .container__content-main .content-right {
-    width: 30%;
-    height: 15%; }
+    width: 30%; }
 
 /*
     Search-box (this is the header search bar of dashboard)
@@ -896,9 +895,12 @@ body {
 .card-wrap::-webkit-scrollbar {
   display: none; }
 
-.account-tab .tab-items {
-  display: flex;
-  align-items: center; }
+.account-tab {
+  width: 20rem; }
+  .account-tab .tab-items {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 .accounts-card {
   overflow: scroll;
@@ -1037,10 +1039,10 @@ body {
     border-collapse: collapse; }
 
 .total-budgets-history-table {
-  width: 90%;
+  width: 100%;
   height: 100%; }
   .total-budgets-history-table__table {
-    width: 90%;
+    width: 85%;
     border-radius: 1.25rem; }
 
 /* 
@@ -1351,7 +1353,6 @@ colors utilities..
     color: #fff; }
 
 .active--tab {
-  position: relative;
   border-bottom: 4px solid #506df5; }
   .active--tab a {
     color: #000; }
