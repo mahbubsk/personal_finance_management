@@ -1,7 +1,11 @@
 .accounts-card{
     @include overflow-scroll;
     height: 40%;
-    width:94%;
+    width:100%;
+
+    display:flex;
+    flex-wrap: wrap;
+
 }
 .accounts-card::-webkit-scrollbar{
     display: none;

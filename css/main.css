@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   overflow-y: hidden;
-  overflow-x: hidden; 
-}
+  overflow-x: hidden; }
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
@@ -909,7 +909,9 @@ body {
   scrollbar-width: none;
   /* Firefox */
   height: 40%;
-  width: 94%; }
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
 
 .accounts-card::-webkit-scrollbar {
   display: none; }
