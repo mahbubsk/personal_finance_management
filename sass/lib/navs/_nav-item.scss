@@ -17,7 +17,7 @@
     list-style-type: none;
     @include d-flex(space-between);
     transition: .4s;
-
+    cursor:pointer;
     // &__icon{
     //     /*not used any kind of design*/
         

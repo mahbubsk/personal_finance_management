@@ -275,7 +275,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: .4s; }
+  transition: .4s;
+  cursor: pointer; }
   .nav-item__link {
     text-decoration: none;
     flex-grow: 2;
