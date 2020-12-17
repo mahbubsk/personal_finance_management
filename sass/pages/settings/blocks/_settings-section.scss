@@ -1,0 +1,12 @@
+.settings-section{
+
+    &__title{
+        font-size: $font-size-title-md;
+    }
+
+    &__form{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:15% 15% 20% auto;
+    }
+}

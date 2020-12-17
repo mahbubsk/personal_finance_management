@@ -80,8 +80,53 @@
                 </div>
             </div>
 
-            <div class="settings-section">
-                <p>Edit profile</p>
+            <div class="settings-section height--100 width--100 padding--lg">
+                <p class="settings-section__title margin--lmd text-deep--gray">Edit profile</p>
+                <form action="#" class="width--90 height--80 margin--tlg settings-section__form padding--md">
+                    <div>
+                        <p class="" for="first name">First Name</p>
+                        <input class="margin--t border-outline--none input-field-lg" type="text" name="first name" id="">
+                    </div>
+
+                    <div>
+                        <p class="" for="last name">Last Name</p>
+                        <input class="margin--t border-outline--none input-field-lg" type="text" name="last name" id="">
+                    </div>
+
+                    <div>
+                        <p class="" for="email">Email</p>
+                        <input class="margin--t border-outline--none input-field-lg" type="email" name="email" id="">
+                    </div>
+
+                    <div>
+                        <p class="" for="contact">Contact</p>
+                        <input class="margin--t border-outline--none input-field-lg" type="text" name="Contact" id="">
+                    </div>
+
+                    
+
+                    <div style="grid-row:3/4;">
+                        <p class="" for="occupation">Occupation</p>
+                        <input class="margin--t border-outline--none input-field-lg" type="text" name="occupation" id="">
+                    </div>
+
+                    
+                    <div class="upload-file">
+                        <p class="margin--bmd" >Upload Image</p>
+                        <div class="bg--white padding--lg width--80 height--80">
+
+                            <label class="upload-file__label" for="upload-file"><img class="width--100 height--100" src="./img/upload-img.svg" alt=""/></label>
+                            <input class="" type="file" name="file" id="upload-file">
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="" for="bio">Bio</p>
+                        <textarea class="display--b padding--sm resize--none border-outline--none" rows="7" cols="55"></textarea>
+                        <button class="btn-sm bg--secondary border-outline--none text--white margin--t">SAVE</button>
+                    </div>
+
+                </form>
             </div>
 
         </section>

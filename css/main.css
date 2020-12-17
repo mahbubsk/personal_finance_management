@@ -942,7 +942,8 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  height: 40%; }
 
 .current-balance {
   width: 30%;
@@ -1047,6 +1048,25 @@ body {
   .total-budgets-history-table__table {
     width: 85%;
     border-radius: 1.25rem; }
+
+.settings-section__title {
+  font-size: 1rem; }
+
+.settings-section__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15% 15% 20% auto; }
+
+.upload-file {
+  grid-row: 3/-1;
+  width: 60%;
+  height: 60%; }
+  .upload-file__label {
+    cursor: pointer; }
+  .upload-file #upload-file {
+    opacity: 0;
+    position: absolute;
+    z-index: -1; }
 
 /* 
 * Utility Rules Defined Here
@@ -1246,11 +1266,6 @@ body {
   padding-left: 2rem; }
 
 /*padding utility*/
-/*border outline none*/
-.border-outline--none {
-  outline: none;
-  border: none; }
-
 /*shadow utility*/
 .shadow--lg {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
@@ -1370,9 +1385,134 @@ active classes
 .border--bottom {
   border-bottom: 1px solid #e0e0e0; }
 
+/*border outline none*/
+.border-outline--none {
+  outline: none;
+  border: none; }
+
+/*resize none*/
+.resize--none {
+  resize: none; }
+
 /*border classes, those utilities use just in this project*/
 /*scroll clearfix classes is writtern here.*/
 .scroll--clearfix {
   height: 15rem; }
 
 /*scroll clearfix classes is written here.*/
+/*width height sizing*/
+.width--10 {
+  width: 10%; }
+
+.height--10 {
+  height: 10%; }
+
+.width--15 {
+  width: 15%; }
+
+.height--15 {
+  height: 15%; }
+
+.width--20 {
+  width: 20%; }
+
+.height--20 {
+  height: 20%; }
+
+.width--25 {
+  width: 25%; }
+
+.height--25 {
+  height: 25%; }
+
+.width--30 {
+  width: 30%; }
+
+.height--30 {
+  height: 30%; }
+
+.width--35 {
+  width: 35%; }
+
+.height--35 {
+  height: 35%; }
+
+.width--40 {
+  width: 40%; }
+
+.height--40 {
+  height: 40%; }
+
+.width--45 {
+  width: 45%; }
+
+.height--45 {
+  height: 45%; }
+
+.width--50 {
+  width: 50%; }
+
+.height--50 {
+  height: 50%; }
+
+.width--55 {
+  width: 55%; }
+
+.height--55 {
+  height: 55%; }
+
+.width--60 {
+  width: 60%; }
+
+.height--60 {
+  height: 60%; }
+
+.width--65 {
+  width: 65%; }
+
+.height--65 {
+  height: 65%; }
+
+.width--70 {
+  width: 70%; }
+
+.height--70 {
+  height: 70%; }
+
+.width--75 {
+  width: 75%; }
+
+.height--75 {
+  height: 75%; }
+
+.width--80 {
+  width: 80%; }
+
+.height--80 {
+  height: 80%; }
+
+.width--85 {
+  width: 85%; }
+
+.height--85 {
+  height: 85%; }
+
+.width--90 {
+  width: 90%; }
+
+.height--90 {
+  height: 90%; }
+
+.width--95 {
+  width: 95%; }
+
+.height--95 {
+  height: 95%; }
+
+.width--100 {
+  width: 100%; }
+
+.height--100 {
+  height: 100%; }
+
+/*width height sizing*/
