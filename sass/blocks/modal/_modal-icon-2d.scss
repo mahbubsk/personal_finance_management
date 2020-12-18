@@ -1,0 +1,54 @@
+/*
+    Modal-Flex (flex modal is here)
+
+    Markup:
+    <div class="modal-icon-tow-d shadow--lg">
+        <form class="modal-icon-tow-d__form">
+            <div class="modal-icon-two-d__form-left">
+                <p class="modal-icon-tow-d__form__label">Budget Name</p>
+                <input value="31st Night Sell" type="text" class="input-field-sm margin--tmd bg--ash border-outline--none"/>
+                <p class="modal-icon-tow-d__form__label margin--tmd">Enter amount</p>
+                <input value="27,550 TK" type="text" class="input-field-sm margin--tmd bg--ash border-outline--none"/>
+            </div>
+            <div class="modal-icon-two-d__form-right margin--l">
+                <img class="margin--lmd" src="../../img/icon-box.svg"/>     
+                <div class="modal-icon-tow-d__form__btns margin--tmd">
+                    <button class="btn-sm border-outline--none">cencle</button>
+                    <button class="btn-sm margin-lmd border-outline--none text--white bg--success">text</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    Styleguide Blocks.modal.modal-icon-two-d
+*/
+
+.modal-icon-tow-d{
+    width:41.875rem;
+    height: 21.875rem;
+    background:$white-color;
+    padding:3rem 6rem;
+    font-size:$font-size-title-lg;
+    border-radius: 5px;
+   
+
+    &__form{
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        width:94%;
+        height: 100%;
+        
+
+        &__btns{
+            @include d-flex(space-between);
+            cursor: pointer;
+
+            button{
+                border-radius: 3px;
+                font-size: $font-size-title-lg;
+            }
+        }
+    }
+
+}

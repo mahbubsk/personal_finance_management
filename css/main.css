@@ -92,9 +92,56 @@ body {
     height: 100%; }
     .modal-tow-d__form__btns {
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: center; }
+      cursor: pointer; }
       .modal-tow-d__form__btns button {
+        border-radius: 3px;
+        font-size: 1.125rem; }
+
+/*
+    Modal-Flex (flex modal is here)
+
+    Markup:
+    <div class="modal-icon-tow-d shadow--lg">
+        <form class="modal-icon-tow-d__form">
+            <div class="modal-icon-two-d__form-left">
+                <p class="modal-icon-tow-d__form__label">Budget Name</p>
+                <input value="31st Night Sell" type="text" class="input-field-sm margin--tmd bg--ash border-outline--none"/>
+                <p class="modal-icon-tow-d__form__label margin--tmd">Enter amount</p>
+                <input value="27,550 TK" type="text" class="input-field-sm margin--tmd bg--ash border-outline--none"/>
+            </div>
+            <div class="modal-icon-two-d__form-right margin--l">
+                <img class="margin--lmd" src="../../img/icon-box.svg"/>     
+                <div class="modal-icon-tow-d__form__btns margin--tmd">
+                    <button class="btn-sm border-outline--none">cencle</button>
+                    <button class="btn-sm margin-lmd border-outline--none text--white bg--success">text</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    Styleguide Blocks.modal.modal-icon-two-d
+*/
+.modal-icon-tow-d {
+  width: 41.875rem;
+  height: 21.875rem;
+  background: #fff;
+  padding: 3rem 6rem;
+  font-size: 1.125rem;
+  border-radius: 5px; }
+  .modal-icon-tow-d__form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 94%;
+    height: 100%; }
+    .modal-icon-tow-d__form__btns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer; }
+      .modal-icon-tow-d__form__btns button {
         border-radius: 3px;
         font-size: 1.125rem; }
 
@@ -102,18 +149,18 @@ body {
     Dropdown-Menu (dropdown menu with some navigation items)
 
     Markup:
-    <ul class="dropdown-menu shadow--lg padding--md">
-        <li class="nav-item">
-            <img class="nav-item__icon" src="../../icons/accounts-drop.svg"/>
-            <a class="nav-item__link text--gray" href="#">add account</a>
+    <ul class="dropdown-menu shadow--md padding--md">
+        <li class="dropdown-menu__item">
+            <img class="dropdown-menu__icon" src="../../icons/accounts-drop.svg"/>
+            <a class="dropdown-menu__link text--gray" href="#">add account</a>
         </li>
-        <li class="nav-item">
-            <img class="nav-item__icon" src="../../icons/transaction-drop.svg"/>
-            <a class="nav-item__link text--gray" href="#">add transaction</a>
+        <li class="dropdown-menu__item">
+            <img class="dropdown-menu__icon" src="../../icons/transaction-drop.svg"/>
+            <a class="dropdown-menu__link text--gray" href="#">add transaction</a>
         </li>
-        <li class="nav-item">
-            <img class="nav-item__icon" src="../../icons/budget-drop.svg"/>
-            <a class="nav-item__link text--gray" href="#">add budget</a>
+        <li class="dropdown-menu__item">
+            <img class="dropdown-menu__icon" src="../../icons/budget-drop.svg"/>
+            <a class="dropdown-menu__link text--gray" href="#">add budget</a>
         </li>
     </ul>
 
@@ -123,6 +170,20 @@ body {
   width: 14rem;
   height: 11.25rem;
   background: #fff; }
+  .dropdown-menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30%;
+    font-weight: 500;
+    font-size: 1rem;
+    list-style-type: none;
+    transition: .4s;
+    cursor: pointer; }
+  .dropdown-menu__link {
+    text-decoration: none;
+    flex-grow: 2;
+    margin-left: 0.8rem; }
 
 /*
     btn-xsm (button extra small)
@@ -1057,13 +1118,17 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 15% 15% 20% auto; }
 
+.occupation-section {
+  grid-row-start: 3;
+  grid-row-end: 4; }
+
 .upload-file {
   grid-row: 3/-1;
   width: 60%;
   height: 60%; }
   .upload-file__label {
     cursor: pointer; }
-  .upload-file #upload-file {
+  .upload-file__input {
     opacity: 0;
     position: absolute;
     z-index: -1; }
