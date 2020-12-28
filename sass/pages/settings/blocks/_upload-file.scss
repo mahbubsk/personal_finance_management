@@ -1,9 +1,7 @@
 .upload-file{
-    grid-row:3/-1;
     // grid-row-start:3;
     // grid-row-end: -1;
-    width:60%;
-    height:60%;
+    grid-row:3/-1;
 
     &__label{
         cursor: pointer;

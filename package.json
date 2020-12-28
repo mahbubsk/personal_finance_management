@@ -4,7 +4,8 @@
   "description": "personal finance management project ",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/main.css -w",
+    "compile:sass": "node-sass sass/main.scss css/main.css",
+    "sass": "sass sass/main.scss css/main.css",
     "kss": "kss --config kss-config.json"
   },
   "author": "stack learner",
