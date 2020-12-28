@@ -1,15 +1,14 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    overflow-y: hidden;
-    overflow-x: hidden;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
-
-body{
+body {
 	font-family: $text-font-family;
-    font-size: $font-size-title-sm;
-    width:100vw;
-    height: 100vh;
+	font-size: $font-size-title-sm;
+	width: 100vw;
+	height: 100vh;
 }
