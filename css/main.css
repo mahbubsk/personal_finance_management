@@ -461,7 +461,7 @@ body {
     Styleguide Lib.cards.card
 */
 .card {
-  background-image: url("../../../img/card-bg.svg");
+  background-image: url("../img/card-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1430,8 +1430,8 @@ colors utilities..
 /*active classes
 */
 .active {
-  background-color: #889DFF;
-  border-radius: .25rem; }
+  background-color: #889dff;
+  border-radius: 0.25rem; }
   .active a {
     color: #fff; }
 
@@ -1462,7 +1462,7 @@ active classes
 /*border classes, those utilities use just in this project*/
 /*scroll clearfix classes is writtern here.*/
 .scroll--clearfix {
-  height: 15rem; }
+  height: 2rem; }
 
 /*scroll clearfix classes is written here.*/
 /*width height sizing*/
