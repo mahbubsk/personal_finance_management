@@ -1,4 +1,3 @@
-
 /* 
 * Utility Rules Defined Here
 * All Type of Utility Tools will Describe Here
@@ -52,7 +51,6 @@
 }
 /*layout utility*/
 
-
 /*
 * Utility Rules Defined end here
 * All Type of Utility Tools will Describe Here
@@ -60,8 +58,8 @@
 
 /*margin-utility*/
 
-.margin--auto{
-	margin:  auto;
+.margin--auto {
+	margin: auto;
 }
 .margin-t--auto {
 	margin: 2rem auto;
@@ -78,8 +76,6 @@
 	margin: 2rem;
 }
 
-
-
 .margin--y {
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
@@ -94,9 +90,6 @@
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
-
-
-
 
 .margin--x {
 	margin-left: 0.5rem;
@@ -113,55 +106,49 @@
 	margin-right: 2rem;
 }
 
-
-.margin--t{
-    margin-top: 0.5rem;
+.margin--t {
+	margin-top: 0.5rem;
 }
-.margin--tmd{
-    margin-top:1rem;
-}
-
-.margin--tlg{
-    margin-top:2rem;
+.margin--tmd {
+	margin-top: 1rem;
 }
 
-.margin--r{
-    margin-right: 0.5rem;
-}
-.margin--rmd{
-    margin-right:1rem;
+.margin--tlg {
+	margin-top: 2rem;
 }
 
-.margin--rlg{
-    margin-right:2rem;
+.margin--r {
+	margin-right: 0.5rem;
+}
+.margin--rmd {
+	margin-right: 1rem;
 }
 
-
-
-.margin--b{
-    margin-bottom: 0.5rem;
-}
-.margin--bmd{
-    margin-bottom:1rem;
+.margin--rlg {
+	margin-right: 2rem;
 }
 
-.margin--blg{
-    margin-bottom:2rem;
+.margin--b {
+	margin-bottom: 0.5rem;
+}
+.margin--bmd {
+	margin-bottom: 1rem;
 }
 
-
-.margin--l{
-    margin-left: 0.5rem;
-}
-.margin--lmd{
-    margin-left:1rem;
+.margin--blg {
+	margin-bottom: 2rem;
 }
 
-.margin--llg{
-    margin-left:2rem;
+.margin--l {
+	margin-left: 0.5rem;
+}
+.margin--lmd {
+	margin-left: 1rem;
 }
 
-
+.margin--llg {
+	margin-left: 2rem;
+}
 
 /*margin-utility*/
 
@@ -179,8 +166,6 @@
 	padding: 2rem;
 }
 
-
-
 .padding--y {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
@@ -195,9 +180,6 @@
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
-
-
-
 
 .padding--x {
 	padding-left: 0.5rem;
@@ -214,60 +196,51 @@
 	padding-right: 2rem;
 }
 
-
-
-.padding--t{
-    padding-top: 0.5rem;
+.padding--t {
+	padding-top: 0.5rem;
 }
-.padding--tmd{
-    padding-top:1rem;
+.padding--tmd {
+	padding-top: 1rem;
 }
 
-.padding--tlg{
-    padding-top:2rem;
+.padding--tlg {
+	padding-top: 2rem;
 }
 
-.padding--r{
-    padding-right: 0.5rem;
+.padding--r {
+	padding-right: 0.5rem;
 }
-.padding--rmd{
-    padding-right:1rem;
-}
-
-.padding--rlg{
-    padding-right:2rem;
+.padding--rmd {
+	padding-right: 1rem;
 }
 
-
-
-.padding--b{
-    padding-bottom: 0.5rem;
-}
-.padding--bmd{
-    padding-bottom:1rem;
+.padding--rlg {
+	padding-right: 2rem;
 }
 
-.padding--blg{
-    padding-bottom:2rem;
+.padding--b {
+	padding-bottom: 0.5rem;
+}
+.padding--bmd {
+	padding-bottom: 1rem;
 }
 
-
-.padding--l{
-    margin-left: 0.5rem;
-}
-.padding--lmd{
-    padding-left:1rem;
+.padding--blg {
+	padding-bottom: 2rem;
 }
 
-.padding--llg{
-    padding-left:2rem;
+.padding--l {
+	margin-left: 0.5rem;
+}
+.padding--lmd {
+	padding-left: 1rem;
 }
 
+.padding--llg {
+	padding-left: 2rem;
+}
 
 /*padding utility*/
-
-
-
 
 /*shadow utility*/
 
@@ -280,7 +253,7 @@
 .shadow--md {
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
 	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
-	-webkit-box-shadow: 1px 1px 5px  rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
 }
 
 .shadow--sm {
@@ -291,9 +264,7 @@
 
 /*shadow utility*/
 
-
-
-.display--i{
+.display--i {
 	display: inline;
 }
 .display--n {
@@ -304,7 +275,6 @@
 	display: block;
 }
 
-
 .align--right {
 	text-align: right;
 }
@@ -312,264 +282,254 @@
 .align--left {
 	text-align: left;
 }
-.align--center{
+.align--center {
 	text-align: center;
 }
-
-
-
 
 /*
 colors utilities..
 */
-.text--secondary{
-	color:$secondary-color;
+.text--secondary {
+	color: $secondary-color;
 }
-.text--primary{
-    color:$primary-color;
+.text--primary {
+	color: $primary-color;
 }
-.text--info{
-    color:$info-color;
+.text--info {
+	color: $info-color;
 }
-.text--white{
-    color:$white-color;
+.text--white {
+	color: $white-color;
 }
-.text--black{
-	color:$black-color;
+.text--black {
+	color: $black-color;
 }
-.text--berry{
-    color:$blue-berry-color;
+.text--berry {
+	color: $blue-berry-color;
 }
-.text--success{
-    color:$success-color;
-}
-
-.text--ash{
-	color:$ash-color;
-}
-.text--gray{
-	color:$color-gray;
-}
-.text-deep--gray{
-	color:$text-color;
+.text--success {
+	color: $success-color;
 }
 
+.text--ash {
+	color: $ash-color;
+}
+.text--gray {
+	color: $color-gray;
+}
+.text-deep--gray {
+	color: $text-color;
+}
 
-
-.bg--gray{
+.bg--gray {
 	background: $color-gray;
 }
-.bg--secondary{
-    background-color:$secondary-color;
+.bg--secondary {
+	background-color: $secondary-color;
 }
-.bg--primary{
-    background-color:$primary-color;
+.bg--primary {
+	background-color: $primary-color;
 }
-.bg--info{
-    background-color:$info-color;
+.bg--info {
+	background-color: $info-color;
 }
-.bg--white{
-    background-color:$white-color;
+.bg--white {
+	background-color: $white-color;
 }
-.bg--berry{
-    background-color:$blue-berry-color;
+.bg--berry {
+	background-color: $blue-berry-color;
 }
-.bg--success{
-    background-color:$success-color;
+.bg--success {
+	background-color: $success-color;
 }
-.bg--ash{
+.bg--ash {
 	background-color: $ash-color;
 }
-.bg-deep--gray{
-	background-color:$text-color;
+.bg-deep--gray {
+	background-color: $text-color;
 }
-
 
 /*colors utilities*/
 
-
 /*active classes
-*/ 
+*/
 .active {
-	background-color: #889DFF;
-	border-radius: .25rem;
-	a{
-		color:$white-color;
-	}
-} 
-.active--tab{
-	border-bottom:4px solid $secondary-color;
-
-	a{
-		color:$black-color
+	background-color: #889dff;
+	border-radius: 0.25rem;
+	a {
+		color: $white-color;
 	}
 }
+.active--tab {
+	border-bottom: 4px solid $secondary-color;
 
-
+	a {
+		color: $black-color;
+	}
+}
 
 /*
 active classes
 */
 
 /*border classes, those utilities use just in this project*/
-.border--left{
+.border--left {
 	border-left: 1px solid #e0e0e0;
 }
-.border--bottom{
+.border--bottom {
 	border-bottom: 1px solid #e0e0e0;
 }
 
-
 /*border outline none*/
-.border-outline--none{
+.border-outline--none {
 	outline: none;
 	border: none;
 }
 
 /*resize none*/
-.resize--none{
+.resize--none {
 	resize: none;
 }
 
 /*border classes, those utilities use just in this project*/
 
 /*scroll clearfix classes is writtern here.*/
-.scroll--clearfix{
-	height: 15rem;
+.scroll--clearfix {
+	height: 2rem;
 }
 /*scroll clearfix classes is written here.*/
 
 /*width height sizing*/
-.width--10{
-	width:10%;
+.width--10 {
+	width: 10%;
 }
-.height--10{
-	height:10%;
-}
-
-.width--15{
-	width:15%;
-}
-.height--15{
-	height:15%;
+.height--10 {
+	height: 10%;
 }
 
-.width--20{
-	width:20%;
+.width--15 {
+	width: 15%;
 }
-.height--20{
-	height:20%;
-}
-
-.width--25{
-	width:25%;
-}
-.height--25{
-	height:25%;
+.height--15 {
+	height: 15%;
 }
 
-.width--30{
-	width:30%;
+.width--20 {
+	width: 20%;
 }
-.height--30{
-	height:30%;
-}
-
-.width--35{
-	width:35%;
-}
-.height--35{
-	height:35%;
+.height--20 {
+	height: 20%;
 }
 
-.width--40{
-	width:40%;
+.width--25 {
+	width: 25%;
 }
-.height--40{
-	height:40%;
-}
-
-.width--45{
-	width:45%;
-}
-.height--45{
-	height:45%;
+.height--25 {
+	height: 25%;
 }
 
-.width--50{
-	width:50%;
+.width--30 {
+	width: 30%;
 }
-.height--50{
-	height:50%;
-}
-
-.width--55{
-	width:55%;
-}
-.height--55{
-	height:55%;
+.height--30 {
+	height: 30%;
 }
 
-.width--60{
-	width:60%;
+.width--35 {
+	width: 35%;
 }
-.height--60{
-	height:60%;
-}
-
-.width--65{
-	width:65%;
-}
-.height--65{
-	height:65%;
+.height--35 {
+	height: 35%;
 }
 
-.width--70{
-	width:70%;
+.width--40 {
+	width: 40%;
 }
-.height--70{
-	height:70%;
-}
-
-.width--75{
-	width:75%;
-}
-.height--75{
-	height:75%;
+.height--40 {
+	height: 40%;
 }
 
-.width--80{
-	width:80%;
+.width--45 {
+	width: 45%;
 }
-.height--80{
-	height:80%;
-}
-
-.width--85{
-	width:85%;
-}
-.height--85{
-	height:85%;
+.height--45 {
+	height: 45%;
 }
 
-.width--90{
-	width:90%;
+.width--50 {
+	width: 50%;
 }
-.height--90{
-	height:90%;
-}
-
-.width--95{
-	width:95%;
-}
-.height--95{
-	height:95%;
+.height--50 {
+	height: 50%;
 }
 
-.width--100{
-	width:100%;
+.width--55 {
+	width: 55%;
 }
-.height--100{
-	height:100%;
+.height--55 {
+	height: 55%;
+}
+
+.width--60 {
+	width: 60%;
+}
+.height--60 {
+	height: 60%;
+}
+
+.width--65 {
+	width: 65%;
+}
+.height--65 {
+	height: 65%;
+}
+
+.width--70 {
+	width: 70%;
+}
+.height--70 {
+	height: 70%;
+}
+
+.width--75 {
+	width: 75%;
+}
+.height--75 {
+	height: 75%;
+}
+
+.width--80 {
+	width: 80%;
+}
+.height--80 {
+	height: 80%;
+}
+
+.width--85 {
+	width: 85%;
+}
+.height--85 {
+	height: 85%;
+}
+
+.width--90 {
+	width: 90%;
+}
+.height--90 {
+	height: 90%;
+}
+
+.width--95 {
+	width: 95%;
+}
+.height--95 {
+	height: 95%;
+}
+
+.width--100 {
+	width: 100%;
+}
+.height--100 {
+	height: 100%;
 }
 /*width height sizing*/

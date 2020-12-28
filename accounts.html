@@ -1,239 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accounts</title>
-    <link rel="icon" href="./icons/accounts-ac.svg"  type="image/icon type">
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <main class="container bg--secondary margin-t--auto padding--md">
-      <section class="container__nav-menu">
-        <div class="brand-logo margin--tlg">
-          <a href="./dashboard.html">
-            <img class="brand-logo__logo" src="./img/brand_logo2.svg" alt="" />
-          </a>
-          <h3 class="text--white brand-logo__title">Stack Wallet</h3>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Accounts</title>
+		<link
+			rel="icon"
+			href="./icons/accounts-ac.svg"
+			type="image/icon type"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<main class="container bg--secondary margin-t--auto padding--md">
+			<section class="container__nav-menu">
+				<div class="brand-logo margin--tlg">
+					<a href="./dashboard.html">
+						<img
+							class="brand-logo__logo"
+							src="./img/brand_logo2.svg"
+							alt=""
+						/>
+					</a>
+					<h3 class="text--white brand-logo__title">Stack Wallet</h3>
+				</div>
 
-        <div class="margin--tlg">
-          <ul class="navigation-items margin--lmd margin--rmd">
-            <li class="nav-item padding--sm margin--tmd">
-              <img class="nav-item__icon" src="./icons/dashboard.svg" />
-              <a class="nav-item__link" href="./dashboard.html">Dashboard</a>
-            </li>
-            <li class="nav-item padding--sm active margin--tmd">
-              <img class="nav-item__icon" src="./icons/accounts-ac.svg" />
-              <a class="nav-item__link" href="./accounts.html">Accounts</a>
-            </li>
-            <li class="nav-item padding--sm margin--tmd">
-              <img class="nav-item__icon" src="./icons/transaction.svg" />
-              <a class="nav-item__link" href="./transactions.html"
-                >Transactions</a
-              >
-            </li>
-            <li class="nav-item padding--sm margin--tmd">
-              <img class="nav-item__icon" src="./icons/budget.svg" />
-              <a class="nav-item__link" href="./budgets.html">Budgets</a>
-            </li>
-            <li class="nav-item padding--sm margin--tmd">
-              <img class="nav-item__icon" src="../../icons/setting.svg" />
-              <a class="nav-item__link" href="./settings.html">Settings</a>
-            </li>
-          </ul>
-        </div>
-      </section>
+				<div class="margin--tlg">
+					<ul class="navigation-items margin--lmd margin--rmd">
+						<li class="nav-item padding--sm margin--tmd">
+							<img
+								class="nav-item__icon"
+								src="./icons/dashboard.svg"
+							/>
+							<a class="nav-item__link" href="./dashboard.html"
+								>Dashboard</a
+							>
+						</li>
+						<li class="nav-item padding--sm active margin--tmd">
+							<img
+								class="nav-item__icon"
+								src="./icons/accounts-ac.svg"
+							/>
+							<a class="nav-item__link" href="./accounts.html"
+								>Accounts</a
+							>
+						</li>
+						<li class="nav-item padding--sm margin--tmd">
+							<img
+								class="nav-item__icon"
+								src="./icons/transaction.svg"
+							/>
+							<a class="nav-item__link" href="./transactions.html"
+								>Transactions</a
+							>
+						</li>
+						<li class="nav-item padding--sm margin--tmd">
+							<img
+								class="nav-item__icon"
+								src="./icons/budget.svg"
+							/>
+							<a class="nav-item__link" href="./budgets.html"
+								>Budgets</a
+							>
+						</li>
+						<li class="nav-item padding--sm margin--tmd">
+							<img
+								class="nav-item__icon"
+								src="./icons/setting.svg"
+							/>
+							<a class="nav-item__link" href="./settings.html"
+								>Settings</a
+							>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-      <section class="container__content-main row">
-        <div class="content-left padding--lg col--8">
-          <div class="search-box">
-            <div class="search-box__search-bar bg--white">
-              <img class="margin--lmd" src="./icons/search.svg" alt="" />
-              <input
-                placeholder="Search"
-                type="text"
-                class="input-field-xlg border-outline--none"
-              />
-            </div>
-            <div class="search-box__notification margin--lmd">
-              <img src="./icons/notification.svg" alt="" />
-            </div>
-            <div class="search-box__add margin--lmd">
-              <img src="./icons/plus.svg" alt="" />
-            </div>
-          </div>
+			<section class="container__content-main row">
+				<div class="content-left padding--lg col--8">
+					<div class="search-box">
+						<div class="search-box__search-bar bg--white">
+							<img
+								class="margin--lmd"
+								src="./icons/search.svg"
+								alt=""
+							/>
+							<input
+								placeholder="Search"
+								type="text"
+								class="input-field-xlg border-outline--none"
+							/>
+						</div>
+						<div class="search-box__notification margin--lmd">
+							<img src="./icons/notification.svg" alt="" />
+						</div>
+						<div class="search-box__add margin--lmd">
+							<img src="./icons/plus.svg" alt="" />
+						</div>
+					</div>
 
-          <nav class="account-tab margin--tmd">
-            <ul class="tab-items">
-              <li
-                class="tab-items__tab-item padding--sm margin--lmd active--tab"
-              >
-                <a class="tab-item__link text--black" href="./accounts.html"
-                  >Accounts</a
-                >
-              </li>
-              <li class="tab-items__tab-item padding--sm margin--lmd">
-                <a class="text--gray tab-item__link" href="./trans-history.html"
-                  >Trans History</a
-                >
-              </li>
-            </ul>
-          </nav>
-         
-        </div>
+					<nav class="account-tab margin--tmd">
+						<ul class="tab-items">
+							<li
+								class="tab-items__tab-item padding--sm margin--lmd active--tab"
+							>
+								<a
+									class="tab-item__link text--black"
+									href="./accounts.html"
+									>Accounts</a
+								>
+							</li>
+							<li
+								class="tab-items__tab-item padding--sm margin--lmd"
+							>
+								<a
+									class="text--gray tab-item__link"
+									href="./trans-history.html"
+									>Trans History</a
+								>
+							</li>
+						</ul>
+					</nav>
+				</div>
 
-        <div class="content-right padding--md col--4">
-          <div class="user-profile padding--sm">
-            <div class="user-profile__avatar">
-              <img
-                class="user-profile__avatar__img"
-                src="./img/profile.png"
-                alt="profile"
-              />
-            </div>
-            <div class="user-profile__email-name margin--lmd">
-              <h4 class="user-profile__email-name__name">MD Mahbub Sk</h4>
-              <p class="user-profile__email-name__email text--gray">
-                skmahbubkr786@gmail.com
-              </p>
-            </div>
-            <div class="user-profile__logout">
-              <img src="./icons/logout.svg" alt="log-out icon" />
-            </div>
-          </div>
-        </div>
+				<div class="content-right padding--md col--4">
+					<div class="user-profile padding--sm">
+						<div class="user-profile__avatar">
+							<img
+								class="user-profile__avatar__img"
+								src="./img/profile.png"
+								alt="profile"
+							/>
+						</div>
+						<div class="user-profile__email-name margin--lmd">
+							<h4 class="user-profile__email-name__name">
+								MD Mahbub Sk
+							</h4>
+							<p
+								class="user-profile__email-name__email text--gray"
+							>
+								skmahbubkr786@gmail.com
+							</p>
+						</div>
+						<div class="user-profile__logout">
+							<img src="./icons/logout.svg" alt="log-out icon" />
+						</div>
+					</div>
+				</div>
 
-        
+				<div class="accounts-transaction-statistics">
+					<div class="current-balance">
+						<div>
+							<p class="current-balance__title text--ash">
+								CURRENT BALANCE
+							</p>
+							<p
+								class="current-balance__money text--white margin--t"
+							>
+								54329.00 TK
+							</p>
+						</div>
+					</div>
+					<div class="height--75">
+						<img
+							class="width--100 height--100"
+							src="./icons/pi-chart.svg"
+							alt=""
+						/>
+					</div>
+					<div class="height--75">
+						<img
+							class="width--100 height--100"
+							src="./icons/line-chart.svg"
+							alt=""
+						/>
+					</div>
+				</div>
 
-        <div class="accounts-transaction-statistics">
-          <div class="current-balance">
-            <div>
-              <p class="current-balance__title text--ash">
-                CURRENT BALANCE
-              </p>
-              <p class="current-balance__money text--white margin--t">
-                54329.00 TK
-              </p>
-            </div>
-          </div>
-          <div class="height--75">
-            <img class="width--100 height--100" src="./icons/pi-chart.svg" alt="" />
-          </div>
-          <div class="height--75">
-            <img class="width--100 height--100" src="./icons/line-chart.svg" alt="" />
-          </div>
-        </div>
+				<div class="accounts-card padding--lg">
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-        <div class="accounts-card padding--lg ">
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
+					<div class="accounts-card__card margin--blg margin--llg">
+						<div class="card padding--md text--white">
+							<p class="card__title">Dutch Bangla Bank</p>
+							<p class="card__footer text--white">27,550 TK</p>
+						</div>
+					</div>
 
-            <div class="accounts-card__card margin--blg margin--llg">
-              <div class="card padding--md text--white">
-                <p class="card__title">Dutch Bangla Bank</p>
-                <p class="card__footer text--white">27,550 TK</p>
-              </div>
-            </div>
-
-
-            
-
-            
-
-           
-
-            <div class="scroll--clearfix"></div>
-        </div>
-      </section>
-    </main>
-  </body>
+					<div class="scroll--clearfix"></div>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>

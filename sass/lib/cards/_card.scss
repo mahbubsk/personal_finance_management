@@ -14,25 +14,24 @@
     Styleguide Lib.cards.card
 */
 
-.card{
-    background-image:url("../../../img/card-bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width:14.375rem;
-    height: 8.125rem;
-    position: relative;
-    &__title{
-        font-size: $font-size-title-lg;
-        font-weight: $font-weight-semi-bold;
-        position: absolute;
-        
-    }
+.card {
+	background-image: url('../img/card-bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 14.375rem;
+	height: 8.125rem;
+	position: relative;
+	&__title {
+		font-size: $font-size-title-lg;
+		font-weight: $font-weight-semi-bold;
+		position: absolute;
+	}
 
-    &__footer{
-        font-size: $font-size-title-xlg;
-        position: absolute;
-        bottom:15px;
-        right:15px;
-    }
+	&__footer {
+		font-size: $font-size-title-xlg;
+		position: absolute;
+		bottom: 15px;
+		right: 15px;
+	}
 }
